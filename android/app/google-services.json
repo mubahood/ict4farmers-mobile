@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "716474564792",
+    "project_id": "ict4farmers-febd2",
+    "storage_bucket": "ict4farmers-febd2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716474564792:android:494c1c843d9d3630b4344d",
+        "android_client_info": {
+          "package_name": "net.eighttechnologes.ict4farmers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "716474564792-1bpukpl05ibfrei90rgc12623a8mdunk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "net.eighttechnologes.ict4farmers",
+            "certificate_hash": "3ee5c94aec70f2aea32d0b489f50045b85d9663a"
+          }
+        },
+        {
+          "client_id": "716474564792-0ou6ra9qlq135q8mpq5g1uqf01nkk0hh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBscGEVpFqQZ26b3q5y_9Rz-VM4bOQsKLI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "716474564792-0ou6ra9qlq135q8mpq5g1uqf01nkk0hh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

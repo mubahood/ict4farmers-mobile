@@ -1,0 +1,236 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="tmcuganda.com"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="20"
+8-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+11-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:4:5-79
+11-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:4:22-76
+12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+12-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:5:5-81
+12-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:5:22-78
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:6:5-67
+13-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:6:22-64
+14
+15    <queries>
+15-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:8:5-29:15
+16
+17        <!-- If your app opens https URLs -->
+18        <intent>
+18-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:10:9-13:18
+19            <action android:name="android.intent.action.VIEW" />
+19-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:11:13-65
+19-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:11:21-62
+20
+21            <data android:scheme="https" />
+21-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:12:13-44
+21-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:12:19-41
+22        </intent>
+23        <!-- If your app makes calls -->
+24        <intent>
+24-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:15:9-18:18
+25            <action android:name="android.intent.action.DIAL" />
+25-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:16:13-65
+25-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:16:21-62
+26
+27            <data android:scheme="tel" />
+27-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:12:13-44
+27-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:12:19-41
+28        </intent>
+29        <!-- If your sends SMS messages -->
+30        <intent>
+30-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:20:9-23:18
+31            <action android:name="android.intent.action.SENDTO" />
+31-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:21:13-67
+31-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:21:21-64
+32
+33            <data android:scheme="smsto" />
+33-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:12:13-44
+33-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:12:19-41
+34        </intent>
+35        <!-- If your app sends emails -->
+36        <intent>
+36-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:25:9-28:18
+37            <action android:name="android.intent.action.SEND" />
+37-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:26:13-65
+37-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:26:21-62
+38
+39            <data android:mimeType="*/*" />
+39-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:12:13-44
+39-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:27:19-41
+40        </intent>
+41        <!-- Needs to be explicitly declared on Android R+ -->
+42        <package android:name="com.google.android.apps.maps" />
+42-->[com.google.android.gms:play-services-maps:18.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/7d064776558e2f29807c8a762199a631/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:9-64
+42-->[com.google.android.gms:play-services-maps:18.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/7d064776558e2f29807c8a762199a631/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:18-61
+43    </queries>
+44
+45    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+45-->[:geolocator_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/geolocator_android/intermediates/library_manifest/release/AndroidManifest.xml:7:5-77
+45-->[:geolocator_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/geolocator_android/intermediates/library_manifest/release/AndroidManifest.xml:7:22-74
+46    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+46-->[:connectivity_plus] /Users/mac/Desktop/github/ict4farmers-flutter/build/connectivity_plus/intermediates/library_manifest/release/AndroidManifest.xml:7:5-79
+46-->[:connectivity_plus] /Users/mac/Desktop/github/ict4farmers-flutter/build/connectivity_plus/intermediates/library_manifest/release/AndroidManifest.xml:7:22-76
+47
+48    <uses-feature
+48-->[com.google.android.gms:play-services-maps:18.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/7d064776558e2f29807c8a762199a631/jetified-play-services-maps-18.0.2/AndroidManifest.xml:26:5-28:35
+49        android:glEsVersion="0x00020000"
+49-->[com.google.android.gms:play-services-maps:18.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/7d064776558e2f29807c8a762199a631/jetified-play-services-maps-18.0.2/AndroidManifest.xml:27:9-41
+50        android:required="true" />
+50-->[com.google.android.gms:play-services-maps:18.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/7d064776558e2f29807c8a762199a631/jetified-play-services-maps-18.0.2/AndroidManifest.xml:28:9-32
+51<!--     <uses-permission android:name="android.permission.RECORD_AUDIO" /> -->
+52    <application
+53        android:name="android.app.Application"
+53-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:35:8-41
+54        android:allowBackup="true"
+54-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:37:8-34
+55        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+55-->[androidx.core:core:1.6.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/122df2e57d294d1a53db26bbc3b813c1/core-1.6.0/AndroidManifest.xml:24:18-86
+56        android:icon="@drawable/logo"
+56-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:34:8-37
+57        android:label="TMC" >
+57-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:36:8-27
+58
+59        <!-- Place your Google Map API KEY here at value -->
+60        <meta-data
+60-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:41:8-42:69
+61            android:name="com.google.android.geo.API_KEY"
+61-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:41:19-64
+62            android:value="AIzaSyAcctJQgkbQQI37Ae_2rAeck-l6nyDRQj0" />
+62-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:42:12-67
+63
+64        <activity
+64-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:44:9-64:20
+65            android:name="tmcuganda.com.MainActivity"
+65-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:45:13-41
+66            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+66-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:49:13-163
+67            android:exported="true"
+67-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:46:13-36
+68            android:hardwareAccelerated="true"
+68-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:50:13-47
+69            android:launchMode="singleTop"
+69-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:47:13-43
+70            android:theme="@style/LaunchTheme"
+70-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:48:13-47
+71            android:windowSoftInputMode="adjustResize" >
+71-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:51:13-55
+72
+73            <!--
+74                 Specifies an Android theme to apply to this Activity as soon as
+75                 the Android process has started. This theme is visible to the user
+76                 while the Flutter UI initializes. After that, this theme continues
+77                 to determine the Window background behind the Flutter UI.
+78            -->
+79            <meta-data
+79-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:56:13-59:17
+80                android:name="io.flutter.embedding.android.NormalTheme"
+80-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:57:15-70
+81                android:resource="@style/NormalTheme" />
+81-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:58:15-52
+82
+83            <intent-filter>
+83-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:60:13-63:29
+84                <action android:name="android.intent.action.MAIN" />
+84-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:61:17-68
+84-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:61:25-66
+85
+86                <category android:name="android.intent.category.LAUNCHER" />
+86-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:62:17-76
+86-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:62:27-74
+87            </intent-filter>
+88        </activity>
+89        <!--
+90             Don't delete the meta-data below.
+91             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+92        -->
+93        <meta-data
+93-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:67:9-69:33
+94            android:name="flutterEmbedding"
+94-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:68:13-44
+95            android:value="2" />
+95-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:69:13-30
+96
+97        <service
+97-->[:geolocator_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/geolocator_android/intermediates/library_manifest/release/AndroidManifest.xml:10:9-14:56
+98            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+98-->[:geolocator_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/geolocator_android/intermediates/library_manifest/release/AndroidManifest.xml:11:13-77
+99            android:enabled="true"
+99-->[:geolocator_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/geolocator_android/intermediates/library_manifest/release/AndroidManifest.xml:12:13-35
+100            android:exported="false"
+100-->[:geolocator_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/geolocator_android/intermediates/library_manifest/release/AndroidManifest.xml:13:13-37
+101            android:foregroundServiceType="location" />
+101-->[:geolocator_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/geolocator_android/intermediates/library_manifest/release/AndroidManifest.xml:14:13-53
+102
+103        <provider
+103-->[:image_picker_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/image_picker_android/intermediates/library_manifest/release/AndroidManifest.xml:8:9-16:20
+104            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+104-->[:image_picker_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/image_picker_android/intermediates/library_manifest/release/AndroidManifest.xml:9:13-82
+105            android:authorities="tmcuganda.com.flutter.image_provider"
+105-->[:image_picker_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/image_picker_android/intermediates/library_manifest/release/AndroidManifest.xml:10:13-74
+106            android:exported="false"
+106-->[:image_picker_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/image_picker_android/intermediates/library_manifest/release/AndroidManifest.xml:11:13-37
+107            android:grantUriPermissions="true" >
+107-->[:image_picker_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/image_picker_android/intermediates/library_manifest/release/AndroidManifest.xml:12:13-47
+108            <meta-data
+108-->[:image_picker_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/image_picker_android/intermediates/library_manifest/release/AndroidManifest.xml:13:13-15:75
+109                android:name="android.support.FILE_PROVIDER_PATHS"
+109-->[:image_picker_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/image_picker_android/intermediates/library_manifest/release/AndroidManifest.xml:14:17-67
+110                android:resource="@xml/flutter_image_picker_file_paths" />
+110-->[:image_picker_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/image_picker_android/intermediates/library_manifest/release/AndroidManifest.xml:15:17-72
+111        </provider>
+112
+113        <activity
+113-->[:url_launcher_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/url_launcher_android/intermediates/library_manifest/release/AndroidManifest.xml:8:9-11:74
+114            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+114-->[:url_launcher_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/url_launcher_android/intermediates/library_manifest/release/AndroidManifest.xml:9:13-74
+115            android:exported="false"
+115-->[:url_launcher_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/url_launcher_android/intermediates/library_manifest/release/AndroidManifest.xml:10:13-37
+116            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+116-->[:url_launcher_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/url_launcher_android/intermediates/library_manifest/release/AndroidManifest.xml:11:13-71
+117
+118        <uses-library
+118-->[androidx.window:window:1.0.0-beta04] /Users/mac/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+119            android:name="androidx.window.extensions"
+119-->[androidx.window:window:1.0.0-beta04] /Users/mac/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+120            android:required="false" />
+120-->[androidx.window:window:1.0.0-beta04] /Users/mac/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+121        <uses-library
+121-->[androidx.window:window:1.0.0-beta04] /Users/mac/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+122            android:name="androidx.window.sidecar"
+122-->[androidx.window:window:1.0.0-beta04] /Users/mac/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+123            android:required="false" /> <!-- Needs to be explicitly declared on P+ -->
+123-->[androidx.window:window:1.0.0-beta04] /Users/mac/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+124        <uses-library
+124-->[com.google.android.gms:play-services-maps:18.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/7d064776558e2f29807c8a762199a631/jetified-play-services-maps-18.0.2/AndroidManifest.xml:39:9-41:40
+125            android:name="org.apache.http.legacy"
+125-->[com.google.android.gms:play-services-maps:18.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/7d064776558e2f29807c8a762199a631/jetified-play-services-maps-18.0.2/AndroidManifest.xml:40:13-50
+126            android:required="false" />
+126-->[com.google.android.gms:play-services-maps:18.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/7d064776558e2f29807c8a762199a631/jetified-play-services-maps-18.0.2/AndroidManifest.xml:41:13-37
+127
+128        <activity
+128-->[com.google.android.gms:play-services-base:18.0.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/642cc9e2632e586d1058ed231591ead4/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+129            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+129-->[com.google.android.gms:play-services-base:18.0.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/642cc9e2632e586d1058ed231591ead4/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+130            android:exported="false"
+130-->[com.google.android.gms:play-services-base:18.0.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/642cc9e2632e586d1058ed231591ead4/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+131            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+131-->[com.google.android.gms:play-services-base:18.0.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/642cc9e2632e586d1058ed231591ead4/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+132
+133        <meta-data
+133-->[com.google.android.gms:play-services-basement:18.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/65c8b9154009d1931a3db50d7627d9e4/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+134            android:name="com.google.android.gms.version"
+134-->[com.google.android.gms:play-services-basement:18.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/65c8b9154009d1931a3db50d7627d9e4/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+135            android:value="@integer/google_play_services_version" />
+135-->[com.google.android.gms:play-services-basement:18.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/65c8b9154009d1931a3db50d7627d9e4/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+136    </application>
+137
+138</manifest>

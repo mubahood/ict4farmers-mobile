@@ -1,0 +1,64 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'CategoryModel.dart';
+
+// **************************************************************************
+// TypeAdapterGenerator
+// **************************************************************************
+
+class CategoryModelAdapter extends TypeAdapter<CategoryModel> {
+  @override
+  final int typeId = 51;
+
+  @override
+  CategoryModel read(BinaryReader reader) {
+    final numOfFields = reader.readByte();
+    final fields = <int, dynamic>{
+      for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
+    };
+    return CategoryModel()
+      ..id = fields[0] as int
+      ..category_id = fields[1] as int
+      ..parent = fields[2] as int
+      ..name = fields[3] as String
+      ..description = fields[4] as String
+      ..slug = fields[5] as String
+      ..image = fields[7] as String
+      ..has_parent = fields[8] as String
+      ..attributes = (fields[9] as List).cast<String>();
+  }
+
+  @override
+  void write(BinaryWriter writer, CategoryModel obj) {
+    writer
+      ..writeByte(9)
+      ..writeByte(0)
+      ..write(obj.id)
+      ..writeByte(1)
+      ..write(obj.category_id)
+      ..writeByte(2)
+      ..write(obj.parent)
+      ..writeByte(3)
+      ..write(obj.name)
+      ..writeByte(4)
+      ..write(obj.description)
+      ..writeByte(5)
+      ..write(obj.slug)
+      ..writeByte(7)
+      ..write(obj.image)
+      ..writeByte(8)
+      ..write(obj.has_parent)
+      ..writeByte(9)
+      ..write(obj.attributes);
+  }
+
+  @override
+  int get hashCode => typeId.hashCode;
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      other is CategoryModelAdapter &&
+          runtimeType == other.runtimeType &&
+          typeId == other.typeId;
+}
