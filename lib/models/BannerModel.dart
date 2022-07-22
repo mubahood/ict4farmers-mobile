@@ -6,7 +6,7 @@ import 'package:ict4farmers/utils/AppConfig.dart';
 import 'package:ict4farmers/utils/Utils.dart';
 
 part 'BannerModel.g.dart';
-
+//test
 @HiveType(typeId: 20)
 class BannerModel extends HiveObject {
   @HiveField(0)
