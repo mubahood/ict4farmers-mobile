@@ -383,7 +383,17 @@ class Utils {
         Navigator.push(
           context,
           PageRouteBuilder(
-            pageBuilder: (context, animation1, animation2) => Dashboard(),
+            pageBuilder: (context, animation1, animation2) => Dashboard(data),
+            transitionDuration: Duration.zero,
+          ),
+        );
+        break;
+
+        case AppConfig.HomesScreen:
+        Navigator.push(
+          context,
+          PageRouteBuilder(
+            pageBuilder: (context, animation1, animation2) => HomesScreen(data),
             transitionDuration: Duration.zero,
           ),
         );

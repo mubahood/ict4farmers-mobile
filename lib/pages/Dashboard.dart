@@ -18,20 +18,21 @@ import '../../utils/AppConfig.dart';
 import '../../utils/Utils.dart';
 import '../models/FarmersGroup.dart';
 import '../models/MenuItemModel.dart';
-import '../models/OneSignalModel.dart';
 import '../widget/my_widgets.dart';
 import '../widget/shimmer_loading_widget.dart';
 
 class Dashboard extends StatefulWidget {
+  BuildContext _context;
 
-  Dashboard();
+  Dashboard(this._context);
 
   @override
-  DashboardState createState() => DashboardState();
+  DashboardState createState() => DashboardState(_context);
 }
 
 class DashboardState extends State<Dashboard> {
   late ThemeData theme;
+  BuildContext _context;
 
   List<MenuItemModel> main_menu_items = [
 //    new MenuItemModel('HRM', "1.png", AppConfig.WorkersScreen, true),
@@ -49,6 +50,7 @@ class DashboardState extends State<Dashboard> {
         'Ask the Expert', "5.png", AppConfig.QuestionsScreen, true, null),
   ];
 
+  DashboardState(this._context);
 
   @override
   void initState() {
@@ -784,7 +786,7 @@ class DashboardState extends State<Dashboard> {
 
   Future<void> do_logout() async {
     await Utils.logged_out();
-    Utils.showSnackBar("Logged out successfully.", context, Colors.white);
+    Utils.showSnackBar("Logged out successfully.", _context, Colors.white);
     my_init();
   }
 

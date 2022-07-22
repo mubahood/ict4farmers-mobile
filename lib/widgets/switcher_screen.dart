@@ -75,7 +75,8 @@ class _switcher_screenState extends State<switcher_screen> {
                     top: 320,
                     child: FxContainer(
                       onTap: () {
-                        Utils.navigate_to(AppConfig.HomePage, context);
+                        Utils.navigate_to(AppConfig.Dashboard, context,data: context);
+
                       },
                       borderRadius: BorderRadius.only(
                           topLeft:
