@@ -63,7 +63,7 @@ class MyApp extends StatelessWidget {
           home: OnBoardingWidget2(),
           routes: {
             '/OnBoardingWidget': (context) => OnBoardingWidget2(),
-            '/HomesScreen': (context) => Dashboard(context),
+            '/HomesScreen': (context) => Dashboard(),
           },
         );
       },

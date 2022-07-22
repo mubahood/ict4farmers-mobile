@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/mac/Desktop/github/ict4farmers-flutter/build/flutter_plugin_android_lifecycle/intermediates/res/merged/debug/values/values.xml",
+            "outputFile": "/Users/mac/Desktop/github/ict4farmers-mobile/build/flutter_plugin_android_lifecycle/intermediates/res/merged/debug/values/values.xml",
             "map": [
                 {
                     "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f128d1f70b2201f4a4d4cfa076a603aa/jetified-window-1.0.0-beta04/res/values/values.xml",
@@ -44,7 +44,7 @@
             ]
         },
         {
-            "outputFile": "/Users/mac/Desktop/github/ict4farmers-flutter/build/flutter_plugin_android_lifecycle/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/mac/Desktop/github/ict4farmers-mobile/build/flutter_plugin_android_lifecycle/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
                     "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/f128d1f70b2201f4a4d4cfa076a603aa/jetified-window-1.0.0-beta04/res/values/values.xml",

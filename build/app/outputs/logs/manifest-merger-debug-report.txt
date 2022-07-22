@@ -1,12 +1,12 @@
 -- Merging decision tree log ---
 application
-INJECTED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:58:4-95:19
-MERGED from [:geolocator_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-15:19
-MERGED from [:geolocator_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-15:19
-MERGED from [:image_picker_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-17:19
-MERGED from [:image_picker_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-17:19
-MERGED from [:url_launcher_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-12:19
-MERGED from [:url_launcher_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-12:19
+INJECTED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:58:4-95:19
+MERGED from [:geolocator_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-15:19
+MERGED from [:geolocator_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-15:19
+MERGED from [:image_picker_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-17:19
+MERGED from [:image_picker_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-17:19
+MERGED from [:url_launcher_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-12:19
+MERGED from [:url_launcher_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-12:19
 MERGED from [com.onesignal:OneSignal:4.7.3] /Users/mac/.gradle/caches/transforms-2/files-2.1/c3a01dd6c89b428115feccdb0a8b1103/jetified-OneSignal-4.7.3/AndroidManifest.xml:48:5-133:19
 MERGED from [com.onesignal:OneSignal:4.7.3] /Users/mac/.gradle/caches/transforms-2/files-2.1/c3a01dd6c89b428115feccdb0a8b1103/jetified-OneSignal-4.7.3/AndroidManifest.xml:48:5-133:19
 MERGED from [androidx.window:window:1.0.0-beta04] /Users/mac/.gradle/caches/transforms-2/files-2.1/f128d1f70b2201f4a4d4cfa076a603aa/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
@@ -48,24 +48,24 @@ MERGED from [androidx.room:room-runtime:2.2.5] /Users/mac/.gradle/caches/transfo
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.6.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/0d872673fc57629972b3a425e07d52da/core-1.6.0/AndroidManifest.xml:24:18-86
 	android:name
-		INJECTED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml
 manifest
-ADDED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:1:1-96:12
-INJECTED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:1:1-96:12
-INJECTED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:1:1-96:12
-INJECTED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:1:1-96:12
-MERGED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:1:1-96:12
-MERGED from [:shared_preferences_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/shared_preferences_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:geolocator_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-17:12
-MERGED from [:google_maps_flutter] /Users/mac/Desktop/github/ict4farmers-flutter/build/google_maps_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:image_picker_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-19:12
-MERGED from [:flutter_plugin_android_lifecycle] /Users/mac/Desktop/github/ict4farmers-flutter/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:sqflite] /Users/mac/Desktop/github/ict4farmers-flutter/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:onesignal_flutter] /Users/mac/Desktop/github/ict4farmers-flutter/build/onesignal_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:url_launcher_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
-MERGED from [:path_provider_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:connectivity_plus] /Users/mac/Desktop/github/ict4farmers-flutter/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:flutter_native_splash] /Users/mac/Desktop/github/ict4farmers-flutter/build/flutter_native_splash/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+ADDED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:1:1-96:12
+INJECTED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:1:1-96:12
+INJECTED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:1:1-96:12
+INJECTED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:1:1-96:12
+MERGED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:1:1-96:12
+MERGED from [:shared_preferences_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/shared_preferences_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:geolocator_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-17:12
+MERGED from [:google_maps_flutter] /Users/mac/Desktop/github/ict4farmers-mobile/build/google_maps_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:image_picker_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-19:12
+MERGED from [:flutter_plugin_android_lifecycle] /Users/mac/Desktop/github/ict4farmers-mobile/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:sqflite] /Users/mac/Desktop/github/ict4farmers-mobile/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:onesignal_flutter] /Users/mac/Desktop/github/ict4farmers-mobile/build/onesignal_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:url_launcher_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
+MERGED from [:path_provider_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:connectivity_plus] /Users/mac/Desktop/github/ict4farmers-mobile/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:flutter_native_splash] /Users/mac/Desktop/github/ict4farmers-mobile/build/flutter_native_splash/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [com.onesignal:OneSignal:4.7.3] /Users/mac/.gradle/caches/transforms-2/files-2.1/c3a01dd6c89b428115feccdb0a8b1103/jetified-OneSignal-4.7.3/AndroidManifest.xml:2:1-135:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/mac/.gradle/caches/transforms-2/files-2.1/14caad3ce49472539496b8b2deaf405c/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.window:window:1.0.0-beta04] /Users/mac/.gradle/caches/transforms-2/files-2.1/f128d1f70b2201f4a4d4cfa076a603aa/jetified-window-1.0.0-beta04/AndroidManifest.xml:17:1-33:12
@@ -124,35 +124,35 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] /Users/mac/.gradle/cac
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/68e7834ca353e8a05ee8fc702bea76c4/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/4fe1ed195b431ea461d2296183701f92/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/eacbc12e360d4d3649a2ed386f743e9e/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-INJECTED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-INJECTED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 	package
-		ADDED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:2:5-47
-		INJECTED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/debug/AndroidManifest.xml
+		ADDED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:2:5-47
+		INJECTED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/debug/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:1:1-96:12
-		INJECTED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:1:1-96:12
+		INJECTED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/debug/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:1:1-96:12
-		INJECTED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:1:1-96:12
+		INJECTED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:4:5-79
+ADDED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:4:5-79
 	android:name
-		ADDED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:4:22-76
+		ADDED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:4:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:5:5-81
+ADDED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:5:5-81
 	android:name
-		ADDED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:5:22-78
+		ADDED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:5:22-78
 uses-permission#android.permission.INTERNET
-ADDED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:6:5-67
-MERGED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:6:5-67
-MERGED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:6:5-67
+ADDED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:6:5-67
+MERGED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:6:5-67
+MERGED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:6:5-67
 MERGED from [com.onesignal:OneSignal:4.7.3] /Users/mac/.gradle/caches/transforms-2/files-2.1/c3a01dd6c89b428115feccdb0a8b1103/jetified-OneSignal-4.7.3/AndroidManifest.xml:16:5-67
 MERGED from [com.onesignal:OneSignal:4.7.3] /Users/mac/.gradle/caches/transforms-2/files-2.1/c3a01dd6c89b428115feccdb0a8b1103/jetified-OneSignal-4.7.3/AndroidManifest.xml:16:5-67
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/17941d786ccf979d42320249cee72686/jetified-play-services-maps-18.0.2/AndroidManifest.xml:24:5-67
@@ -160,65 +160,65 @@ MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/mac/.gradl
 MERGED from [com.google.firebase:firebase-iid:19.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/b737a575a3c4340a51c4426c76a01b40/jetified-firebase-iid-19.0.0/AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-iid:19.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/b737a575a3c4340a51c4426c76a01b40/jetified-firebase-iid-19.0.0/AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:6:22-64
+		ADDED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:6:22-64
 queries
-ADDED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:33:5-54:15
+ADDED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:33:5-54:15
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/17941d786ccf979d42320249cee72686/jetified-play-services-maps-18.0.2/AndroidManifest.xml:30:5-34:15
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/17941d786ccf979d42320249cee72686/jetified-play-services-maps-18.0.2/AndroidManifest.xml:30:5-34:15
 intent#action:name:android.intent.action.VIEW+data:scheme:https
-ADDED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:35:9-38:18
+ADDED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:35:9-38:18
 action#android.intent.action.VIEW
-ADDED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:36:13-65
+ADDED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:36:13-65
 	android:name
-		ADDED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:36:21-62
+		ADDED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:36:21-62
 data
-ADDED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:37:13-44
+ADDED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:37:13-44
 	android:scheme
-		ADDED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:37:19-41
+		ADDED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:37:19-41
 intent#action:name:android.intent.action.DIAL+data:scheme:tel
-ADDED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:40:9-43:18
+ADDED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:40:9-43:18
 action#android.intent.action.DIAL
-ADDED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:41:13-65
+ADDED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:41:13-65
 	android:name
-		ADDED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:41:21-62
+		ADDED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:41:21-62
 intent#action:name:android.intent.action.SENDTO+data:scheme:smsto
-ADDED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:45:9-48:18
+ADDED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:45:9-48:18
 action#android.intent.action.SENDTO
-ADDED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:46:13-67
+ADDED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:46:13-67
 	android:name
-		ADDED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:46:21-64
+		ADDED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:46:21-64
 intent#action:name:android.intent.action.SEND+data:mimeType:*/*
-ADDED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:50:9-53:18
+ADDED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:50:9-53:18
 action#android.intent.action.SEND
-ADDED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:51:13-65
+ADDED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:51:13-65
 	android:name
-		ADDED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:51:21-62
+		ADDED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:51:21-62
 uses-sdk
-INJECTED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml
-INJECTED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml
-MERGED from [:shared_preferences_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/shared_preferences_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:shared_preferences_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/shared_preferences_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:geolocator_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:geolocator_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:google_maps_flutter] /Users/mac/Desktop/github/ict4farmers-flutter/build/google_maps_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:google_maps_flutter] /Users/mac/Desktop/github/ict4farmers-flutter/build/google_maps_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:image_picker_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:image_picker_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:flutter_plugin_android_lifecycle] /Users/mac/Desktop/github/ict4farmers-flutter/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:flutter_plugin_android_lifecycle] /Users/mac/Desktop/github/ict4farmers-flutter/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:sqflite] /Users/mac/Desktop/github/ict4farmers-flutter/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:sqflite] /Users/mac/Desktop/github/ict4farmers-flutter/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:onesignal_flutter] /Users/mac/Desktop/github/ict4farmers-flutter/build/onesignal_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:onesignal_flutter] /Users/mac/Desktop/github/ict4farmers-flutter/build/onesignal_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:url_launcher_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:url_launcher_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:path_provider_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:path_provider_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:connectivity_plus] /Users/mac/Desktop/github/ict4farmers-flutter/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:connectivity_plus] /Users/mac/Desktop/github/ict4farmers-flutter/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:flutter_native_splash] /Users/mac/Desktop/github/ict4farmers-flutter/build/flutter_native_splash/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:flutter_native_splash] /Users/mac/Desktop/github/ict4farmers-flutter/build/flutter_native_splash/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+INJECTED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml
+MERGED from [:shared_preferences_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/shared_preferences_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/shared_preferences_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:geolocator_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:geolocator_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:google_maps_flutter] /Users/mac/Desktop/github/ict4farmers-mobile/build/google_maps_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:google_maps_flutter] /Users/mac/Desktop/github/ict4farmers-mobile/build/google_maps_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:image_picker_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:image_picker_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] /Users/mac/Desktop/github/ict4farmers-mobile/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] /Users/mac/Desktop/github/ict4farmers-mobile/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] /Users/mac/Desktop/github/ict4farmers-mobile/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] /Users/mac/Desktop/github/ict4farmers-mobile/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:onesignal_flutter] /Users/mac/Desktop/github/ict4farmers-mobile/build/onesignal_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:onesignal_flutter] /Users/mac/Desktop/github/ict4farmers-mobile/build/onesignal_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:path_provider_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:path_provider_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/path_provider_android/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:connectivity_plus] /Users/mac/Desktop/github/ict4farmers-mobile/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:connectivity_plus] /Users/mac/Desktop/github/ict4farmers-mobile/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_native_splash] /Users/mac/Desktop/github/ict4farmers-mobile/build/flutter_native_splash/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_native_splash] /Users/mac/Desktop/github/ict4farmers-mobile/build/flutter_native_splash/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [com.onesignal:OneSignal:4.7.3] /Users/mac/.gradle/caches/transforms-2/files-2.1/c3a01dd6c89b428115feccdb0a8b1103/jetified-OneSignal-4.7.3/AndroidManifest.xml:4:5-44
 MERGED from [com.onesignal:OneSignal:4.7.3] /Users/mac/.gradle/caches/transforms-2/files-2.1/c3a01dd6c89b428115feccdb0a8b1103/jetified-OneSignal-4.7.3/AndroidManifest.xml:4:5-44
 MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/mac/.gradle/caches/transforms-2/files-2.1/14caad3ce49472539496b8b2deaf405c/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
@@ -335,56 +335,56 @@ MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/mac/.gradle/caches/tr
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/4fe1ed195b431ea461d2296183701f92/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/eacbc12e360d4d3649a2ed386f743e9e/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/eacbc12e360d4d3649a2ed386f743e9e/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
-INJECTED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/debug/AndroidManifest.xml
-INJECTED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/debug/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/debug/AndroidManifest.xml
 uses-permission#android.permission.FOREGROUND_SERVICE
-ADDED from [:geolocator_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-77
+ADDED from [:geolocator_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-77
 MERGED from [androidx.work:work-runtime:2.7.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/08a4d68c40d73354012aebdc25744fa9/work-runtime-2.7.1/AndroidManifest.xml:28:5-77
 MERGED from [androidx.work:work-runtime:2.7.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/08a4d68c40d73354012aebdc25744fa9/work-runtime-2.7.1/AndroidManifest.xml:28:5-77
 	android:name
-		ADDED from [:geolocator_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-74
+		ADDED from [:geolocator_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-74
 service#com.baseflow.geolocator.GeolocatorLocationService
-ADDED from [:geolocator_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:10:9-14:56
+ADDED from [:geolocator_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:10:9-14:56
 	android:enabled
-		ADDED from [:geolocator_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-35
+		ADDED from [:geolocator_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-35
 	android:exported
-		ADDED from [:geolocator_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-37
+		ADDED from [:geolocator_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-37
 	android:foregroundServiceType
-		ADDED from [:geolocator_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-53
+		ADDED from [:geolocator_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-53
 	android:name
-		ADDED from [:geolocator_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-77
+		ADDED from [:geolocator_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-77
 provider#io.flutter.plugins.imagepicker.ImagePickerFileProvider
-ADDED from [:image_picker_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-16:20
+ADDED from [:image_picker_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-16:20
 	android:grantUriPermissions
-		ADDED from [:image_picker_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-47
+		ADDED from [:image_picker_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-47
 	android:authorities
-		ADDED from [:image_picker_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-74
+		ADDED from [:image_picker_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-74
 	android:exported
-		ADDED from [:image_picker_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-37
+		ADDED from [:image_picker_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-37
 	android:name
-		ADDED from [:image_picker_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-82
+		ADDED from [:image_picker_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-82
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [:image_picker_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-15:75
+ADDED from [:image_picker_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-15:75
 	android:resource
-		ADDED from [:image_picker_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:15:17-72
+		ADDED from [:image_picker_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:15:17-72
 	android:name
-		ADDED from [:image_picker_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:14:17-67
+		ADDED from [:image_picker_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:14:17-67
 activity#io.flutter.plugins.urllauncher.WebViewActivity
-ADDED from [:url_launcher_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:74
+ADDED from [:url_launcher_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:74
 	android:exported
-		ADDED from [:url_launcher_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-37
+		ADDED from [:url_launcher_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-37
 	android:theme
-		ADDED from [:url_launcher_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-71
+		ADDED from [:url_launcher_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-71
 	android:name
-		ADDED from [:url_launcher_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-74
+		ADDED from [:url_launcher_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-74
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [:connectivity_plus] /Users/mac/Desktop/github/ict4farmers-flutter/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-79
+ADDED from [:connectivity_plus] /Users/mac/Desktop/github/ict4farmers-mobile/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-79
 MERGED from [com.onesignal:OneSignal:4.7.3] /Users/mac/.gradle/caches/transforms-2/files-2.1/c3a01dd6c89b428115feccdb0a8b1103/jetified-OneSignal-4.7.3/AndroidManifest.xml:24:5-79
 MERGED from [com.onesignal:OneSignal:4.7.3] /Users/mac/.gradle/caches/transforms-2/files-2.1/c3a01dd6c89b428115feccdb0a8b1103/jetified-OneSignal-4.7.3/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/17941d786ccf979d42320249cee72686/jetified-play-services-maps-18.0.2/AndroidManifest.xml:23:5-79
@@ -394,7 +394,7 @@ MERGED from [com.google.firebase:firebase-iid:19.0.0] /Users/mac/.gradle/caches/
 MERGED from [androidx.work:work-runtime:2.7.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/08a4d68c40d73354012aebdc25744fa9/work-runtime-2.7.1/AndroidManifest.xml:26:5-79
 MERGED from [androidx.work:work-runtime:2.7.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/08a4d68c40d73354012aebdc25744fa9/work-runtime-2.7.1/AndroidManifest.xml:26:5-79
 	android:name
-		ADDED from [:connectivity_plus] /Users/mac/Desktop/github/ict4farmers-flutter/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-76
+		ADDED from [:connectivity_plus] /Users/mac/Desktop/github/ict4farmers-mobile/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-76
 permission#${applicationId}.permission.C2D_MESSAGE
 ADDED from [com.onesignal:OneSignal:4.7.3] /Users/mac/.gradle/caches/transforms-2/files-2.1/c3a01dd6c89b428115feccdb0a8b1103/jetified-OneSignal-4.7.3/AndroidManifest.xml:7:5-9:47
 	android:protectionLevel

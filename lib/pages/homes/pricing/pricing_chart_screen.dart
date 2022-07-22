@@ -178,6 +178,7 @@ class SplashController extends FxController {
   }
 
   void goToLogin() {
+
     /* Navigator.of(context, rootNavigator: true).push(
       MaterialPageRoute(builder: (context) => EstateLoginScreen()),
     );*/

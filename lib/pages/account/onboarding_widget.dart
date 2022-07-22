@@ -5,6 +5,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:ict4farmers/models/ProductModel.dart';
+import 'package:ict4farmers/utils/AppConfig.dart';
+import 'package:ict4farmers/utils/Utils.dart';
 
 import '../../theme/app_theme.dart';
 import '../../theme/custom_theme.dart';
@@ -32,6 +34,8 @@ class _OnBoardingWidget2State extends State<OnBoardingWidget2> {
     //return;
     ProductModel.get_trending();
     await Future.delayed(Duration(seconds: 5), () {
+      Utils.navigate_to(AppConfig.switcher_screen, context);
+      return;
       Navigator.pushNamedAndRemoveUntil(
           context, "/HomesScreen", (r) => false);
       // Your code

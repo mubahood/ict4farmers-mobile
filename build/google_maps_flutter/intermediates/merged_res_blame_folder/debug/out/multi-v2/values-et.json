@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/mac/Desktop/github/ict4farmers-flutter/build/google_maps_flutter/intermediates/res/merged/debug/values-et/values-et.xml",
+            "outputFile": "/Users/mac/Desktop/github/ict4farmers-mobile/build/google_maps_flutter/intermediates/incremental/mergeDebugResources/merged.dir/values-et/values-et.xml",
             "map": [
                 {
                     "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/7a6d49d12f72459ce23e7e6abc2d3461/jetified-play-services-basement-18.0.0/res/values-et/values.xml",
@@ -57,7 +57,7 @@
             ]
         },
         {
-            "outputFile": "/Users/mac/Desktop/github/ict4farmers-flutter/build/google_maps_flutter/intermediates/incremental/mergeDebugResources/merged.dir/values-et/values-et.xml",
+            "outputFile": "/Users/mac/Desktop/github/ict4farmers-mobile/build/google_maps_flutter/intermediates/res/merged/debug/values-et/values-et.xml",
             "map": [
                 {
                     "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/7a6d49d12f72459ce23e7e6abc2d3461/jetified-play-services-basement-18.0.0/res/values-et/values.xml",

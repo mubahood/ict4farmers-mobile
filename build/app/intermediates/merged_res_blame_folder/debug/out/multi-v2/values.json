@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/mac/Desktop/github/ict4farmers-flutter/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/mac/Desktop/github/ict4farmers-mobile/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
                     "source": "/Users/mac/.gradle/caches/transforms-2/files-2.1/8f3744446441e438160ce6f04c0ffde9/jetified-play-services-base-18.0.1/res/values/values.xml",
@@ -39,6 +39,25 @@
                         "endLines": "12,13,14,15,273,2039,2043,3370,3387,3395",
                         "endColumns": "11,59,51,44,59,24,24,24,24,24",
                         "endOffsets": "601,661,713,758,18011,138412,138609,207556,208670,209063"
+                    }
+                },
+                {
+                    "source": "/Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "3,16",
+                        "startColumns": "4,4",
+                        "startOffsets": "173,925",
+                        "endLines": "9,18",
+                        "endColumns": "12,12",
+                        "endOffsets": "583,1089"
+                    },
+                    "to": {
+                        "startLines": "1470,1477",
+                        "startColumns": "4,4",
+                        "startOffsets": "96486,96901",
+                        "endLines": "1476,1479",
+                        "endColumns": "12,12",
+                        "endOffsets": "96896,97065"
                     }
                 },
                 {
@@ -289,25 +308,6 @@
                         "startOffsets": "19275",
                         "endColumns": "42",
                         "endOffsets": "19313"
-                    }
-                },
-                {
-                    "source": "/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/res/values/styles.xml",
-                    "from": {
-                        "startLines": "3,16",
-                        "startColumns": "4,4",
-                        "startOffsets": "173,925",
-                        "endLines": "9,18",
-                        "endColumns": "12,12",
-                        "endOffsets": "583,1089"
-                    },
-                    "to": {
-                        "startLines": "1470,1477",
-                        "startColumns": "4,4",
-                        "startOffsets": "96486,96901",
-                        "endLines": "1476,1479",
-                        "endColumns": "12,12",
-                        "endOffsets": "96896,97065"
                     }
                 },
                 {

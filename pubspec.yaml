@@ -79,5 +79,6 @@ flutter:
     #Other
     - assets/other/
     - assets/project/
+    - assets/project/switcher_bg.jpg
 
     #main-branch

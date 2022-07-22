@@ -12,14 +12,14 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:6:5-67
-14-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:6:22-64
+14-->/Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:6:5-67
+14-->/Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:6:22-64
 15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-15-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:4:5-79
-15-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:4:22-76
+15-->/Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:4:5-79
+15-->/Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:4:22-76
 16    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-16-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:5:5-81
-16-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:5:22-78
+16-->/Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:5:5-81
+16-->/Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:5:22-78
 17    <!--
 18     PASSWORD: sumayahswaibk@gmail.com
 19     FIRST NAME: Sumaya
@@ -43,50 +43,50 @@
 37    -->
 38    <!-- ict4farmers.jks -->
 39    <queries>
-39-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:33:5-54:15
+39-->/Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:33:5-54:15
 40
 41        <!-- If your app opens https URLs -->
 42        <intent>
-42-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:35:9-38:18
+42-->/Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:35:9-38:18
 43            <action android:name="android.intent.action.VIEW" />
-43-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:36:13-65
-43-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:36:21-62
+43-->/Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:36:13-65
+43-->/Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:36:21-62
 44
 45            <data android:scheme="https" />
-45-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:37:13-44
-45-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:37:19-41
+45-->/Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:37:13-44
+45-->/Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:37:19-41
 46        </intent>
 47        <!-- If your app makes calls -->
 48        <intent>
-48-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:40:9-43:18
+48-->/Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:40:9-43:18
 49            <action android:name="android.intent.action.DIAL" />
-49-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:41:13-65
-49-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:41:21-62
+49-->/Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:41:13-65
+49-->/Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:41:21-62
 50
 51            <data android:scheme="tel" />
-51-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:37:13-44
-51-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:37:19-41
+51-->/Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:37:13-44
+51-->/Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:37:19-41
 52        </intent>
 53        <!-- If your sends SMS messages -->
 54        <intent>
-54-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:45:9-48:18
+54-->/Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:45:9-48:18
 55            <action android:name="android.intent.action.SENDTO" />
-55-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:46:13-67
-55-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:46:21-64
+55-->/Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:46:13-67
+55-->/Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:46:21-64
 56
 57            <data android:scheme="smsto" />
-57-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:37:13-44
-57-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:37:19-41
+57-->/Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:37:13-44
+57-->/Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:37:19-41
 58        </intent>
 59        <!-- If your app sends emails -->
 60        <intent>
-60-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:50:9-53:18
+60-->/Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:50:9-53:18
 61            <action android:name="android.intent.action.SEND" />
-61-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:51:13-65
-61-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:51:21-62
+61-->/Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:51:13-65
+61-->/Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:51:21-62
 62
 63            <data android:mimeType="*/*" />
-63-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:37:13-44
+63-->/Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:37:13-44
 64        </intent>
 65        <!-- Needs to be explicitly declared on Android R+ -->
 66        <package android:name="com.google.android.apps.maps" />
@@ -95,11 +95,11 @@
 67    </queries>
 68
 69    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-69-->[:geolocator_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-77
-69-->[:geolocator_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-74
+69-->[:geolocator_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-77
+69-->[:geolocator_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-74
 70    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Create a unique permission for your app and use it so only your app can receive your OneSignal messages. -->
-70-->[:connectivity_plus] /Users/mac/Desktop/github/ict4farmers-flutter/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-79
-70-->[:connectivity_plus] /Users/mac/Desktop/github/ict4farmers-flutter/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-76
+70-->[:connectivity_plus] /Users/mac/Desktop/github/ict4farmers-mobile/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-79
+70-->[:connectivity_plus] /Users/mac/Desktop/github/ict4farmers-mobile/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-76
 71    <permission
 71-->[com.onesignal:OneSignal:4.7.3] /Users/mac/.gradle/caches/transforms-2/files-2.1/c3a01dd6c89b428115feccdb0a8b1103/jetified-OneSignal-4.7.3/AndroidManifest.xml:7:5-9:47
 72        android:name="net.eighttechnologes.ict4farmers.permission.C2D_MESSAGE"
@@ -235,42 +235,42 @@
 154            android:value="2" />
 155
 156        <service
-156-->[:geolocator_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:10:9-14:56
+156-->[:geolocator_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:10:9-14:56
 157            android:name="com.baseflow.geolocator.GeolocatorLocationService"
-157-->[:geolocator_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-77
+157-->[:geolocator_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-77
 158            android:enabled="true"
-158-->[:geolocator_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-35
+158-->[:geolocator_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-35
 159            android:exported="false"
-159-->[:geolocator_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-37
+159-->[:geolocator_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-37
 160            android:foregroundServiceType="location" />
-160-->[:geolocator_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-53
+160-->[:geolocator_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-53
 161
 162        <provider
-162-->[:image_picker_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-16:20
+162-->[:image_picker_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-16:20
 163            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
-163-->[:image_picker_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-82
+163-->[:image_picker_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-82
 164            android:authorities="net.eighttechnologes.ict4farmers.flutter.image_provider"
-164-->[:image_picker_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-74
+164-->[:image_picker_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-74
 165            android:exported="false"
-165-->[:image_picker_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-37
+165-->[:image_picker_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-37
 166            android:grantUriPermissions="true" >
-166-->[:image_picker_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-47
+166-->[:image_picker_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-47
 167            <meta-data
-167-->[:image_picker_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-15:75
+167-->[:image_picker_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-15:75
 168                android:name="android.support.FILE_PROVIDER_PATHS"
-168-->[:image_picker_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:14:17-67
+168-->[:image_picker_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:14:17-67
 169                android:resource="@xml/flutter_image_picker_file_paths" />
-169-->[:image_picker_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:15:17-72
+169-->[:image_picker_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:15:17-72
 170        </provider>
 171
 172        <activity
-172-->[:url_launcher_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:74
+172-->[:url_launcher_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:74
 173            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
-173-->[:url_launcher_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-74
+173-->[:url_launcher_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-74
 174            android:exported="false"
-174-->[:url_launcher_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-37
+174-->[:url_launcher_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-37
 175            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-175-->[:url_launcher_android] /Users/mac/Desktop/github/ict4farmers-flutter/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-71
+175-->[:url_launcher_android] /Users/mac/Desktop/github/ict4farmers-mobile/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-71
 176
 177        <receiver
 177-->[com.onesignal:OneSignal:4.7.3] /Users/mac/.gradle/caches/transforms-2/files-2.1/c3a01dd6c89b428115feccdb0a8b1103/jetified-OneSignal-4.7.3/AndroidManifest.xml:49:9-60:20
@@ -322,8 +322,8 @@
 203            <intent-filter>
 203-->[com.onesignal:OneSignal:4.7.3] /Users/mac/.gradle/caches/transforms-2/files-2.1/c3a01dd6c89b428115feccdb0a8b1103/jetified-OneSignal-4.7.3/AndroidManifest.xml:75:13-77:29
 204                <action android:name="android.intent.action.VIEW" />
-204-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:36:13-65
-204-->/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/AndroidManifest.xml:36:21-62
+204-->/Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:36:13-65
+204-->/Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/AndroidManifest.xml:36:21-62
 205            </intent-filter>
 206        </activity>
 207

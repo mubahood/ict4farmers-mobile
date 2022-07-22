@@ -45,6 +45,7 @@ import '../models/PestModel.dart';
 import '../models/PostModel.dart';
 import '../models/ProductModel.dart';
 import '../models/QuestionModel.dart';
+import '../pages/Dashboard.dart';
 import '../pages/account/account_details.dart';
 import '../pages/account/account_edit.dart';
 import '../pages/account/account_login.dart';
@@ -84,6 +85,7 @@ import '../pages/questions/question_screen.dart';
 import '../pages/questions/questions_create_screen.dart';
 import '../pages/questions/questions_screen.dart';
 import '../pages/search/search_screen.dart';
+import '../widgets/switcher_screen.dart';
 import 'AppConfig.dart';
 import 'SubmitActivityScreen.dart';
 
@@ -377,6 +379,27 @@ class Utils {
   }
   static navigate_to(String screen, context, {dynamic data: null}) {
     switch (screen) {
+      case AppConfig.Dashboard:
+        Navigator.push(
+          context,
+          PageRouteBuilder(
+            pageBuilder: (context, animation1, animation2) => Dashboard(),
+            transitionDuration: Duration.zero,
+          ),
+        );
+        break;
+
+
+        case AppConfig.switcher_screen:
+        Navigator.push(
+          context,
+          PageRouteBuilder(
+            pageBuilder: (context, animation1, animation2) => switcher_screen(),
+            transitionDuration: Duration.zero,
+          ),
+        );
+        break;
+
       case AppConfig.account_verification_code:
         Navigator.push(
           context,
