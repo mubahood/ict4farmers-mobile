@@ -110,7 +110,7 @@ class AccountDetailsState extends State<AccountDetails> {
                   ),
                   InkWell(
                     onTap: () {
-                      show_not_account_bottom_sheet(context);
+                      get_shop_products();
                     },
                     child: Container(
                         padding: FxSpacing.x(0),
@@ -280,6 +280,10 @@ class AccountDetailsState extends State<AccountDetails> {
             ));
       },
     );
+  }
+
+  void get_shop_products() {
+    print("Romin");
   }
 }
 
