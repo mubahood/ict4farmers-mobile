@@ -387,10 +387,52 @@ class ProductAddFormState extends State<ProductAddForm> {
   String error_message = "";
   List<String> photos_picked = [AppConfig.form_field_image_picker];
 
+  void _show_bottom_sheet_photo(context) {
+    showModalBottomSheet(
+        context: context,
+        builder: (BuildContext buildContext) {
+          return Container(
+            color: Colors.transparent,
+            child: Container(
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(16),
+                      topRight: Radius.circular(16))),
+              child: Padding(
+                padding: FxSpacing.all(16),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    ListTile(
+                      onTap: ()  {do_pick_image('camera');},
+                      dense: false,
+                      leading: Icon(Icons.camera_alt,
+                          color: Colors.white),
+                      title: FxText.b1("Camera", fontWeight: 600),
+                    ),
+                    ListTile(
+                        dense: false,
+                        onTap: () => {do_pick_image("gallery")},
+                        leading: Icon(Icons.photo_library_sharp,
+                            color: Colors.white),
+                        title: FxText.b1("Gallery", fontWeight: 600)),
+                  ],
+                ),
+              ),
+            ),
+          );
+        });
+  }
+
   Widget single_image_picker(int index, String _item, BuildContext context) {
     return (_item == AppConfig.form_field_image_picker)
         ? InkWell(
-        onTap: () => {do_pick_image()},
+        onTap: ()  {
+        _show_bottom_sheet_photo(context);
+          //do_pick_image()
+
+        },
         child: Container(
             margin: EdgeInsets.all(5),
             decoration: BoxDecoration(
@@ -624,7 +666,36 @@ class ProductAddFormState extends State<ProductAddForm> {
     Navigator.pop(context, {"task": 'success'});
   }
 
-  do_pick_image() async {
+  do_pick_image(String source) async {
+    Navigator.pop(context);
+
+    new_dp = "";
+
+    final ImagePicker _picker = ImagePicker();
+    temp_images = [];
+    if (source == "camera") {
+      final XFile? pic = await _picker.pickImage(
+          source: ImageSource.camera, imageQuality: 100);
+      if (pic != null) {
+        temp_images?.add(pic);
+      }
+    } else {
+      final XFile? pic = await _picker.pickImage(source: ImageSource.gallery);
+      if (pic != null) {
+        temp_images?.add(pic);
+      }
+    }
+
+    temp_images?.forEach((element) {
+      if (element.path == null) {
+        return;
+      }
+      new_dp = element.path;
+    });
+
+    setState(() {});
+  }
+  /*do_pick_image() async {
     final ImagePicker _picker = ImagePicker();
     final List<XFile>? images = await _picker.pickMultiImage();
 
@@ -638,7 +709,7 @@ class ProductAddFormState extends State<ProductAddForm> {
       // /data/user/0/jotrace.com/cache/image_picker3734385312125071389.jpg
     });
     setState(() {});
-  }
+  }*/
 
   void romove_image_at(int image_position) {
     photos_picked.removeAt((image_position));
