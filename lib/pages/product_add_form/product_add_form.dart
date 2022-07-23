@@ -35,6 +35,8 @@ late CustomTheme customTheme;
 class ProductAddFormState extends State<ProductAddForm> {
   String nature_of_off = "";
 
+  bool main_loading = true;
+
   @override
   void initState() {
     super.initState();
@@ -98,73 +100,86 @@ class ProductAddFormState extends State<ProductAddForm> {
             ),
             body: FormBuilder(
               key: _formKey,
-              child: CustomScrollView(
-                slivers: [
-                  SliverList(
-                    delegate: SliverChildBuilderDelegate(
-                          (BuildContext context, int index) {
-                        return Container(
-                          padding: EdgeInsets.all(0),
-                          child: Column(
-                            children: [
-                              Container(
-                                padding: EdgeInsets.only(
-                                  left: 15,
-                                  top: 5,
-                                  right: 15,
-                                ),
-                                child: Column(
-                                  children: [
-                                    FormBuilderTextField(
-                                        name: "name",
-                                        textInputAction: TextInputAction.next,
-                                        keyboardType: TextInputType.name,
-                                        validator: FormBuilderValidators.compose([
-                                          FormBuilderValidators.required(
-                                            context,
-                                            errorText: "Name is required.",
-                                          ),
-                                          FormBuilderValidators.minLength(
-                                            context,
-                                            2,
-                                            errorText: "Title too short.",
-                                          ),
-                                          FormBuilderValidators.maxLength(
-                                            context,
-                                            45,
-                                            errorText: "Title too long.",
-                                          ),
-                                        ]),
-                                        decoration: customTheme.input_decoration_2(
-                                            labelText: "Title",
-                                            hintText:
-                                            "What is the name of this item?")),
-                                    FxDashedDivider(
-                                      color: Colors.grey.shade300,
-                                    ),
-                                    FormBuilderTextField(
-                                        name: "price",
-                                        textInputAction: TextInputAction.next,
-                                        keyboardType: TextInputType.number,
-                                        validator: FormBuilderValidators.compose([
-                                          FormBuilderValidators.required(
-                                            context,
-                                            errorText: "Price is required",
-                                          ),
-                                        ]),
-                                        decoration: customTheme.input_decoration_2(
-                                            labelText: "Price",
-                                            hintText: "How much is this item?")),
-                                    FxDashedDivider(
-                                      color: Colors.grey.shade300,
-                                    ),
-                                    FormBuilderTextField(
-                                        name: "description",
-                                        minLines: 2,
-                                        maxLines: 4,
-                                        textInputAction: TextInputAction.newline,
-                                        keyboardType: TextInputType.multiline,
-                                        validator: FormBuilderValidators.compose([
+          child: main_loading
+              ? Center(
+                  child: CircularProgressIndicator(
+                    color: CustomTheme.primary,
+                    strokeWidth: 2,
+                  ),
+                )
+              : CustomScrollView(
+                  slivers: [
+                    SliverList(
+                      delegate: SliverChildBuilderDelegate(
+                        (BuildContext context, int index) {
+                          return Container(
+                            padding: EdgeInsets.all(0),
+                            child: Column(
+                              children: [
+                                Container(
+                                  padding: EdgeInsets.only(
+                                    left: 15,
+                                    top: 5,
+                                    right: 15,
+                                  ),
+                                  child: Column(
+                                    children: [
+                                      FormBuilderTextField(
+                                          name: "name",
+                                          textInputAction: TextInputAction.next,
+                                          keyboardType: TextInputType.name,
+                                          validator:
+                                              FormBuilderValidators.compose([
+                                            FormBuilderValidators.required(
+                                              context,
+                                              errorText: "Name is required.",
+                                            ),
+                                            FormBuilderValidators.minLength(
+                                              context,
+                                              2,
+                                              errorText: "Title too short.",
+                                            ),
+                                            FormBuilderValidators.maxLength(
+                                              context,
+                                              45,
+                                              errorText: "Title too long.",
+                                            ),
+                                          ]),
+                                          decoration:
+                                              customTheme.input_decoration_2(
+                                                  labelText: "Title",
+                                                  hintText:
+                                                      "What is the name of this item?")),
+                                      FxDashedDivider(
+                                        color: Colors.grey.shade300,
+                                      ),
+                                      FormBuilderTextField(
+                                          name: "price",
+                                          textInputAction: TextInputAction.next,
+                                          keyboardType: TextInputType.number,
+                                          validator:
+                                              FormBuilderValidators.compose([
+                                            FormBuilderValidators.required(
+                                              context,
+                                              errorText: "Price is required",
+                                            ),
+                                          ]),
+                                          decoration:
+                                              customTheme.input_decoration_2(
+                                                  labelText: "Price",
+                                                  hintText:
+                                                      "How much is this item?")),
+                                      FxDashedDivider(
+                                        color: Colors.grey.shade300,
+                                      ),
+                                      FormBuilderTextField(
+                                          name: "description",
+                                          minLines: 2,
+                                          maxLines: 4,
+                                          textInputAction:
+                                              TextInputAction.newline,
+                                          keyboardType: TextInputType.multiline,
+                                          validator: FormBuilderValidators.compose([
                                           FormBuilderValidators.required(
                                             context,
                                             errorText: "Description is required.",
@@ -552,6 +567,8 @@ class ProductAddFormState extends State<ProductAddForm> {
     }
   }
 
+  LoggedInUserModel userModel = new LoggedInUserModel();
+
   void do_upload_process() async {
     if (photos_picked.length < 16) {
       Utils.showSnackBar("Too many photos.", context, Colors.white,
@@ -573,7 +590,7 @@ class ProductAddFormState extends State<ProductAddForm> {
     form_data_to_upload.clear();
     form_data_to_upload = await FormItemModel.get_all();
 
-    LoggedInUserModel userModel = await Utils.get_logged_in();
+    userModel = await Utils.get_logged_in();
     if (userModel.id < 1) {
       Utils.showSnackBar(
           "Login before  you proceed.", context, CustomTheme.onPrimary);
@@ -736,6 +753,23 @@ class ProductAddFormState extends State<ProductAddForm> {
   List<CategoryModel> categories = [];
 
   Future<void> my_init() async {
+    main_loading = true;
+    setState(() {});
+    userModel = await Utils.get_logged_in();
+    if (!userModel.profile_is_complete()) {
+      Utils.showSnackBar("Complete your profile first", context, Colors.white,
+          background_color: Colors.red);
+
+      Navigator.pop(context);
+      Utils.navigate_to(AppConfig.AccountEdit, context);
+
+      main_loading = false;
+      setState(() {});
+      return;
+    }
     categories = await CategoryModel.get_all();
+
+    main_loading = false;
+    setState(() {});
   }
 }
