@@ -15,8 +15,6 @@ import '../../models/CategoryModel.dart';
 import '../../models/FormItemModel.dart';
 import '../../models/LoggedInUserModel.dart';
 import '../../models/ProductModel.dart';
-import '../../models/UserModel.dart';
-import '../../models/LoggedInUserModel.dart';
 import '../../models/option_picker_model.dart';
 import '../../theme/app_notifier.dart';
 import '../../theme/app_theme.dart';
@@ -408,14 +406,14 @@ class ProductAddFormState extends State<ProductAddForm> {
                       onTap: ()  {do_pick_image('camera');},
                       dense: false,
                       leading: Icon(Icons.camera_alt,
-                          color: Colors.white),
+                          color: CustomTheme.primary),
                       title: FxText.b1("Camera", fontWeight: 600),
                     ),
                     ListTile(
                         dense: false,
                         onTap: () => {do_pick_image("gallery")},
                         leading: Icon(Icons.photo_library_sharp,
-                            color: Colors.white),
+                            color: CustomTheme.primary),
                         title: FxText.b1("Gallery", fontWeight: 600)),
                   ],
                 ),
@@ -555,10 +553,15 @@ class ProductAddFormState extends State<ProductAddForm> {
   }
 
   void do_upload_process() async {
+    if (photos_picked.length < 16) {
+      Utils.showSnackBar("Too many photos.", context, Colors.white,
+          background_color: Colors.red);
+      return;
+    }
+
     error_message = "";
     setState(() {});
     if (!_formKey.currentState!.validate()) {
-
       Utils.showSnackBar("Please Check errors in the form and fix them first.",
           context, Colors.white,
           background_color: Colors.red);
@@ -669,33 +672,28 @@ class ProductAddFormState extends State<ProductAddForm> {
   do_pick_image(String source) async {
     Navigator.pop(context);
 
-    new_dp = "";
-
-    final ImagePicker _picker = ImagePicker();
-    temp_images = [];
     if (source == "camera") {
-      final XFile? pic = await _picker.pickImage(
-          source: ImageSource.camera, imageQuality: 100);
-      if (pic != null) {
-        temp_images?.add(pic);
-      }
+      do_pick_image_from_camera();
     } else {
-      final XFile? pic = await _picker.pickImage(source: ImageSource.gallery);
-      if (pic != null) {
-        temp_images?.add(pic);
-      }
+      do_pick_image_from_gallary();
     }
-
-    temp_images?.forEach((element) {
-      if (element.path == null) {
-        return;
-      }
-      new_dp = element.path;
-    });
 
     setState(() {});
   }
-  /*do_pick_image() async {
+
+  do_pick_image_from_camera() async {
+    final ImagePicker _picker = ImagePicker();
+    final XFile? pic =
+        await _picker.pickImage(source: ImageSource.camera, imageQuality: 100);
+    if (pic != null) {
+      if (photos_picked.length < 16) {
+        photos_picked.add(pic.path);
+      }
+    }
+    setState(() {});
+  }
+
+  do_pick_image_from_gallary() async {
     final ImagePicker _picker = ImagePicker();
     final List<XFile>? images = await _picker.pickMultiImage();
 
@@ -709,7 +707,7 @@ class ProductAddFormState extends State<ProductAddForm> {
       // /data/user/0/jotrace.com/cache/image_picker3734385312125071389.jpg
     });
     setState(() {});
-  }*/
+  }
 
   void romove_image_at(int image_position) {
     photos_picked.removeAt((image_position));
