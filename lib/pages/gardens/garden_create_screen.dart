@@ -12,6 +12,7 @@ import 'package:form_builder_validators/form_builder_validators.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:ict4farmers/models/CropCategory.dart';
 import 'package:ict4farmers/models/FarmModel.dart';
+import 'package:ict4farmers/models/GardenModel.dart';
 import 'package:ict4farmers/pages/option_pickers/single_option_picker.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
@@ -561,7 +562,7 @@ class GardenCreateScreenState extends State<GardenCreateScreen> {
       context,
       MaterialPageRoute(
           builder: (context) => MultipleOptionPicker(
-              "Select crop category", "Select crop", local_items)),
+              "Select enterprise category", "Select crop", local_items)),
     );
 
     if (result != null) {
@@ -686,27 +687,40 @@ class GardenCreateScreenState extends State<GardenCreateScreen> {
     var response =
         await dio.post('${AppConfig.BASE_URL}/api/gardens', data: formData);
 
-    setState(() {
-      is_uploading = false;
-    });
+
 
     if (response == null) {
+      setState(() {
+        is_uploading = false;
+      });
       Utils.showSnackBar("Failed to upload product. Please try again.", context,
           Colors.red.shade700);
       return;
     }
 
     if (response.data['status'] == null) {
+      setState(() {
+        is_uploading = false;
+      });
       Utils.showSnackBar("Failed to upload product. Please try again.", context,
           Colors.red.shade700);
       return;
     }
 
     if (response.data['status'].toString() != '1') {
+      setState(() {
+        is_uploading = false;
+      });
       Utils.showSnackBar(
           response.data['status'].toString(), context, Colors.red.shade700);
       return;
     }
+
+    await GardenModel.get_items();
+
+    setState(() {
+      is_uploading = false;
+    });
 
     Utils.showSnackBar(
         response.data['message'].toString(), context, Colors.white,

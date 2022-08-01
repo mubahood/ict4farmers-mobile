@@ -383,25 +383,25 @@ password
                   FormBuilderTextField(
                       name: "email",
                       textInputAction: TextInputAction.next,
-                      keyboardType: TextInputType.name,
+                      keyboardType: TextInputType.emailAddress,
                       validator: FormBuilderValidators.compose([
                         FormBuilderValidators.required(
                           context,
-                          errorText: "Email or Phone number is required.",
+                          errorText: "Email address is required.",
                         ),
                         FormBuilderValidators.minLength(
                           context,
                           5,
-                          errorText: "Phone number too short.",
+                          errorText: "Email address too short.",
                         ),
                         FormBuilderValidators.maxLength(
                           context,
-                          18,
-                          errorText: "Phone number too long.",
+                          30,
+                          errorText: "Email address too long.",
                         ),
                       ]),
                       decoration: customTheme.input_decoration_2(
-                          labelText: "Email or Phone number",
+                          labelText: "Email address",
                           hintText: "You will use this to login")),
                   FxDashedDivider(
                     color: Colors.grey.shade300,

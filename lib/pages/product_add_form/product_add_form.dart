@@ -570,7 +570,7 @@ class ProductAddFormState extends State<ProductAddForm> {
   LoggedInUserModel userModel = new LoggedInUserModel();
 
   void do_upload_process() async {
-    if (photos_picked.length < 16) {
+    if (photos_picked.length > 16) {
       Utils.showSnackBar("Too many photos.", context, Colors.white,
           background_color: Colors.red);
       return;

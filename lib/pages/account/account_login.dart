@@ -43,7 +43,8 @@ class _AccountLogin extends State<AccountLogin> {
         return;
       }
 
-      phone_number = _formKey.currentState?.fields['email']?.value;
+      phone_number = Utils.prepare_phone_number(
+          _formKey.currentState?.fields['email']?.value);
       error_message = "";
       setState(() {});
 
@@ -54,8 +55,6 @@ class _AccountLogin extends State<AccountLogin> {
         });
         return;
       }
-
-      phone_number = "+256" + phone_number;
 
       onLoading = true;
       setState(() {});

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/mac/Desktop/github/ict4farmers-flutter/build/app/intermediates/incremental/mergeReleaseResources/merged.dir/values-v31/values-v31.xml",
+            "outputFile": "/Users/mac/Desktop/github/ict4farmers-mobile/build/app/intermediates/incremental/mergeReleaseResources/merged.dir/values-v31/values-v31.xml",
             "map": [
                 {
-                    "source": "/Users/mac/Desktop/github/ict4farmers-flutter/android/app/src/main/res/values-v31/styles.xml",
+                    "source": "/Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/res/values-v31/styles.xml",
                     "from": {
                         "startLines": "3,15",
                         "startColumns": "4,4",

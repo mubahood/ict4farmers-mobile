@@ -48,6 +48,7 @@ class _account_verification_phone extends State<account_verification_phone> {
     super.initState();
     customTheme = AppTheme.customTheme;
     theme = AppTheme.theme;
+    my_init();
     check_verification();
   }
 
@@ -62,7 +63,8 @@ class _account_verification_phone extends State<account_verification_phone> {
         return;
       }
 
-      phone_number = _formKey.currentState?.fields['phone_number']?.value;
+      phone_number = Utils.prepare_phone_number(
+          _formKey.currentState?.fields['phone_number']?.value);
       error_message = "";
       setState(() {});
 
@@ -73,8 +75,6 @@ class _account_verification_phone extends State<account_verification_phone> {
         });
         return;
       }
-
-      phone_number = "+256" + phone_number;
 
       _showDialog();
       return;
@@ -119,111 +119,117 @@ class _account_verification_phone extends State<account_verification_phone> {
         body: ListView(
           padding: FxSpacing.fromLTRB(24, 80, 24, 0),
           children: [
-            FormBuilder(
-              key: _formKey,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Center(
-                    child: Container(
-                      child: Image.asset(
-                        'assets/project/on-phone.png',
-                        height:
-                            ((MediaQuery.of(context).size.height / 2) - 100),
+            FutureBuilder(
+                future: my_init(),
+                builder: (context, snapshot) => FormBuilder(
+                      key: _formKey,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Center(
+                            child: Container(
+                              child: Image.asset(
+                                'assets/project/on-phone.png',
+                                height:
+                                    ((MediaQuery.of(context).size.height / 2) -
+                                        100),
+                              ),
+                            ),
+                          ),
+                          FxSpacing.height(32),
+                          FxText.h3(
+                            "STEP 1 of 2",
+                            color: CustomTheme.primary,
+                            fontWeight: 800,
+                            textAlign: TextAlign.start,
+                          ),
+                          FxSpacing.height(10),
+                          FxText.h3(
+                            "Enter your valid phone number where we should send you an a secret code in SMS.",
+                            color: Colors.black,
+                            fontWeight: 600,
+                            fontSize: 16,
+                            textAlign: TextAlign.center,
+                          ),
+                          FxSpacing.height(32),
+                          FormBuilderTextField(
+                              name: "phone_number",
+                              initialValue: phone_number,
+                              keyboardType: TextInputType.phone,
+                              validator: FormBuilderValidators.compose([
+                                FormBuilderValidators.required(
+                                  context,
+                                  errorText: "Phone number required.",
+                                ),
+                                FormBuilderValidators.minLength(
+                                  context,
+                                  8,
+                                  errorText: "Phone number too short.",
+                                ),
+                                FormBuilderValidators.minLength(
+                                  context,
+                                  8,
+                                  errorText: "Phone number too short.",
+                                ),
+                                FormBuilderValidators.maxLength(
+                                  context,
+                                  15,
+                                  errorText: "Phone number too short.",
+                                ),
+                              ]),
+                              decoration: customTheme.input_decoration(
+                                  labelText: "Phone number",
+                                  icon: Icons.phone)),
+                          FxSpacing.height(24),
+                          Container(
+                            margin: EdgeInsets.only(bottom: 20),
+                            decoration: BoxDecoration(
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(10)),
+                              color: Colors.red.shade50,
+                            ),
+                            child: error_message.isEmpty
+                                ? SizedBox(
+                                    height: 0,
+                                    width: 0,
+                                  )
+                                : Container(
+                                    padding: EdgeInsets.all(12),
+                                    child: Text(
+                                      error_message,
+                                      style:
+                                          TextStyle(color: Colors.red.shade800),
+                                    ),
+                                  ),
+                          ),
+                          FxSpacing.height(0),
+                          onLoading
+                              ? Center(
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(6.0),
+                                    child: CircularProgressIndicator(
+                                      strokeWidth: 2.0,
+                                      valueColor: AlwaysStoppedAnimation<Color>(
+                                          Colors.red),
+                                    ),
+                                  ),
+                                )
+                              : FxButton.block(
+                                  borderRadiusAll: 8,
+                                  onPressed: () {
+                                    submit_form();
+                                  },
+                                  backgroundColor: CustomTheme.primary,
+                                  child: FxText.l1(
+                                    "SUBMIT",
+                                    fontSize: 20,
+                                    color: customTheme.cookifyOnPrimary,
+                                  )),
+                          FxSpacing.height(16),
+                        ],
                       ),
-                    ),
-                  ),
-                  FxSpacing.height(32),
-                  FxText.h3(
-                    "STEP 1 of 2",
-                    color: CustomTheme.primary,
-                    fontWeight: 800,
-                    textAlign: TextAlign.start,
-                  ),
-                  FxSpacing.height(10),
-                  FxText.h3(
-                    "Enter your valid phone number where we should send you an a secret code in SMS.",
-                    color: Colors.black,
-                    fontWeight: 600,
-                    fontSize: 16,
-                    textAlign: TextAlign.center,
-                  ),
-                  FxSpacing.height(32),
-                  FormBuilderTextField(
-                      name: "phone_number",
-                      initialValue: u.phone_number,
-                      keyboardType: TextInputType.phone,
-                      validator: FormBuilderValidators.compose([
-                        FormBuilderValidators.required(
-                          context,
-                          errorText: "Phone number required.",
-                        ),
-                        FormBuilderValidators.minLength(
-                          context,
-                          8,
-                          errorText: "Phone number too short.",
-                        ),
-                        FormBuilderValidators.minLength(
-                          context,
-                          8,
-                          errorText: "Phone number too short.",
-                        ),
-                        FormBuilderValidators.maxLength(
-                          context,
-                          15,
-                          errorText: "Phone number too short.",
-                        ),
-                      ]),
-                      decoration: customTheme.input_decoration(
-                          labelText: "Phone number", icon: Icons.phone)),
-                  FxSpacing.height(24),
-                  Container(
-                    margin: EdgeInsets.only(bottom: 20),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(10)),
-                      color: Colors.red.shade50,
-                    ),
-                    child: error_message.isEmpty
-                        ? SizedBox(
-                            height: 0,
-                            width: 0,
-                          )
-                        : Container(
-                            padding: EdgeInsets.all(12),
-                            child: Text(
-                              error_message,
-                              style: TextStyle(color: Colors.red.shade800),
-                            ),
-                          ),
-                  ),
-                  FxSpacing.height(0),
-                  onLoading
-                      ? Center(
-                          child: Padding(
-                            padding: const EdgeInsets.all(6.0),
-                            child: CircularProgressIndicator(
-                              strokeWidth: 2.0,
-                              valueColor:
-                                  AlwaysStoppedAnimation<Color>(Colors.red),
-                            ),
-                          ),
-                        )
-                      : FxButton.block(
-                          borderRadiusAll: 8,
-                          onPressed: () {
-                            submit_form();
-                          },
-                          backgroundColor: CustomTheme.primary,
-                          child: FxText.l1(
-                            "SUBMIT",
-                            fontSize: 20,
-                            color: customTheme.cookifyOnPrimary,
-                          )),
-                  FxSpacing.height(16),
-                ],
-              ),
-            ),
+                    )),
           ],
         ),
       ),
@@ -269,7 +275,6 @@ class _account_verification_phone extends State<account_verification_phone> {
     );
   }
 
-  LoggedInUserModel u = new LoggedInUserModel();
 
   Future<void> do_verification() async {
     u = await LoggedInUserModel.get_logged_in_user();
@@ -297,5 +302,20 @@ class _account_verification_phone extends State<account_verification_phone> {
     Utils.showSnackBar(r.message, context, Colors.white,
         background_color: CustomTheme.primary);
     Utils.navigate_to(AppConfig.account_verification_code, context);
+  }
+
+  LoggedInUserModel u = new LoggedInUserModel();
+
+  Future<void> my_init() async {
+    u = await LoggedInUserModel.get_logged_in_user();
+    if (Utils.phone_number_is_valid(u.phone_number)) {
+      phone_number = u.phone_number;
+    } else {
+      phone_number = "";
+    }
+    _formKey.currentState!.patchValue({
+      'phone_number': "${phone_number}",
+    });
+    setState(() {});
   }
 }

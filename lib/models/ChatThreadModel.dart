@@ -13,7 +13,8 @@ class ChatThreadModel extends HiveObject {
     bool clear_db,
     bool is_threads,
   ) async {
-    Utils.init_databse();
+    await Utils.init_databse();
+    clear_db = await Utils.is_connected();
     await Hive.initFlutter();
     var box = null;
     if (!Hive.isBoxOpen("ChatThreadModel")) {
@@ -140,6 +141,7 @@ class ChatThreadModel extends HiveObject {
     List<ChatThreadModel> items = [];
 
     String resp = await Utils.http_post('api/threads', {'user_id': user_id});
+    print(resp);
 
     if (resp != null && !resp.isEmpty) {
       json.decode(resp).map((element) {

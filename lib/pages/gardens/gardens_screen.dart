@@ -1,11 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:ict4farmers/models/FarmModel.dart';
 import 'package:ict4farmers/models/GardenModel.dart';
 import 'package:ict4farmers/widget/loading_widget.dart';
 
 import '../../models/LoggedInUserModel.dart';
-import '../../models/UserModel.dart';
 import '../../theme/app_theme.dart';
 import '../../utils/AppConfig.dart';
 import '../../utils/Utils.dart';
@@ -32,7 +32,7 @@ class GardensScreenState extends State<GardensScreen> {
     my_init();
   }
 
-  List<GardenModel> gardens = [];
+  List<FarmModel> farms = [];
 
   Future<void> my_init() async {
     Utils.ini_theme();
@@ -46,11 +46,12 @@ class GardensScreenState extends State<GardensScreen> {
       return;
     }
 
+    farms = await FarmModel.get_items();
     gardens = await GardenModel.get_items();
-    if (gardens.isEmpty) {
-      gardens = await GardenModel.get_items();
+    if (farms.isEmpty) {
+      farms = await FarmModel.get_items();
     }
-    if (gardens.isEmpty) {
+    if (farms.isEmpty) {
       Utils.showSnackBar(
           "You need to create at least one farm.", context, Colors.white,
           background_color: Colors.red);
@@ -63,6 +64,7 @@ class GardensScreenState extends State<GardensScreen> {
 
   bool is_logged_in = false;
   LoggedInUserModel loggedUser = new LoggedInUserModel();
+  List<GardenModel> gardens = [];
 
   Future<Null> _onRefresh() async {
     my_init();

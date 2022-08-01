@@ -46,7 +46,8 @@ class _AccountRegisterState extends State<AccountRegister> {
       error_message = "";
       setState(() {});
 
-      phone_number = _formKey.currentState?.fields['email']?.value;
+      phone_number = Utils.prepare_phone_number(
+          _formKey.currentState?.fields['email']?.value);
       if (!Utils.phone_number_is_valid(phone_number)) {
         setState(() {
           error_message =
@@ -54,7 +55,6 @@ class _AccountRegisterState extends State<AccountRegister> {
         });
         return;
       }
-      phone_number = "+256" + phone_number;
 
       if (_formKey.currentState?.fields['password_2']?.value !=
           _formKey.currentState?.fields['password_1']?.value) {
@@ -65,6 +65,7 @@ class _AccountRegisterState extends State<AccountRegister> {
 
       onLoading = true;
       setState(() {});
+
       String _resp = await Utils.http_post('api/users', {
         'password': _formKey.currentState?.fields['password_1']?.value,
         'name': _formKey.currentState?.fields['name']?.value,

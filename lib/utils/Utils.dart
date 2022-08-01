@@ -93,6 +93,7 @@ class Utils {
   static void boot_system() async {
     await Utils.get_logged_in();
     await CropCategory.get_items();
+    await FarmModel.get_items();
     await GardenModel.get_items();
     await GardenActivityModel.get_items();
     await PestModel.get_items();
@@ -100,7 +101,6 @@ class Utils {
     await LocationModel.get_items();
     await CategoryModel.get_all();
     await ProductModel.get_online_items({});
-    await FarmModel.get_items();
   }
 
   static void launchURL(String _url) async {
@@ -229,8 +229,9 @@ class Utils {
             "accept": "application/json",
           }));
       return jsonEncode(response.data);
-    } catch (e) {
-
+    } on DioError catch (e) {
+      print(e.response?.data);
+      return jsonEncode(e.response?.data);
       return "";
     }
 
@@ -364,19 +365,32 @@ class Utils {
     }
   }
 
-  static bool phone_number_is_valid(String phone_number) {
-    if (phone_number.length > 10) {
+  static String prepare_phone_number(String phone_number) {
+    if (phone_number.length > 12) {
       phone_number = phone_number.replaceFirst('+', "");
       phone_number = phone_number.replaceFirst('256', "");
     } else {
       phone_number = phone_number.replaceFirst('0', "");
     }
-
     if (phone_number.length != 9) {
-       return false;
+      return "";
     }
+    phone_number = "+256" + phone_number;
+    return phone_number;
+  }
+
+  static bool phone_number_is_valid(String phone_number) {
+    if (phone_number.length != 13) {
+      return false;
+    }
+
+    if (phone_number.substring(0, 4) != "+256") {
+      return false;
+    }
+
     return true;
   }
+
   static navigate_to(String screen, context, {dynamic data: null}) {
     switch (screen) {
       case AppConfig.Dashboard:
@@ -952,10 +966,6 @@ class Utils {
       return false;
     }
     if (u.id < 1) {
-      return false;
-    }
-
-    if (u.status != 'logged_in') {
       return false;
     }
 
