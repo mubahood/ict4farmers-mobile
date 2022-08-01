@@ -27,8 +27,8 @@ import '../../widget/my_widgets.dart';
 import '../../widget/product_item_ui.dart';
 import '../../widget/shimmer_loading_widget.dart';
 import '../chat/chat_screen.dart';
-
 class ProductDetails extends StatefulWidget {
+
   ProductModel productModel = new ProductModel();
   dynamic raw;
   int id = 0;
