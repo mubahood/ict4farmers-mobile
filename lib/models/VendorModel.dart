@@ -56,7 +56,7 @@ class VendorModel {
         if (map['id'] != null) {
           VendorModel item = new VendorModel();
           item.id = Utils.int_parse(map['id']);
-          if (item.id > 1) {
+          if (item.id > 0) {
 
 
             item.created_at = map['created_at'].toString();

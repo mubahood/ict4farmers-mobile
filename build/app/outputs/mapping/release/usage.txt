@@ -14405,7 +14405,6 @@ androidx.core.content.res.ComplexColorCompat:
     private static final java.lang.String LOG_TAG
 kotlinx.coroutines.scheduling.DefaultScheduler:
     public final java.lang.String toDebugString()
-kotlinx.coroutines.channels.ProduceKt
 androidx.work.Data:
     public static boolean[] convertToPrimitiveArray(java.lang.Boolean[])
     public static byte[] convertToPrimitiveArray(java.lang.Byte[])
@@ -14426,6 +14425,7 @@ androidx.work.Data:
     public byte[] toByteArray()
     public boolean hasKeyWithValueOfType(java.lang.String,java.lang.Class)
     public static final int MAX_DATA_BYTES
+kotlinx.coroutines.channels.ProduceKt
 com.google.firebase.messaging.SendException:
     public final int getErrorCode()
     public static final int ERROR_UNKNOWN
@@ -16437,8 +16437,8 @@ androidx.activity.R$color
 com.google.common.base.CharMatcher$NegatedFastMatcher
 com.google.common.collect.DenseImmutableTable$RowMap
 com.google.common.collect.TreeBasedTable
-com.google.common.base.FinalizableReferenceQueue
 com.google.common.base.Converter$ConverterComposition
+com.google.common.base.FinalizableReferenceQueue
 com.google.common.util.concurrent.AbstractTransformFuture$AsyncTransformFuture
 kotlinx.coroutines.flow.FlowKt__TransformKt$runningFold$$inlined$unsafeFlow$1$1
 com.google.common.graph.ValueGraph
@@ -21491,8 +21491,8 @@ androidx.core.view.ViewCompat$AccessibilityViewProperty:
     private final int mContentChangeType
 androidx.appcompat.view.StandaloneActionMode:
     private boolean mFocusable
-androidx.lifecycle.DefaultLifecycleObserver$-CC
-io.flutter.plugin.common.BinaryMessenger$-CC
 io.flutter.plugin.platform.PlatformView$-CC:
     public static void $default$onInputConnectionLocked(io.flutter.plugin.platform.PlatformView)
     public static void $default$onInputConnectionUnlocked(io.flutter.plugin.platform.PlatformView)
+io.flutter.plugin.common.BinaryMessenger$-CC
+androidx.lifecycle.DefaultLifecycleObserver$-CC

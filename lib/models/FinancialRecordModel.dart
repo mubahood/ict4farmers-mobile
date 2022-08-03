@@ -7,7 +7,7 @@ import 'DynamicTable.dart';
 import 'LoggedInUserModel.dart';
 
 class FinancialRecordModel {
-  static String end_point = "financial-records";
+  static String end_point = "api/financial-records";
   int id = 0;
   int garden_id = 0;
   String garden_name = "";

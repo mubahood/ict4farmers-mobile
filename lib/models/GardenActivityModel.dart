@@ -7,7 +7,7 @@ import 'DynamicTable.dart';
 import 'LoggedInUserModel.dart';
 
 class GardenActivityModel {
-  static String end_point = "garden-activities";
+  static String end_point = "api/garden-activities";
   int id = 0;
   int position = 0;
   int person_responsible = 0;

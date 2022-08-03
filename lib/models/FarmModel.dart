@@ -8,7 +8,7 @@ import 'LoggedInUserModel.dart';
 import 'UserModel.dart';
 
 class FarmModel {
-  static String end_point = "farms";
+  static String end_point = "api/farms";
   int id = 0;
   String name = "";
   String details = "";
@@ -32,7 +32,7 @@ class FarmModel {
         if (map['id'] != null) {
           FarmModel item = new FarmModel();
           item.id = Utils.int_parse(map['id']);
-          if (item.id > 1) {
+          if (item.id > 0) {
             item.details = map['details'].toString();
             item.name = map['name'].toString();
             _items.add(item);

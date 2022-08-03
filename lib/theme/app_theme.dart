@@ -30,7 +30,7 @@ class AppTheme {
   }
 
   static resetFont() {
-    FxTextStyle.changeFontFamily(GoogleFonts.openSans);
+    FxTextStyle.changeFontFamily(GoogleFonts.lato);
     FxTextStyle.changeDefaultFontWeight({
       100: FontWeight.w100,
       200: FontWeight.w200,
@@ -91,7 +91,7 @@ class AppTheme {
     cardTheme: CardTheme(color: Color(0xfff6f6f6)),
 
     textTheme: TextTheme(
-        headline6: GoogleFonts.aBeeZee(), bodyText1: GoogleFonts.abel()),
+        headline6: GoogleFonts.lato(), bodyText1: GoogleFonts.lato()),
 
     /// Colorscheme
     colorScheme: ColorScheme.light(

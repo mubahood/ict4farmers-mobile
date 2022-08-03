@@ -8,7 +8,7 @@ import 'LoggedInUserModel.dart';
 import 'UserModel.dart';
 
 class WorkerModel {
-  static String end_point = "workers";
+  static String end_point = "api/workers";
   int id = 0;
   String name = "";
   String phone_number = "";
@@ -34,7 +34,7 @@ class WorkerModel {
         if (map['id'] != null) {
           WorkerModel item = new WorkerModel();
           item.id = Utils.int_parse(map['id']);
-          if (item.id > 1) {
+          if (item.id > 0) {
             item.about = map['about'].toString();
             item.name = map['name'].toString();
             item.phone_number = map['phone_number'].toString();

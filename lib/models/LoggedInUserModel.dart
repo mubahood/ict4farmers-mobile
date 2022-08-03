@@ -5,7 +5,7 @@ import 'package:ict4farmers/utils/Utils.dart';
 import 'DynamicTable.dart';
 
 class LoggedInUserModel {
-  static String end_point = "logged_in_user";
+  static String end_point = "api/logged_in_user";
   int id = 0;
   String name = "";
   String token = "";

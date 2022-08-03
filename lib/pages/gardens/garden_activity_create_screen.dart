@@ -381,7 +381,7 @@ class GardenActivityCreateScreenState
       context,
       MaterialPageRoute(
           builder: (context) =>
-              SingleOptionPicker("Select an worker", local_items)),
+              SingleOptionPicker("Select a worker", local_items)),
     );
 
     if (result != null) {

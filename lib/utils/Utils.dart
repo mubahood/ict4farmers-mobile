@@ -45,6 +45,7 @@ import '../models/PestModel.dart';
 import '../models/PostModel.dart';
 import '../models/ProductModel.dart';
 import '../models/QuestionModel.dart';
+import '../models/WizardItemModel.dart';
 import '../pages/Dashboard.dart';
 import '../pages/account/account_details.dart';
 import '../pages/account/account_edit.dart';
@@ -85,12 +86,15 @@ import '../pages/questions/question_screen.dart';
 import '../pages/questions/questions_create_screen.dart';
 import '../pages/questions/questions_screen.dart';
 import '../pages/search/search_screen.dart';
+import '../pages/wizard/WizardCheckListScreen.dart';
+import '../pages/wizard/WizardHomeScreen.dart';
 import '../widgets/switcher_screen.dart';
 import 'AppConfig.dart';
 import 'SubmitActivityScreen.dart';
 
 class Utils {
   static void boot_system() async {
+    await WizardItemModel.get_items();
     await Utils.get_logged_in();
     await CropCategory.get_items();
     await FarmModel.get_items();
@@ -217,8 +221,10 @@ class Utils {
       return client;
     };
 
-/*    UserModel u = new UserModel();
-    u = await Utils.get_logged_user();*/
+    /*
+      UserModel u = new UserModel();
+      u = await Utils.get_logged_user();
+    */
     var da = FormData.fromMap(body);
     try {
       response = await dio.post(AppConfig.BASE_URL + "/${path}",
@@ -228,9 +234,9 @@ class Utils {
             "Content-Type": "application/json",
             "accept": "application/json",
           }));
+
       return jsonEncode(response.data);
     } on DioError catch (e) {
-      print(e.response?.data);
       return jsonEncode(e.response?.data);
       return "";
     }
@@ -303,11 +309,11 @@ class Utils {
       return client;
     };
 
-    var da = FormData.fromMap(body);
-    //UserModel u = new UserModel();
-    //u = await Utils.get_logged_user();
-
     try {
+      if (!path.contains('api')) {
+        path = "api/$path";
+      }
+
       response = await dio.get(AppConfig.BASE_URL + "/${path}",
           queryParameters: body,
           options: Options(headers: <String, String>{
@@ -315,11 +321,12 @@ class Utils {
             "Content-Type": "application/json",
             "accept": "application/json",
           }));
-    } catch (E) {
+
+      return jsonEncode(response.data);
+    } on DioError catch (e) {
+      return jsonEncode(e.response?.data);
       return "";
     }
-
-    return jsonEncode(response.data);
   }
 
   static Future<dynamic> init_databse() async {
@@ -393,6 +400,28 @@ class Utils {
 
   static navigate_to(String screen, context, {dynamic data: null}) {
     switch (screen) {
+      case AppConfig.WizardCheckListScreen:
+        Navigator.push(
+          context,
+          PageRouteBuilder(
+            pageBuilder: (context, animation1, animation2) =>
+                WizardCheckListScreen(),
+            transitionDuration: Duration.zero,
+          ),
+        );
+        break;
+
+      case AppConfig.WizardHomeScreen:
+        Navigator.push(
+          context,
+          PageRouteBuilder(
+            pageBuilder: (context, animation1, animation2) =>
+                WizardHomeScreen(),
+            transitionDuration: Duration.zero,
+          ),
+        );
+        break;
+
       case AppConfig.Dashboard:
         Navigator.push(
           context,
@@ -403,7 +432,7 @@ class Utils {
         );
         break;
 
-        case AppConfig.HomesScreen:
+      case AppConfig.HomesScreen:
         Navigator.push(
           context,
           PageRouteBuilder(
@@ -413,8 +442,7 @@ class Utils {
         );
         break;
 
-
-        case AppConfig.switcher_screen:
+      case AppConfig.switcher_screen:
         Navigator.push(
           context,
           PageRouteBuilder(
@@ -1051,7 +1079,6 @@ class Utils {
 
 
   static void ini_theme() {
-
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
       statusBarColor: CustomTheme.primary,
       statusBarIconBrightness: Brightness.light,

@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 
 import 'package:dio/adapter.dart';
@@ -57,6 +58,7 @@ class GardenProductionRecordCreateScreenState
 
   @override
   Widget build(BuildContext context) {
+
     String _title = "Creating production record";
     return Consumer<AppNotifier>(
         builder: (BuildContext context, AppNotifier value, Widget? child) {
@@ -461,8 +463,18 @@ class GardenProductionRecordCreateScreenState
       is_uploading = true;
     });
 
-    var response =
-        await dio.post('${AppConfig.BASE_URL}/api/garden-production-record', data: formData);
+    var response = null;
+    try{
+      response = await dio.post('${AppConfig.BASE_URL}/api/garden-production-record', data: formData);
+    } on DioError catch (e) {
+      print(e.response?.data);
+
+      setState(() {
+        is_uploading = false;
+      });
+      return ;
+    }
+
 
     setState(() {
       is_uploading = false;

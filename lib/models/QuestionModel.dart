@@ -54,7 +54,7 @@ class QuestionModel {
         if (map['id'] != null) {
           QuestionModel item = new QuestionModel();
           item.id = Utils.int_parse(map['id']);
-          if (item.id > 1) {
+          if (item.id > 0) {
             item.administrator_id = Utils.int_parse(map['administrator_id'].toString());
             item.answered_by = Utils.int_parse(map['answered_by'].toString());
             item.is_answered = Utils.bool_parse(map['is_answered'].toString());

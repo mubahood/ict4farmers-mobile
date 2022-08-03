@@ -23,7 +23,7 @@ class CropCategory {
         if (map['id'] != null) {
           CropCategory item = new CropCategory();
           item.id = Utils.int_parse(map['id']);
-          if (item.id > 1) {
+          if (item.id > 0) {
             item.details = map['details'].toString();
             item.name = map['name'].toString();
             item.parent = Utils.int_parse(map['parent']);

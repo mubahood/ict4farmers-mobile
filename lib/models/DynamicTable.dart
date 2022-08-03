@@ -52,22 +52,68 @@ class DynamicTable extends HiveObject {
 
     if (await Utils.is_connected()) {
       RespondModel resp =
-      new RespondModel(await Utils.http_get('${end_point}', params));
+          new RespondModel(await Utils.http_get('${end_point}', params));
 
       if (resp.code != 1) {
         return [];
       }
       List<int> new_ids = [];
 
+      bool done_parsing = false;
+      try {
+        resp.data.map((element) {
+          DynamicTable item = new DynamicTable();
+          item = DynamicTable.fromJson(element);
+          item.data_type = end_point;
+          items.add(item);
+          new_ids.add(item.own_id);
+        }).toList();
+        done_parsing = true;
+      } catch (e) {
+        done_parsing = false;
+      }
 
-      resp.data.map((element) {
-        DynamicTable item = new DynamicTable();
-        item = DynamicTable.fromJson(element);
-        item.data_type = end_point;
-        items.add(item);
-        new_ids.add(item.own_id);
-      }).toList();
+      if (resp.data.runtimeType.toString() == "String" && !done_parsing) {
+        if (jsonDecode(resp.data).runtimeType.toString() ==
+            '_InternalLinkedHashMap<String, dynamic>') {
+          Map<String, dynamic> _d = jsonDecode(resp.data);
+          if (_d['data'].runtimeType.toString() == 'List<dynamic>') {
+            _d['data'].map((element) {
+              DynamicTable item = new DynamicTable();
+              item = DynamicTable.fromJson(element);
+              item.data_type = end_point;
+              items.add(item);
+              new_ids.add(item.own_id);
+              done_parsing = true;
+            }).toList();
+          }
+        }
 
+        if (!done_parsing) {
+          if (jsonDecode(resp.data).runtimeType.toString() == 'List<dynamic>') {
+            jsonDecode(resp.data).map((element) {
+              DynamicTable item = new DynamicTable();
+              item = DynamicTable.fromJson(element);
+              item.data_type = end_point;
+              items.add(item);
+              new_ids.add(item.own_id);
+              done_parsing = true;
+            }).toList();
+          }
+        }
+        if(!done_parsing){
+          print(resp.data);
+          print("FAILED");
+        }
+
+        /*  jsonDecode(jsonDecode(resp.data)).map((element) {
+          DynamicTable item = new DynamicTable();
+          item = DynamicTable.fromJson(element);
+          item.data_type = end_point;
+          items.add(item);
+          new_ids.add(item.own_id);
+        }).toList();*/
+      }
       await save_to_local_db(
           end_point: end_point,
           clear_previous: clear_previous,

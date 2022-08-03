@@ -39,6 +39,7 @@ class AppConfig {
   static const String MyProductsScreen = "MyProductsScreen";
   static const String AppName = "ICT4Farmers";
   static const String AccountRegister = "AccountRegister";
+  static const String WizardHomeScreen = "WizardHomeScreen";
   static const String AccountSplash = "AccountSplash";
   static const String ProductDetails = "ProductDetails";
   static const String ProductAddForm = "ProductAddForm";
@@ -66,6 +67,8 @@ class AppConfig {
   static const String SearchScreen = "SearchScreen";
   static const String AboutUs = "AboutUs";
   static const String CallUs = "CallUs";
+  static const String WizardCheckListScreen = "WizardCheckListScreen";
+  static const String ASSETS_PATH = "assets/project";
   static const String OurWhatsApp = "OurWhatsApp";
   static const String OUR_PHONE_NUMBER = "0414230705";
   static const String TOLL_FREE_PHONE_NUMBER = "0800209003";

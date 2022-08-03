@@ -6,7 +6,7 @@ import 'package:ict4farmers/utils/Utils.dart';
 import 'DynamicTable.dart';
 
 class PestModel {
-  static String end_point = "pests";
+  static String end_point = "api/pests";
   int id = 0;
   String name = "";
   String description = "";
@@ -28,7 +28,7 @@ class PestModel {
         if (map['id'] != null) {
           PestModel item = new PestModel();
           item.id = Utils.int_parse(map['id']);
-          if (item.id > 1) {
+          if (item.id > 0) {
             item.description = map['description'].toString();
             item.name = map['name'].toString();
             item.cause = map['cause'].toString();

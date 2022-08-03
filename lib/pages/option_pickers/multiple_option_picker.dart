@@ -100,7 +100,7 @@ class MultipleOptionPickerState extends State<MultipleOptionPicker> {
               )
             ],
           ),
-        )),
+        ) ),
       );
     });
   }

@@ -9,6 +9,7 @@ import 'package:flutx/utils/spacing.dart';
 import 'package:flutx/widgets/container/container.dart';
 import 'package:flutx/widgets/text/text.dart';
 import 'package:ict4farmers/models/LoggedInUserModel.dart';
+import 'package:ict4farmers/models/WizardItemModel.dart';
 import 'package:ict4farmers/pages/location_picker/single_item_picker.dart';
 import 'package:ict4farmers/pages/product_add_form/product_add_form.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
@@ -60,12 +61,17 @@ class DashboardState extends State<Dashboard> {
     my_init();
   }
 
+  bool open_setup_wizard = false;
+
   Future<void> my_init() async {
+    bool open_setup_wizard = false;
     loggedUser = await LoggedInUserModel.get_logged_in_user();
     if (loggedUser.id < 1) {
       is_logged_in = false;
     } else {
       is_logged_in = true;
+
+      open_setup_wizard = await WizardItemModel.open_setup_wizard();
       if (loggedUser.phone_number_verified != "1") {
         Utils.navigate_to(AppConfig.account_verification_splash, context);
       }
@@ -74,6 +80,9 @@ class DashboardState extends State<Dashboard> {
     setState(() {});
     Utils.ini_theme();
 
+    if (open_setup_wizard) {
+      Utils.navigate_to(AppConfig.WizardHomeScreen, context);
+    }
     return;
     LoggedInUserModel.get_logged_in_user();
 
@@ -139,8 +148,14 @@ class DashboardState extends State<Dashboard> {
                     backgroundColor: Colors.red.shade800,
                     elevation: 20,
                     onPressed: () {
+                      //
 
-                   /*   if(mounted){
+                      if (open_setup_wizard) {
+                        Utils.navigate_to(AppConfig.WizardHomeScreen, context);
+                        return;
+                      }
+
+                      /*   if(mounted){
                         OneSignalModel.set_player_id(context);
                       }
 
@@ -156,13 +171,15 @@ class DashboardState extends State<Dashboard> {
                     label: Row(
                       children: [
                         Icon(
-                          Icons.edit,
+                          open_setup_wizard ? Icons.settings : Icons.edit,
                           size: 18,
                         ),
                         Container(
                           padding: EdgeInsets.only(left: 10),
                           child: FxText(
-                            "Complete Profile",
+                            open_setup_wizard
+                                ? 'System Setup Wizard'
+                                : "Complete Profile",
                             color: Colors.white,
                           ),
                         ),
@@ -173,6 +190,10 @@ class DashboardState extends State<Dashboard> {
                     elevation: 20,
                     onPressed: () {
 
+                      if (open_setup_wizard) {
+                        Utils.navigate_to(AppConfig.WizardHomeScreen, context);
+                        return;
+                      }
 
                       if (is_logged_in) {
                         Utils.navigate_to(AppConfig.MyAccountScreen, context);
@@ -183,12 +204,14 @@ class DashboardState extends State<Dashboard> {
                     label: Row(
                       children: [
                         Icon(
-                          Icons.person,
+                          open_setup_wizard ? Icons.settings : Icons.person,
                           size: 18,
                         ),
                         Container(
                           child: Text(
-                            is_logged_in ? "My Account" : " Register | Login ",
+                            open_setup_wizard
+                                ? 'System Setup Wizard'
+                                :  is_logged_in ? "My Account" : " Register | Login ",
                           ),
                         ),
                       ],

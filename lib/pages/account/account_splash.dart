@@ -29,7 +29,7 @@ class AaccountSplashState extends State<AccountSplash> {
     super.initState();
     check_login();
 
-    FxTextStyle.changeFontFamily(GoogleFonts.openSans);
+    FxTextStyle.changeFontFamily(GoogleFonts.lato);
     FxTextStyle.changeDefaultFontWeight({
       100: FontWeight.w100,
       200: FontWeight.w200,
