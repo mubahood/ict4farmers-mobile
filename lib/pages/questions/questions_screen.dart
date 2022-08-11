@@ -104,7 +104,7 @@ class QuestionsScreenState extends State<QuestionsScreen> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     FxText.b1(
-                      'Muhindo Mubaraka',
+                      'Farmer question',
                       color: Colors.black,
                       maxLines: 1,
                       fontWeight: 700,
@@ -119,7 +119,7 @@ class QuestionsScreenState extends State<QuestionsScreen> {
                 ),
               ),
               FxText(
-                AppConfig.Lorem1,
+                m.question,
                 overflow: TextOverflow.ellipsis,
                 maxLines: 4,
                 height: 1.2,

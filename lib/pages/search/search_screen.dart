@@ -158,6 +158,7 @@ class SearchScreenState extends State<SearchScreen>
   }
 
   SingleProduct(CategoryModel item) {
+    print("=======> ${item.image} <=========");
     return Column(
       children: [
         ListTile(

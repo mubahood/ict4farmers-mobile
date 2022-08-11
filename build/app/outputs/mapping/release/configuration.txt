@@ -138,6 +138,8 @@
 -keep class androidx.work.impl.foreground.SystemForegroundService { <init>(); }
 -keep class androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver { <init>(); }
 -keep class com.baseflow.geolocator.GeolocatorLocationService { <init>(); }
+-keep class com.google.android.gms.auth.api.signin.RevocationBoundService { <init>(); }
+-keep class com.google.android.gms.auth.api.signin.internal.SignInHubActivity { <init>(); }
 -keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(); }
 -keep class com.google.firebase.components.ComponentDiscoveryService { <init>(); }
 -keep class com.google.firebase.iid.FirebaseInstanceIdReceiver { <init>(); }
@@ -512,6 +514,28 @@
 }
 
 # End of content from /Users/mac/.gradle/caches/transforms-2/files-2.1/18ac7a7bfcf92df0a058308d5c5ec886/appcompat-1.3.1/proguard.txt
+# The proguard configuration file for the following section is /Users/mac/.gradle/caches/transforms-2/files-2.1/0488e3ce236639448446121db6266f15/fragment-1.3.6/proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# The default FragmentFactory creates Fragment instances using reflection
+-if public class ** extends androidx.fragment.app.Fragment
+-keepclasseswithmembers,allowobfuscation public class <1> {
+    public <init>();
+}
+
+# End of content from /Users/mac/.gradle/caches/transforms-2/files-2.1/0488e3ce236639448446121db6266f15/fragment-1.3.6/proguard.txt
 # The proguard configuration file for the following section is /Users/mac/.gradle/caches/transforms-2/files-2.1/08a4d68c40d73354012aebdc25744fa9/work-runtime-2.7.1/proguard.txt
 -keep class * extends androidx.work.Worker
 -keep class * extends androidx.work.InputMerger
@@ -548,28 +572,6 @@
     public static final android.os.Parcelable$Creator *;
 }
 # End of content from /Users/mac/.gradle/caches/transforms-2/files-2.1/3e23b828247dc9bd1cf7255fda1d0912/media-1.0.0/proguard.txt
-# The proguard configuration file for the following section is /Users/mac/.gradle/caches/transforms-2/files-2.1/0488e3ce236639448446121db6266f15/fragment-1.3.6/proguard.txt
-# Copyright (C) 2020 The Android Open Source Project
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#      http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
-# The default FragmentFactory creates Fragment instances using reflection
--if public class ** extends androidx.fragment.app.Fragment
--keepclasseswithmembers,allowobfuscation public class <1> {
-    public <init>();
-}
-
-# End of content from /Users/mac/.gradle/caches/transforms-2/files-2.1/0488e3ce236639448446121db6266f15/fragment-1.3.6/proguard.txt
 # The proguard configuration file for the following section is /Users/mac/.gradle/caches/transforms-2/files-2.1/a93b8e74377d0e2383a0091f2fcdbd11/coordinatorlayout-1.0.0/proguard.txt
 # Copyright (C) 2016 The Android Open Source Project
 #
@@ -633,6 +635,13 @@
 }
 
 # End of content from /Users/mac/.gradle/caches/transforms-2/files-2.1/0d872673fc57629972b3a425e07d52da/core-1.6.0/proguard.txt
+# The proguard configuration file for the following section is /Users/mac/.gradle/caches/transforms-2/files-2.1/320dd6a0cf4b0a6fc09f65a60fd50e1a/versionedparcelable-1.1.1/proguard.txt
+-keep class * implements androidx.versionedparcelable.VersionedParcelable
+-keep public class android.support.**Parcelizer { *; }
+-keep public class androidx.**Parcelizer { *; }
+-keep public class androidx.versionedparcelable.ParcelImpl
+
+# End of content from /Users/mac/.gradle/caches/transforms-2/files-2.1/320dd6a0cf4b0a6fc09f65a60fd50e1a/versionedparcelable-1.1.1/proguard.txt
 # The proguard configuration file for the following section is /Users/mac/.gradle/caches/transforms-2/files-2.1/73427087fd92260bd9d76d3075197bdf/jetified-startup-runtime-1.0.0/proguard.txt
 # This Proguard rule ensures that ComponentInitializers are are neither shrunk nor obfuscated.
 # This is because they are discovered and instantiated during application initialization.
@@ -644,13 +653,6 @@
 -assumenosideeffects class androidx.startup.StartupLogger
 
 # End of content from /Users/mac/.gradle/caches/transforms-2/files-2.1/73427087fd92260bd9d76d3075197bdf/jetified-startup-runtime-1.0.0/proguard.txt
-# The proguard configuration file for the following section is /Users/mac/.gradle/caches/transforms-2/files-2.1/320dd6a0cf4b0a6fc09f65a60fd50e1a/versionedparcelable-1.1.1/proguard.txt
--keep class * implements androidx.versionedparcelable.VersionedParcelable
--keep public class android.support.**Parcelizer { *; }
--keep public class androidx.**Parcelizer { *; }
--keep public class androidx.versionedparcelable.ParcelImpl
-
-# End of content from /Users/mac/.gradle/caches/transforms-2/files-2.1/320dd6a0cf4b0a6fc09f65a60fd50e1a/versionedparcelable-1.1.1/proguard.txt
 # The proguard configuration file for the following section is /Users/mac/.gradle/caches/transforms-2/files-2.1/b460810798f6907950b3e611df4b1b13/lifecycle-runtime-2.3.1/proguard.txt
 -keepattributes *Annotation*
 
@@ -683,6 +685,16 @@
 }
 
 # End of content from /Users/mac/.gradle/caches/transforms-2/files-2.1/50eb08f6a080cdd642e9f1c6b8bcea5b/jetified-lifecycle-viewmodel-savedstate-2.3.1/proguard.txt
+# The proguard configuration file for the following section is /Users/mac/.gradle/caches/transforms-2/files-2.1/d710359730ea5aa88633203b773b0937/lifecycle-viewmodel-2.3.1/proguard.txt
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.ViewModel {
+    <init>();
+}
+
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.AndroidViewModel {
+    <init>(android.app.Application);
+}
+
+# End of content from /Users/mac/.gradle/caches/transforms-2/files-2.1/d710359730ea5aa88633203b773b0937/lifecycle-viewmodel-2.3.1/proguard.txt
 # The proguard configuration file for the following section is /Users/mac/.gradle/caches/transforms-2/files-2.1/3befda7b6a366e1c7d1179b797e6e2e8/jetified-savedstate-1.1.0/proguard.txt
 # Copyright (C) 2019 The Android Open Source Project
 #
@@ -703,16 +715,6 @@
 }
 
 # End of content from /Users/mac/.gradle/caches/transforms-2/files-2.1/3befda7b6a366e1c7d1179b797e6e2e8/jetified-savedstate-1.1.0/proguard.txt
-# The proguard configuration file for the following section is /Users/mac/.gradle/caches/transforms-2/files-2.1/d710359730ea5aa88633203b773b0937/lifecycle-viewmodel-2.3.1/proguard.txt
--keepclassmembers,allowobfuscation class * extends androidx.lifecycle.ViewModel {
-    <init>();
-}
-
--keepclassmembers,allowobfuscation class * extends androidx.lifecycle.AndroidViewModel {
-    <init>(android.app.Application);
-}
-
-# End of content from /Users/mac/.gradle/caches/transforms-2/files-2.1/d710359730ea5aa88633203b773b0937/lifecycle-viewmodel-2.3.1/proguard.txt
 # The proguard configuration file for the following section is /Users/mac/.gradle/caches/transforms-2/files-2.1/09c8e731597190fbbf275aef34635c76/room-runtime-2.2.5/proguard.txt
 -keep class * extends androidx.room.RoomDatabase
 -dontwarn androidx.room.paging.**

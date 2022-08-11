@@ -134,6 +134,7 @@ class CategoriesMainScreenState extends State<CategoriesMainScreen> {
   }
 
   SingleProduct(CategoryModel item) {
+
     return Column(
       children: [
         ListTile(

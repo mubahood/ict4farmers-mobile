@@ -171,7 +171,12 @@ Referenced Strings:
   Artist
   AsldcInflateDelegate
   AspectFrame
+  AsyncTask
   AudioAttributesCompat:
+  Auth.CREDENTIALS_API
+  Auth.GOOGLE_SIGN_IN_API
+  Auth.PROXY_API
+  AuthSignInClient
   AutoCompleteTextView
   AutoManageHelper
   AvdcInflateDelegate
@@ -366,6 +371,7 @@ Referenced Strings:
   ENQUEUED
   EQUAL_TO
   ERROR
+  ERROR_START_SMS_RETRIEVER
   ERROR_WHILE_ACQUIRING_POSITION
   EXISTS
   EXPONENTIAL
@@ -397,6 +403,7 @@ Referenced Strings:
   FFFFFFFF
   FIFZZZ
   FIIFZZZI
+  FINISHED
   FLAG_CONVERT_TO_PLAIN_TEXT
   FLAT
   FLOA
@@ -442,6 +449,7 @@ Referenced Strings:
   FragmentManager
   FragmentManager:
   GACConnecting
+  GACSignInLoader
   GACStateManager
   GAC_Executor
   GAC_Transform
@@ -510,6 +518,7 @@ Referenced Strings:
   GooglePlayServicesErrorDialog
   GooglePlayServicesUpdatingDialog
   GooglePlayServicesUtil
+  GoogleSignInCommon
   GoogleSignatureVerifier
   GreedyScheduler
   HALF_OPENED
@@ -701,6 +710,7 @@ Referenced Strings:
   ModuleDescriptor
   MouseCursorChannel
   MultiAutoCompleteTextView
+  NA
   NAME
   NAMES_ROUTE
   NETWORK
@@ -886,6 +896,7 @@ Referenced Strings:
   PUBLIC
   PUSH
   PUT
+  PackageManagerGetSignatures
   PackageManagerHelper
   PathParser
   PathProviderPlugin
@@ -909,6 +920,7 @@ Referenced Strings:
   ProcessUtils
   Processor
   ProcessorForegroundLck
+  Progress:
   QUl6YVN5QW5UTG41LV80TWMyYTJQLWRLVWVFL...
   R:
   R::
@@ -964,14 +976,18 @@ Referenced Strings:
   Restored
   RestrictedAPI
   RestrictedApi
+  Result:
   ResultCallbacks
   ResultT:
   Retry
+  RevocationService
+  RevokeAccessOperation
   RotateGesturesEnabled
   RowsPerStrip
   S
   S:
   S::
+  SAFE_PARCELABLE_NULL_STRING
   SBYTE
   SCOPES_ROUTE
   SCROLL_DOWN
@@ -1050,6 +1066,7 @@ Referenced Strings:
   SignInClientImpl
   SignInCoordinator
   Skip
+  SmsRetriever.API
   Software
   SoonBlockedPrivateApi
   SpatialFrequencyResponse
@@ -1234,6 +1251,7 @@ Referenced Strings:
   USHORT
   UTC
   UTF8
+  UidVerifier
   UnknownNullness
   UnsafeExperimentalUsageError
   UnspecifiedImmutableFlag
@@ -1355,6 +1373,7 @@ Referenced Strings:
   accelerateDecelerateInterpolator
   accelerateInterpolator
   accessibility
+  accountName
   accuracy
   ack
   action
@@ -1788,6 +1807,7 @@ Referenced Strings:
   circles
   circlesToAdd
   circlesToChange
+  claimedCallingPackage
   class
   className
   classes_to_restore
@@ -1845,6 +1865,27 @@ Referenced Strings:
   com.google.android.clockwork.home.UPD...
   com.google.android.gms
   com.google.android.gms.appid
+  com.google.android.gms.auth.APPAUTH_S...
+  com.google.android.gms.auth.GOOGLE_SI...
+  com.google.android.gms.auth.NO_IMPL
+  com.google.android.gms.auth.api.crede...
+  com.google.android.gms.auth.api.crede...
+  com.google.android.gms.auth.api.crede...
+  com.google.android.gms.auth.api.fallback
+  com.google.android.gms.auth.api.inter...
+  com.google.android.gms.auth.api.phone...
+  com.google.android.gms.auth.api.phone...
+  com.google.android.gms.auth.api.phone...
+  com.google.android.gms.auth.api.phone...
+  com.google.android.gms.auth.api.phone...
+  com.google.android.gms.auth.api.phone...
+  com.google.android.gms.auth.api.signi...
+  com.google.android.gms.auth.api.signi...
+  com.google.android.gms.auth.api.signi...
+  com.google.android.gms.auth.api.signi...
+  com.google.android.gms.auth.api.signi...
+  com.google.android.gms.auth.api.signi...
+  com.google.android.gms.auth.service.S...
   com.google.android.gms.availability
   com.google.android.gms.chimera
   com.google.android.gms.chimera.contai...
@@ -1855,6 +1896,8 @@ Referenced Strings:
   com.google.android.gms.common.interna...
   com.google.android.gms.common.interna...
   com.google.android.gms.common.telemet...
+  com.google.android.gms.credentials.Cr...
+  com.google.android.gms.credentials.Hi...
   com.google.android.gms.dynamic.IObjec...
   com.google.android.gms.dynamite.IDyna...
   com.google.android.gms.dynamite.IDyna...
@@ -2004,6 +2047,7 @@ Referenced Strings:
   composingBase
   composingExtent
   computeFitSystemWindows
+  config
   config_showMenuShortcutsWhenKeyboardP...
   connect
   connectivity
@@ -2011,6 +2055,7 @@ Referenced Strings:
   consumeTapEvents
   consumer
   consumerIndex
+  consumer_package
   content
   content://com.android.badge/badge
   content://com.huawei.android.launcher...
@@ -2265,7 +2310,9 @@ Referenced Strings:
   font_variation_settings
   font_weight
   forbidden
+  forceCodeForRefreshToken
   forceLocationManager
+  force_save_dialog
   foregroundNotificationConfig
   fraction
   fragment
@@ -2313,6 +2360,7 @@ Referenced Strings:
   get
   getAll
   getAppBounds
+  getAppSignature
   getApplicationDocumentsDirectory
   getApplicationSupportDirectory
   getAttributionTag
@@ -2378,6 +2426,8 @@ Referenced Strings:
   google.sent_time
   google.ttl
   googleSignInAccount
+  googleSignInOptions
+  googleSignInStatus
   google_api_key
   google_app_id
   google_storage_bucket
@@ -2406,6 +2456,7 @@ Referenced Strings:
   handled
   hasNotificationPermission
   has_liquid
+  hash:NoSuchAlgorithm
   he
   headers
   heading
@@ -2417,6 +2468,7 @@ Referenced Strings:
   hms.sent_time
   hms.ttl
   holes
+  hostedDomain
   html
   http
   http://
@@ -2426,6 +2478,8 @@ Referenced Strings:
   https://
   https://api.onesignal.com/
   https://plus.google.com/
+  https://www.googleapis.com/auth/games
+  https://www.googleapis.com/auth/games...
   hybrid
   i
   i.s.j.a.a
@@ -2442,6 +2496,7 @@ Referenced Strings:
   ic_stat_onesignal_default
   icon
   id
+  idTokenRequested
   identifier
   ids
   image
@@ -2663,6 +2718,7 @@ Referenced Strings:
   line
   linearInterpolator
   listen
+  listenForCode
   listener
   liteModeEnabled
   loaderVersion
@@ -2679,6 +2735,8 @@ Referenced Strings:
   lockScreenVisibility
   logEvent
   logLevel
+  logSessionId
+  log_session_id
   logger
   logoutEmail
   logoutSMSNumber
@@ -2870,6 +2928,7 @@ Referenced Strings:
   openDatabase
   openLocationSettings
   opened
+  openid
   operation
   operations
   operator
@@ -3051,6 +3110,7 @@ Referenced Strings:
   rect
   redisplay
   reduced
+  refreshToken
   registerUser:registerForPushFired:
   registerWith
   registration_id
@@ -3069,6 +3129,7 @@ Referenced Strings:
   repeatMode
   replacement
   requestPermission
+  requestPhoneHint
   requestRelaunchActivity
   requestStartTime
   require_email_auth
@@ -3137,6 +3198,7 @@ Referenced Strings:
   scanCode
   schedule_requested_at
   scope
+  scopes
   scrollBy
   scrollGesturesEnabled
   sdk
@@ -3163,6 +3225,8 @@ Referenced Strings:
   seqno
   sequence
   serverAuthCode
+  serverAuthRequested
+  serverClientId
   serviceActionBundleKey
   serviceIntentCall
   serviceResponseIntentKey
@@ -3204,7 +3268,11 @@ Referenced Strings:
   sidecarCompat
   sidecarDeviceState
   sidecarDisplayFeatures
+  signInAccount
+  signInResultCode
+  signInResultData
   signed
+  signingInGoogleApiClients
   silent
   singleInstance
   sku
@@ -3212,12 +3280,15 @@ Referenced Strings:
   smallIconAccentColor
   sms
   smsAuthHashToken
+  smsCodeRegexPattern
   smsNumber
   smsOTPCode
   smsSubscribed
   smsUserId
   sms_auth_hash
+  sms_autofill
   sms_number
+  smscode
   snippet
   sound
   source
@@ -3370,6 +3441,7 @@ Referenced Strings:
   uniqueIdentifier
   unknown
   unrated
+  unregisterListener
   unregistered
   unsubscribe_on_notifications_disabled
   unsupported
@@ -3636,6 +3708,7 @@ Marking drawable:tooltip_frame_dark:2131165309 used because its prefix matches s
 Marking drawable:tooltip_frame_light:2131165310 used because its prefix matches string pool constant tooltip
 Marking attr:arrowHeadLength:2130903087 used because its prefix matches string pool constant ar
 Marking attr:arrowShaftLength:2130903088 used because its prefix matches string pool constant ar
+Marking integer:config_tooltipAnimTime:2131296259 used because its prefix matches string pool constant config
 Marking attr:font:2130903196 used because its prefix matches string pool constant font
 Marking attr:fontFamily:2130903197 used because its prefix matches string pool constant font
 Marking attr:fontProviderAuthority:2130903198 used because its prefix matches string pool constant font
@@ -5154,6 +5227,7 @@ anim:fragment_fast_out_extra_slow_in:2130771992,
    id:view_tree_view_model_store_owner:2131230932,
    id:visible_removing_fragment_view_tag:2131230933,
    integer:cancel_button_image_alpha:2131296258,
+   integer:config_tooltipAnimTime:2131296259,
    integer:google_play_services_version:2131296260,
    integer:status_bar_notification_info_maxnum:2131296261,
    layout:abc_action_bar_title_item:2131427328,
@@ -5423,6 +5497,9 @@ Skipped unused resource res/drawable/common_google_signin_btn_text_disabled.xml:
 Skipped unused resource res/drawable/common_google_signin_btn_text_light.xml: 909 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/drawable/common_google_signin_btn_text_light_focused.xml: 1174 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/drawable/common_google_signin_btn_text_light_normal.xml: 728 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml: 1201 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable-watch-v20/common_google_signin_btn_text_disabled.xml: 1431 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml: 1129 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/drawable-mdpi-v4/abc_list_pressed_holo_dark.9.png: 207 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-mdpi-v4/abc_list_selector_disabled_holo_dark.9.png: 217 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-mdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png: 610 bytes (replaced with small dummy file of size 77 bytes)

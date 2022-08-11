@@ -315,8 +315,7 @@ void show_not_account_bottom_sheet(context) {
 Widget NoAccountWidget(BuildContext context,
     {String body: "You are not logged in yet."
         "",
-    String action_text:
-        "Create your ${AppConfig.AppName} account today! & Sell your farm products, Chat with experts, Compare farm products prices, Manage your farms and much more...",
+    String action_text: "Login to ${AppConfig.AppName} to proceed ...",
     String empty_image: ""}) {
   String _empty_image = './assets/project/no_account.png';
   if (!empty_image.isEmpty) {
@@ -324,7 +323,6 @@ Widget NoAccountWidget(BuildContext context,
   }
   return Center(
     child: Column(
-      mainAxisSize: MainAxisSize.min,
       children: <Widget>[
         Container(
           child: Image(

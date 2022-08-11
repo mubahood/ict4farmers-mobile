@@ -8,6 +8,7 @@ import 'package:flutx/flutx.dart';
 import 'package:flutx/utils/spacing.dart';
 import 'package:flutx/widgets/container/container.dart';
 import 'package:flutx/widgets/text/text.dart';
+import 'package:ict4farmers/models/AppVersionModel.dart';
 import 'package:ict4farmers/models/LoggedInUserModel.dart';
 import 'package:ict4farmers/models/WizardItemModel.dart';
 import 'package:ict4farmers/pages/location_picker/single_item_picker.dart';
@@ -62,8 +63,14 @@ class DashboardState extends State<Dashboard> {
   }
 
   bool open_setup_wizard = false;
+  bool app_is_latest = true;
 
   Future<void> my_init() async {
+    app_is_latest = await AppVersionModel.is_latest_varsion();
+    if (!app_is_latest) {
+      Utils.navigate_to(AppConfig.AppUpdateScreen, context);
+    }
+
     bool open_setup_wizard = false;
     loggedUser = await LoggedInUserModel.get_logged_in_user();
     if (loggedUser.id < 1) {
@@ -73,7 +80,7 @@ class DashboardState extends State<Dashboard> {
 
       open_setup_wizard = await WizardItemModel.open_setup_wizard();
       if (loggedUser.phone_number_verified != "1") {
-        Utils.navigate_to(AppConfig.account_verification_splash, context);
+        //Utils.navigate_to(AppConfig.account_verification_splash, context);
       }
     }
 
@@ -487,27 +494,6 @@ class DashboardState extends State<Dashboard> {
                                         MdiIcons.twitter,
                                         size: 30,
                                         color: Colors.blue.shade500,
-                                      ),
-                                      decoration: BoxDecoration(
-                                          border: Border.all(
-                                              color: Colors.grey.shade500,
-                                              width: 1),
-                                          borderRadius: BorderRadius.all(
-                                              Radius.circular(11))),
-                                    ),
-                                  ),
-                                  InkWell(
-                                    onTap: () => {
-                                      Utils.launchOuLink(
-                                          AppConfig.OUR_INSTAGRAM_LINK)
-                                    },
-                                    child: Container(
-                                      margin: EdgeInsets.only(left: 16),
-                                      padding: EdgeInsets.all(3),
-                                      child: Icon(
-                                        MdiIcons.instagram,
-                                        size: 30,
-                                        color: Colors.red.shade700,
                                       ),
                                       decoration: BoxDecoration(
                                           border: Border.all(

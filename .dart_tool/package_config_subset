@@ -414,6 +414,10 @@ petitparser
 2.14
 file:///Users/mac/src/flutter/.pub-cache/hosted/pub.dartlang.org/petitparser-4.4.0/
 file:///Users/mac/src/flutter/.pub-cache/hosted/pub.dartlang.org/petitparser-4.4.0/lib/
+pin_input_text_field
+2.13
+file:///Users/mac/src/flutter/.pub-cache/hosted/pub.dartlang.org/pin_input_text_field-4.1.2/
+file:///Users/mac/src/flutter/.pub-cache/hosted/pub.dartlang.org/pin_input_text_field-4.1.2/lib/
 platform
 2.12
 file:///Users/mac/src/flutter/.pub-cache/hosted/pub.dartlang.org/platform-3.1.0/
@@ -490,6 +494,10 @@ shimmer
 2.12
 file:///Users/mac/src/flutter/.pub-cache/hosted/pub.dartlang.org/shimmer-2.0.0/
 file:///Users/mac/src/flutter/.pub-cache/hosted/pub.dartlang.org/shimmer-2.0.0/lib/
+sms_autofill
+2.12
+file:///Users/mac/src/flutter/.pub-cache/hosted/pub.dartlang.org/sms_autofill-2.2.0/
+file:///Users/mac/src/flutter/.pub-cache/hosted/pub.dartlang.org/sms_autofill-2.2.0/lib/
 source_gen
 2.12
 file:///Users/mac/src/flutter/.pub-cache/hosted/pub.dartlang.org/source_gen-1.2.1/

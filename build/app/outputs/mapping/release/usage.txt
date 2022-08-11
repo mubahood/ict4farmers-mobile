@@ -458,6 +458,7 @@ com.google.android.gms.common.server.converter.zab
 kotlinx.coroutines.flow.SharedFlowKt
 com.google.android.gms.tasks.CancellationTokenSource
 androidx.drawerlayout.R$string
+com.jaumard.smsautofill.R$id
 kotlin.collections.builders.MapBuilder$KeysItr
 androidx.appcompat.widget.DrawableUtils:
     private void <init>()
@@ -528,11 +529,13 @@ com.google.firebase.messaging.RemoteMessage$Notification
 android.support.v4.media.RatingCompat$Style
 androidx.core.view.WindowInsetsAnimationCompat$Callback
 com.google.android.gms.common.internal.zzh
+com.google.android.gms.internal.auth.zzg
 androidx.core.hardware.fingerprint.FingerprintManagerCompat$AuthenticationCallback
 androidx.core.view.accessibility.AccessibilityViewCommand$MoveWindowArguments:
     public int getX()
     public int getY()
 com.google.android.gms.common.server.response.zaa
+com.google.android.gms.auth.api.identity.SavePasswordRequest
 androidx.core.view.DisplayCompat$Api23Impl
 androidx.media.MediaBrowserServiceCompat$ServiceBinderImpl$6
 com.google.common.base.Charsets
@@ -562,10 +565,12 @@ kotlinx.coroutines.flow.FlowKt__BuildersKt$flowOf$$inlined$unsafeFlow$1$1
 kotlin.sequences.GeneratorSequence$iterator$1
 kotlin.sequences.SequencesKt___SequencesKt$minus$4
 com.google.common.collect.TreeRangeMap$SubRangeMap$SubRangeMapAsMap$4
+com.google.android.gms.internal.auth.zzx
 com.google.common.collect.TreeMultiset$Aggregate
 androidx.fragment.R$style
 androidx.work.impl.constraints.controllers.package-info
 androidx.core.database.CursorWindowCompat
+com.jaumard.smsautofill.R$attr
 kotlin.NumbersKt__FloorDivModKt
 com.google.common.collect.MapMakerInternalMap$StrongKeyStrongValueEntry$Helper
 androidx.core.widget.CheckedTextViewCompat$Api16Impl
@@ -582,13 +587,13 @@ com.google.android.gms.common.api.internal.ListenerHolder:
     public boolean hasListener()
 kotlin.reflect.KClassifier
 androidx.core.view.accessibility.AccessibilityNodeInfoCompat$RangeInfoCompat
+com.google.android.gms.auth.api.credentials.CredentialPickerConfig$Prompt
 androidx.core.widget.TextViewCompat$OreoCallback:
     android.view.ActionMode$Callback getWrappedCallback()
     private static final int MENU_ITEM_ORDER_PROCESS_TEXT_INTENT_ACTIONS_START
 com.google.common.cache.RemovalCause$2
 com.google.common.collect.TreeMultiset$Reference
 com.google.common.base.CharMatcher$JavaLetter
-com.google.android.gms.common.SignInButton
 com.onesignal.shortcutbadger.impl.NewHtcHomeBadger:
     public static final java.lang.String INTENT_UPDATE_SHORTCUT
     public static final java.lang.String INTENT_SET_NOTIFICATION
@@ -596,6 +601,7 @@ com.onesignal.shortcutbadger.impl.NewHtcHomeBadger:
     public static final java.lang.String COUNT
     public static final java.lang.String EXTRA_COMPONENT
     public static final java.lang.String EXTRA_COUNT
+com.google.android.gms.common.SignInButton
 kotlinx.coroutines.flow.FlowKt__TransformKt$filter$$inlined$unsafeTransform$1$2
 com.google.common.io.ByteSource$ConcatenatedByteSource
 kotlinx.coroutines.channels.ReceiveChannel:
@@ -628,6 +634,7 @@ com.onesignal.HmsMessageServiceOneSignal:
     public void onMessageReceived(com.huawei.hms.push.RemoteMessage)
 kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$6
 com.google.common.util.concurrent.AbstractScheduledService$Scheduler
+com.google.android.gms.auth.api.accounttransfer.zzq
 kotlin.BuilderInference
 kotlin.jdk7.AutoCloseableKt
 com.google.common.collect.Multisets$UnmodifiableMultiset
@@ -710,6 +717,7 @@ kotlin.collections.MapsKt__MapsJVMKt:
     private static final int INT_MAX_POWER_OF_TWO
 kotlin.PreconditionsKt__PreconditionsKt
 com.google.android.gms.maps.internal.zzbj
+com.google.android.gms.auth.api.identity.Identity
 com.google.common.collect.Multisets$1$1
 com.google.common.util.concurrent.CycleDetectingLockFactory$CycleDetectingReentrantReadWriteLock
 androidx.work.impl.utils.futures.AbstractFuture:
@@ -749,13 +757,8 @@ com.google.common.collect.RegularImmutableList
 io.flutter.view.TextureRegistry:
     public abstract io.flutter.view.TextureRegistry$SurfaceTextureEntry registerSurfaceTexture(android.graphics.SurfaceTexture)
 com.google.android.gms.auth.api.signin.internal.Storage:
-    public com.google.android.gms.auth.api.signin.GoogleSignInOptions getSavedDefaultGoogleSignInOptions()
-    public java.lang.String getSavedRefreshToken()
-    public void clear()
-    public void saveDefaultGoogleSignInAccount(com.google.android.gms.auth.api.signin.GoogleSignInAccount,com.google.android.gms.auth.api.signin.GoogleSignInOptions)
     protected final void zab(java.lang.String)
     public final void zac()
-    protected final void zad(java.lang.String,java.lang.String)
 androidx.work.ListenableWorker:
     public final java.util.Set getTags()
     public final java.util.List getTriggeredContentUris()
@@ -767,6 +770,8 @@ androidx.work.ListenableWorker:
     public androidx.work.impl.utils.taskexecutor.TaskExecutor getTaskExecutor()
 kotlin.io.ExposingBufferByteArrayOutputStream
 kotlin.collections.UIntIterator
+com.google.android.gms.internal.auth-api.zbag
+com.google.android.gms.auth.api.signin.internal.zbg
 androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver:
     static final java.lang.String ACTION
     static final java.lang.String KEY_BATTERY_NOT_LOW_PROXY_ENABLED
@@ -995,6 +1000,7 @@ androidx.core.app.RemoteInput:
 androidx.core.view.ActionProvider$SubUiVisibilityListener:
     public abstract void onSubUiVisibilityChanged(boolean)
 androidx.annotation.RestrictTo
+com.google.android.gms.auth.api.identity.zbf
 androidx.appcompat.R$drawable:
     private void <init>()
     public static final int abc_action_bar_item_background_material
@@ -1103,6 +1109,7 @@ androidx.appcompat.widget.TintTypedArray:
     public int getChangingConfigurations()
 com.google.common.collect.Collections2$PermutationIterator
 com.google.android.gms.maps.internal.zzax
+com.google.android.gms.auth.api.signin.GoogleSignInStatusCodes
 androidx.legacy.coreutils.R$integer
 com.onesignal.OneSignalPrefs$WritePrefHandlerThread:
     private static final int WRITE_CALL_DELAY_TO_BUFFER_MS
@@ -1159,6 +1166,8 @@ androidx.lifecycle.Lifecycling:
     private static final int REFLECTIVE_CALLBACK
     private static final int GENERATED_CALLBACK
 com.google.android.gms.internal.base.zak
+com.google.android.gms.internal.auth-api-phone.zzj:
+    public void <init>(android.content.Context)
 com.onesignal.outcomes.domain.OSOutcomeSource:
     public final void setDirectBody(com.onesignal.outcomes.domain.OSOutcomeSourceBody)
     public final void setIndirectBody(com.onesignal.outcomes.domain.OSOutcomeSourceBody)
@@ -1209,6 +1218,9 @@ kotlinx.coroutines.InterruptibleKt
 kotlin.LazyThreadSafetyMode
 com.google.common.collect.TreeTraverser$BreadthFirstIterator
 kotlinx.coroutines.CompletableJob$DefaultImpls
+com.google.android.gms.auth.api.proxy.ProxyApi$ProxyResult
+com.google.android.gms.auth.api.phone.SmsRetrieverClient:
+    public void <init>(android.content.Context)
 com.google.android.gms.tasks.zzx
 androidx.core.view.inputmethod.InputContentInfoCompat$InputContentInfoCompatBaseImpl:
     public void releasePermission()
@@ -1387,10 +1399,13 @@ androidx.cardview.widget.RoundRectDrawableWithShadow:
     private static final float SHADOW_MULTIPLIER
 kotlinx.coroutines.flow.internal.SafeCollector_commonKt$unsafeFlow$1$collect$1
 androidx.core.location.LocationManagerCompat$PreRGnssStatusTransport
+com.google.android.gms.auth.account.zzf
 androidx.work.multiprocess.IWorkManagerImpl$Stub$Proxy
 com.google.common.cache.CacheBuilderSpec$ValueStrengthParser
 androidx.core.location.LocationManagerCompat$CancellableLocationListener
 com.google.common.cache.LocalCache$LoadingValueReference$1
+com.google.android.gms.auth.UserRecoverableAuthException
+com.google.android.gms.auth.api.R
 com.google.common.collect.Lists
 kotlin.text.StringsKt__StringsKt$splitToSequence$2
 io.flutter.plugin.common.EventChannel$EventSink:
@@ -1535,6 +1550,7 @@ androidx.work.Operation:
 kotlinx.coroutines.flow.FlowKt__TransformKt$filterNotNull$$inlined$unsafeTransform$1
 com.google.common.util.concurrent.FuturesGetChecked$GetCheckedTypeValidatorHolder$ClassValueValidator$1
 com.google.common.collect.AbstractTable$Values
+com.google.android.gms.auth.account.WorkAccountApi$AddAccountResult
 kotlin.KotlinVersion$Companion
 io.flutter.plugin.editing.FlutterTextUtils:
     public static final int LINE_FEED
@@ -1599,6 +1615,7 @@ com.onesignal.OSReceiveReceiptRepository:
 com.google.android.gms.internal.common.zzw
 com.google.common.collect.ImmutableMap$1
 com.google.common.util.concurrent.MoreExecutors$4
+com.google.android.gms.internal.auth.zzaj
 com.google.common.reflect.MutableTypeToInstanceMap$UnmodifiableEntry
 kotlin.collections.IntIterator:
     public final java.lang.Integer next()
@@ -1619,13 +1636,13 @@ androidx.cursoradapter.widget.ResourceCursorAdapter:
     public void <init>(android.content.Context,int,android.database.Cursor,int)
     public void setViewResource(int)
     public void setDropDownViewResource(int)
-com.google.android.gms.maps.model.zzp
 com.google.android.gms.internal.location.zzaf:
     private final com.google.android.gms.common.api.PendingResult zza(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.location.zzal)
     public final com.google.android.gms.common.api.PendingResult addGeofences(com.google.android.gms.common.api.GoogleApiClient,java.util.List,android.app.PendingIntent)
     public final com.google.android.gms.common.api.PendingResult addGeofences(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.location.GeofencingRequest,android.app.PendingIntent)
     public final com.google.android.gms.common.api.PendingResult removeGeofences(com.google.android.gms.common.api.GoogleApiClient,android.app.PendingIntent)
     public final com.google.android.gms.common.api.PendingResult removeGeofences(com.google.android.gms.common.api.GoogleApiClient,java.util.List)
+com.google.android.gms.maps.model.zzp
 com.google.common.collect.FilteredEntryMultimap$AsMap$1KeySetImpl
 androidx.core.view.ViewCompat$CompatImplApi28
 com.google.common.util.concurrent.Partially$GwtIncompatible
@@ -1649,6 +1666,7 @@ kotlinx.coroutines.channels.ChannelsKt__DeprecatedKt$lastIndexOf$1
 com.google.android.gms.internal.common.zzf
 com.google.common.collect.SortedMapDifference
 com.google.common.base.AbstractIterator$State
+com.google.android.gms.auth.api.accounttransfer.zzr
 androidx.appcompat.widget.DecorToolbar:
     public abstract void setTitle(java.lang.CharSequence)
     public abstract java.lang.CharSequence getSubtitle()
@@ -1713,6 +1731,7 @@ com.google.common.primitives.Ints$LexicographicalComparator
 com.google.android.gms.common.internal.zzx
 com.google.common.graph.Graphs$TransposedValueGraph
 com.google.android.gms.common.images.zac
+com.google.android.gms.internal.auth.zzw
 com.google.common.collect.ImmutableList
 io.flutter.app.FlutterActivityDelegate$ViewFactory
 kotlin.sequences.SequencesKt___SequencesKt$minus$3
@@ -1839,6 +1858,7 @@ androidx.print.PrintHelper$PrintUriAdapter$1$1
 kotlinx.coroutines.flow.FlowKt__DelayKt$sample$2$values$1$invokeSuspend$$inlined$collect$1
 androidx.slidingpanelayout.R
 com.google.common.collect.EmptyImmutableListMultimap
+com.google.android.gms.internal.auth-api.zbae
 kotlinx.coroutines.flow.FlowKt__ZipKt$nullArrayFactory$1
 com.google.android.gms.maps.GoogleMap$OnInfoWindowLongClickListener
 kotlin.sequences.SequencesKt___SequencesKt$flatMap$1
@@ -1846,6 +1866,7 @@ androidx.viewpager.R$drawable
 com.google.common.collect.FilteredKeyMultimap
 androidx.core.R$color
 com.google.common.cache.RemovalCause$1
+com.google.android.gms.auth.api.accounttransfer.zza
 androidx.core.view.GestureDetectorCompat$GestureDetectorCompatImplBase$GestureHandler
 com.google.android.gms.common.zzs
 android.support.v4.media.session.MediaSessionCompat$MediaSessionImplBase$MediaSessionStub
@@ -1899,6 +1920,7 @@ com.onesignal.OSInAppMessageController:
     private static final java.lang.String OS_IAM_DB_ACCESS
     public static final java.lang.String IN_APP_MESSAGES_JSON_KEY
     private static final java.lang.String LIQUID_TAG_SCRIPT
+com.google.android.gms.auth.api.signin.internal.zbf
 androidx.annotation.BoolRes
 androidx.core.content.res.ResourcesCompat$ThemeCompat$ImplApi23:
     private void <init>()
@@ -1918,11 +1940,6 @@ com.onesignal.OneSignalRestClient:
     private static final int TIMEOUT
     private static final int GET_TIMEOUT
 androidx.loader.app.LoaderManagerImpl$LoaderViewModel:
-    void startCreatingLoader()
-    boolean isCreatingLoader()
-    void finishCreatingLoader()
-    void putLoader(int,androidx.loader.app.LoaderManagerImpl$LoaderInfo)
-    androidx.loader.app.LoaderManagerImpl$LoaderInfo getLoader(int)
     void removeLoader(int)
     boolean hasRunningLoaders()
 com.google.android.gms.common.zzr
@@ -1937,6 +1954,7 @@ androidx.appcompat.widget.ActionMenuView:
     static final int MIN_CELL_SIZE
     static final int GENERATED_ITEM_PADDING
 com.google.common.primitives.UnsignedInts
+com.google.android.gms.internal.auth-api.zbaw
 com.google.common.collect.FilteredMultimap
 kotlinx.coroutines.debug.internal.ConcurrentWeakMap$KeyValueSet
 kotlin.random.Random:
@@ -1982,12 +2000,11 @@ com.google.common.io.BaseEncoding$StandardBaseEncoding$2
 com.onesignal.BadgeCountUpdater:
     void <init>()
 com.google.common.collect.DenseImmutableTable$1
-com.google.android.gms.common.internal.safeparcel.SafeParcelable
 kotlinx.coroutines.AwaitAll
 com.google.common.reflect.ImmutableTypeToInstanceMap$Builder
-com.google.android.gms.location.GeofencingClient
 kotlinx.coroutines.UndispatchedCoroutine:
     public void <init>(kotlin.coroutines.CoroutineContext,kotlin.coroutines.Continuation)
+com.google.android.gms.location.GeofencingClient
 com.google.common.collect.MapMakerInternalMap$Strength
 com.google.common.util.concurrent.SmoothRateLimiter$SmoothWarmingUp
 androidx.core.net.UriCompat
@@ -2005,6 +2022,7 @@ com.onesignal.OneSignal$3
 com.google.common.collect.Cut$BelowValue
 com.google.common.cache.CacheLoader$FunctionToCacheLoader
 kotlin.UByteArrayKt
+com.google.android.gms.internal.auth-api.zbaf
 io.flutter.plugins.googlemaps.R$string
 com.google.android.gms.location.GeofencingRequest
 androidx.work.impl.Schedulers:
@@ -2019,8 +2037,6 @@ com.google.android.gms.auth.api.signin.GoogleSignInAccount:
     public varargs com.google.android.gms.auth.api.signin.GoogleSignInAccount requestExtraScopes(com.google.android.gms.common.api.Scope[])
     public java.util.Set getGrantedScopes()
     public boolean isExpired()
-    public final java.lang.String zac()
-    public final java.lang.String zad()
 com.google.common.collect.Synchronized$SynchronizedTable$1
 kotlin.time.TestTimeSource
 com.google.android.gms.maps.internal.zzaw
@@ -2064,6 +2080,8 @@ com.onesignal.shortcutbadger.impl.SonyHomeBadger:
 com.google.android.gms.maps.internal.zzbi
 kotlin.Metadata$DefaultImpls
 com.google.common.cache.RemovalListeners$1
+com.google.android.gms.auth.api.identity.zbe
+com.google.android.gms.internal.auth.zzf
 com.google.common.collect.Maps$NavigableKeySet
 kotlin.internal.DynamicExtension
 com.google.android.gms.location.places.PlaceReport
@@ -2137,13 +2155,6 @@ com.onesignal.TrackAmazonPurchase$OSPurchasingListener:
 kotlinx.coroutines.flow.FlowKt__BuildersKt$asFlow$$inlined$unsafeFlow$9$1
 com.google.common.escape.CharEscaperBuilder
 com.google.common.collect.Maps$FilteredEntryMap
-androidx.loader.app.LoaderManagerImpl$LoaderObserver:
-    void <init>(androidx.loader.content.Loader,androidx.loader.app.LoaderManager$LoaderCallbacks)
-    public void onChanged(java.lang.Object)
-    public java.lang.String toString()
-    private final androidx.loader.content.Loader mLoader
-    private final androidx.loader.app.LoaderManager$LoaderCallbacks mCallback
-    private boolean mDeliveredData
 com.google.common.base.Predicates$InPredicate
 com.google.common.collect.Iterators$9
 androidx.coordinatorlayout.R$color
@@ -3860,6 +3871,7 @@ com.google.common.util.concurrent.Uninterruptibles:
     public static boolean tryAcquireUninterruptibly(java.util.concurrent.Semaphore,int,long,java.util.concurrent.TimeUnit)
     private void <init>()
 kotlinx.coroutines.flow.internal.CombineKt$zipImpl$1$1
+kotlinx.coroutines.flow.FlowKt__ReduceKt
 androidx.work.Constraints$Builder:
     public void <init>(androidx.work.Constraints)
     public androidx.work.Constraints$Builder setRequiresCharging(boolean)
@@ -3871,7 +3883,6 @@ androidx.work.Constraints$Builder:
     public androidx.work.Constraints$Builder setTriggerContentUpdateDelay(java.time.Duration)
     public androidx.work.Constraints$Builder setTriggerContentMaxDelay(long,java.util.concurrent.TimeUnit)
     public androidx.work.Constraints$Builder setTriggerContentMaxDelay(java.time.Duration)
-kotlinx.coroutines.flow.FlowKt__ReduceKt
 android.support.v4.media.session.IMediaControllerCallback$Stub:
     public static android.support.v4.media.session.IMediaControllerCallback asInterface(android.os.IBinder)
     private static final java.lang.String DESCRIPTOR
@@ -4015,6 +4026,7 @@ com.google.common.collect.MultimapBuilder$LinkedListSupplier
 androidx.collection.CircularIntArray
 com.google.android.gms.maps.zzr
 kotlin.collections.AbstractSet$Companion
+com.google.android.gms.auth.account.zze
 com.google.android.gms.dynamite.DynamiteModule:
     public static int getRemoteVersion(android.content.Context,java.lang.String)
     public android.os.IBinder instantiate(java.lang.String)
@@ -4038,7 +4050,8 @@ androidx.core.app.NotificationCompat$BubbleMetadata:
 androidx.browser.trusted.ConnectionHolder
 kotlinx.coroutines.flow.FlowKt__LimitKt$collectWhile$1
 androidx.versionedparcelable.VersionedParcelStream$1
-androidx.loader.content.AsyncTaskLoader$LoadTask
+androidx.loader.content.AsyncTaskLoader$LoadTask:
+    public void waitForLoader()
 androidx.core.os.LocaleListCompatWrapper:
     private static java.lang.String getLikelyScript(java.util.Locale)
     private static boolean isPseudoLocale(java.util.Locale)
@@ -4155,6 +4168,7 @@ com.google.common.collect.ImmutableMultisetGwtSerializationDependencies
 androidx.legacy.coreutils.R$id
 com.google.common.util.concurrent.Platform
 com.google.common.collect.Multisets$4$1
+com.google.android.gms.internal.auth.zzam
 kotlinx.coroutines.flow.FlowKt__DelayKt$debounce$3
 androidx.room.RoomSQLiteQuery$1
 com.google.common.util.concurrent.MoreExecutors$3
@@ -4162,6 +4176,15 @@ androidx.activity.result.ActivityResultRegistry$1:
     void <init>(androidx.activity.result.ActivityResultRegistry,java.lang.String,androidx.activity.result.ActivityResultCallback,androidx.activity.result.contract.ActivityResultContract)
 androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImplApi26
 androidx.concurrent.futures.AbstractResolvableFuture$1
+com.google.android.gms.auth.api.credentials.CredentialsApi:
+    public abstract com.google.android.gms.common.api.PendingResult delete(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.auth.api.credentials.Credential)
+    public abstract com.google.android.gms.common.api.PendingResult disableAutoSignIn(com.google.android.gms.common.api.GoogleApiClient)
+    public abstract com.google.android.gms.common.api.PendingResult request(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.auth.api.credentials.CredentialRequest)
+    public abstract com.google.android.gms.common.api.PendingResult save(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.auth.api.credentials.Credential)
+    public static final int ACTIVITY_RESULT_ADD_ACCOUNT
+    public static final int ACTIVITY_RESULT_OTHER_ACCOUNT
+    public static final int ACTIVITY_RESULT_NO_HINTS_AVAILABLE
+    public static final int CREDENTIAL_PICKER_REQUEST_CODE
 kotlin.sequences.SequencesKt___SequencesJvmKt:
     public static final kotlin.sequences.Sequence filterIsInstance(kotlin.sequences.Sequence,java.lang.Class)
     public static final java.util.Collection filterIsInstanceTo(kotlin.sequences.Sequence,java.util.Collection,java.lang.Class)
@@ -4227,8 +4250,8 @@ androidx.work.Configuration$Builder:
     public androidx.work.Configuration$Builder setDefaultProcessName(java.lang.String)
 androidx.drawerlayout.widget.DrawerLayout$SavedState
 com.google.common.collect.AbstractBiMap$Inverse
-com.google.android.gms.auth.api.signin.internal.GoogleSignInOptionsExtensionParcelable
-com.google.android.gms.common.internal.zar
+com.google.android.gms.auth.api.signin.internal.GoogleSignInOptionsExtensionParcelable:
+    public void <init>(com.google.android.gms.auth.api.signin.GoogleSignInOptionsExtension)
 io.flutter.embedding.android.FlutterEngineProvider
 kotlin.sequences.SequencesKt___SequencesJvmKt$filterIsInstance$1
 com.onesignal.R$dimen
@@ -4269,6 +4292,7 @@ kotlinx.coroutines.DispatchedTaskKt:
 kotlinx.coroutines.flow.FlowKt__ReduceKt$firstOrNull$$inlined$collectWhile$2$1
 androidx.annotation.WorkerThread
 com.google.common.graph.GraphBuilder
+com.google.android.gms.auth.api.identity.GetSignInIntentRequest$Builder
 kotlinx.coroutines.DeferredCoroutine
 com.google.common.collect.AbstractMapBasedMultimap$SortedAsMap
 androidx.lifecycle.ViewModelProvider$AndroidViewModelFactory
@@ -4312,6 +4336,7 @@ androidx.sqlite.db.SupportSQLiteStatement:
     public abstract long simpleQueryForLong()
     public abstract java.lang.String simpleQueryForString()
 android.support.v4.media.MediaBrowserCompat$ServiceBinderWrapper
+com.google.android.gms.auth.api.accounttransfer.zzb
 kotlin.reflect.TypeOfKt
 com.google.android.gms.location.zzi
 androidx.work.impl.background.systemalarm.package-info
@@ -4340,6 +4365,7 @@ com.google.common.base.Objects
 com.google.common.collect.Tables$TransformedTable
 kotlin.collections.builders.MapBuilderKeys
 kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$4
+com.google.android.gms.auth.api.accounttransfer.zzs
 com.google.common.base.JdkPattern
 kotlin.reflect.KProperty1$Getter
 com.google.common.collect.Multimaps$UnmodifiableSetMultimap
@@ -4451,8 +4477,10 @@ com.onesignal.OSNotificationController:
     private static final java.lang.String EXTENSION_SERVICE_META_DATA_TAG_NAME
     static final java.lang.String GOOGLE_SENT_TIME_KEY
     static final java.lang.String GOOGLE_TTL_KEY
+com.google.android.gms.internal.auth-api.zbp
 com.google.common.collect.TreeRangeMap$SubRangeMap$1
 com.google.common.util.concurrent.CombinedFuture$AsyncCallableInterruptibleTask
+com.google.android.gms.internal.auth.zzi
 kotlin.TypeCastException
 com.google.common.collect.Sets$2$1
 kotlinx.coroutines.flow.FlowKt__ReduceKt$fold$$inlined$collect$1$1
@@ -4477,7 +4505,9 @@ kotlin.text.CharsKt__CharKt:
     public void <init>()
 io.flutter.plugins.imagepicker.R$color
 com.google.common.primitives.UnsignedLongs$LexicographicalComparator
+com.google.android.gms.auth.zza
 com.google.common.io.CharSource
+com.google.android.gms.auth.AccountChangeEventsResponse
 kotlinx.coroutines.AwaitKt$joinAll$3
 com.google.common.collect.Tables$1
 com.google.android.gms.common.GoogleApiAvailabilityLight:
@@ -4504,6 +4534,7 @@ androidx.appcompat.widget.AbsActionBarView$1
 kotlin.ULongArrayKt
 kotlinx.coroutines.channels.ChannelsKt__DeprecatedKt$single$1
 kotlin.io.ReadAfterEOFException
+com.google.android.gms.internal.auth.zzz
 androidx.core.app.NotificationCompat$BigPictureStyle$Api23Impl:
     private void <init>()
 kotlinx.coroutines.flow.ReadonlyStateFlow
@@ -4560,6 +4591,7 @@ com.google.common.eventbus.Dispatcher$1
 com.google.common.math.DoubleMath
 com.google.common.hash.Hashing$ConcatenatedHashFunction
 com.google.common.cache.RemovalCause$4
+com.google.android.gms.auth.api.identity.zbd
 com.google.common.hash.AbstractCompositeHashFunction$1
 com.google.common.collect.ImmutableMap
 kotlin.sequences.IndexingSequence$iterator$1
@@ -4580,6 +4612,7 @@ kotlin.collections.SlidingWindowKt$windowedSequence$$inlined$Sequence$1
 androidx.browser.R$integer
 android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi21
 com.google.common.collect.ImmutableListMultimap
+com.google.android.gms.auth.api.identity.BeginSignInRequest$GoogleIdTokenRequestOptions
 com.google.common.collect.MultimapBuilder$MultimapBuilderWithKeys$3
 javax.annotation.meta.TypeQualifierDefault
 com.google.android.gms.maps.model.UrlTileProvider
@@ -4701,6 +4734,7 @@ com.google.common.eventbus.AllowConcurrentEvents
 androidx.browser.trusted.PackageIdentityUtils
 com.baseflow.geolocator.permission.PermissionUtils:
     public void <init>()
+com.google.android.gms.auth.api.accounttransfer.zzt
 org.intellij.lang.annotations.JdkConstants$HorizontalAlignment
 androidx.annotation.RequiresFeature
 com.google.common.collect.AbstractMultimap$Entries
@@ -4716,6 +4750,7 @@ com.google.android.gms.maps.zzan
 com.google.common.collect.ImmutableMultimap$FieldSettersHolder
 androidx.viewpager.widget.PagerTabStrip$1
 androidx.core.content.PermissionChecker$PermissionResult
+com.google.android.gms.internal.auth-api.zbai
 com.google.common.escape.Platform$1
 androidx.customview.R$drawable
 com.google.common.graph.EndpointPair
@@ -4765,6 +4800,7 @@ com.google.android.gms.common.zzo
 androidx.fragment.R
 androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImplBase
 kotlin.collections.ArraysKt___ArraysJvmKt$asList$2
+com.google.android.gms.auth.api.accounttransfer.AccountTransferClient
 io.flutter.embedding.engine.systemchannels.LifecycleChannel:
     private static final java.lang.String TAG
 com.google.common.graph.DirectedMultiNetworkConnections
@@ -5033,6 +5069,7 @@ com.google.common.collect.StandardTable$Column$EntrySetIterator$1EntryImpl
 com.google.common.primitives.UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator
 com.google.android.gms.internal.location.zzw
 kotlin.io.ExceptionsKt
+com.google.android.gms.auth.account.zzd
 androidx.slidingpanelayout.widget.SlidingPaneLayout
 kotlin.text.StringsKt___StringsKt$asIterable$$inlined$Iterable$1
 com.google.android.gms.internal.base.zai
@@ -5043,6 +5080,9 @@ androidx.core.location.LocationManagerCompat$PreRGnssStatusTransport$1
 androidx.core.view.ContentInfoCompat$Source
 androidx.room.util.FtsTableInfo
 kotlinx.coroutines.flow.FlowKt__ShareKt$launchSharing$1$1
+com.google.android.gms.internal.auth.zzan:
+    public abstract void zza(com.google.android.gms.internal.auth.zzal,com.google.android.gms.auth.api.proxy.ProxyRequest)
+    public abstract void zza(com.google.android.gms.internal.auth.zzal)
 com.onesignal.OSNotificationGenerationJob:
     org.json.JSONObject getAdditionalData()
     public java.lang.CharSequence getOverriddenBodyFromExtender()
@@ -5083,9 +5123,9 @@ androidx.work.impl.OperationImpl:
     public com.google.common.util.concurrent.ListenableFuture getResult()
     public androidx.lifecycle.LiveData getState()
 com.google.common.io.ByteSource$SlicedByteSource
+androidx.fragment.app.FragmentTabHost
 android.support.v4.media.MediaBrowserCompat$ItemReceiver:
     void <init>(java.lang.String,android.support.v4.media.MediaBrowserCompat$ItemCallback,android.os.Handler)
-androidx.fragment.app.FragmentTabHost
 com.google.common.util.concurrent.Partially
 javax.annotation.ParametersAreNullableByDefault
 kotlinx.coroutines.flow.FlowKt__EmittersKt$onEmpty$lambda-5$$inlined$collect$1
@@ -5100,6 +5140,10 @@ io.flutter.embedding.engine.renderer.FlutterRenderer:
     public void dispatchSemanticsAction(int,int,java.nio.ByteBuffer,int)
     private static final java.lang.String TAG
 com.onesignal.OneSignal$33
+com.google.android.gms.auth.api.signin.GoogleSignInClient:
+    void <init>(android.app.Activity,com.google.android.gms.auth.api.signin.GoogleSignInOptions)
+    public android.content.Intent getSignInIntent()
+    public com.google.android.gms.tasks.Task silentSignIn()
 kotlin.collections.builders.AbstractMapBuilderEntrySet
 com.google.common.reflect.TypeToken$TypeCollector$2
 androidx.room.RoomOpenHelper:
@@ -5108,9 +5152,7 @@ com.google.android.gms.common.api.internal.zaca:
     public abstract com.google.android.gms.common.ConnectionResult zab()
     public abstract com.google.android.gms.common.ConnectionResult zac(long,java.util.concurrent.TimeUnit)
     public abstract com.google.android.gms.common.ConnectionResult zad(com.google.android.gms.common.api.Api)
-    public abstract void zau()
     public abstract boolean zax()
-    public abstract boolean zay(com.google.android.gms.common.api.internal.SignInConnectionListener)
 com.google.common.collect.Collections2$PermutationCollection
 com.google.common.collect.FilteredKeyMultimap$AddRejectingSet
 kotlin.ranges.ULongRange$Companion
@@ -5149,6 +5191,7 @@ com.onesignal.JSONUtils:
     private static java.util.List jsonArrayToListNonNull(org.json.JSONArray)
     private static java.lang.Object convertNestedJSONType(java.lang.Object)
 kotlinx.coroutines.flow.FlowKt__ErrorsKt$catchImpl$$inlined$collect$1
+com.google.android.gms.internal.auth.zzal
 com.google.common.cache.CacheBuilderSpec$MaximumSizeParser
 androidx.appcompat.resources.R$id
 com.google.common.collect.ArrayTable$RowMap
@@ -5198,7 +5241,15 @@ kotlin.jvm.internal.BooleanSpreadBuilder
 kotlin.system.ProcessKt
 com.google.common.io.CountingOutputStream
 com.google.android.gms.common.internal.zzak
-com.google.android.gms.auth.api.signin.GoogleSignInOptions$Builder
+com.google.android.gms.auth.api.signin.GoogleSignInOptions$Builder:
+    private final java.lang.String zaa(java.lang.String)
+    public com.google.android.gms.auth.api.signin.GoogleSignInOptions$Builder addExtension(com.google.android.gms.auth.api.signin.GoogleSignInOptionsExtension)
+    public com.google.android.gms.auth.api.signin.GoogleSignInOptions$Builder requestEmail()
+    public com.google.android.gms.auth.api.signin.GoogleSignInOptions$Builder requestIdToken(java.lang.String)
+    public com.google.android.gms.auth.api.signin.GoogleSignInOptions$Builder requestServerAuthCode(java.lang.String)
+    public com.google.android.gms.auth.api.signin.GoogleSignInOptions$Builder requestServerAuthCode(java.lang.String,boolean)
+    public com.google.android.gms.auth.api.signin.GoogleSignInOptions$Builder setAccountName(java.lang.String)
+    public com.google.android.gms.auth.api.signin.GoogleSignInOptions$Builder setHostedDomain(java.lang.String)
 androidx.customview.widget.ExploreByTouchHelper$2
 com.google.android.gms.common.server.response.FastParser
 kotlin.reflect.KProperty2$Getter
@@ -5565,9 +5616,11 @@ androidx.core.view.WindowInsetsCompat$BuilderImpl30:
     void setVisible(int,boolean)
 dev.fluttercommunity.plus.connectivity.R$drawable
 com.google.common.io.Closeables
+com.google.android.gms.auth.api.accounttransfer.zzc
 com.google.android.gms.common.internal.zzi
 com.google.android.gms.internal.common.zzy
 kotlin.collections.AbstractMap
+com.google.android.gms.internal.auth.zzh
 com.google.android.gms.common.internal.HideFirstParty
 com.google.common.collect.ComparatorOrdering
 kotlin.time.DurationUnitKt__DurationUnitKt
@@ -5659,7 +5712,15 @@ androidx.core.app.AppOpsManagerCompat:
     public static final int MODE_IGNORED
     public static final int MODE_ERRORED
     public static final int MODE_DEFAULT
+com.google.android.gms.auth.api.credentials.HintRequest$Builder:
+    public varargs com.google.android.gms.auth.api.credentials.HintRequest$Builder setAccountTypes(java.lang.String[])
+    public com.google.android.gms.auth.api.credentials.HintRequest$Builder setEmailAddressIdentifierSupported(boolean)
+    public com.google.android.gms.auth.api.credentials.HintRequest$Builder setHintPickerConfig(com.google.android.gms.auth.api.credentials.CredentialPickerConfig)
+    public com.google.android.gms.auth.api.credentials.HintRequest$Builder setIdTokenNonce(java.lang.String)
+    public com.google.android.gms.auth.api.credentials.HintRequest$Builder setIdTokenRequested(boolean)
+    public com.google.android.gms.auth.api.credentials.HintRequest$Builder setServerClientId(java.lang.String)
 androidx.core.app.Person$Builder
+com.google.android.gms.auth.zzb
 androidx.core.view.WindowCompat$Impl30
 kotlinx.coroutines.intrinsics.CancellableKt:
     public static final void startCoroutineCancellable(kotlin.jvm.functions.Function1,kotlin.coroutines.Continuation)
@@ -5681,6 +5742,9 @@ androidx.media.MediaBrowserServiceCompatApi26
 com.google.common.util.concurrent.ExecutionSequencer$4
 android.support.v4.media.session.MediaSessionCompatApi22
 com.google.common.collect.LinkedListMultimap$KeyList
+com.google.android.gms.auth.api.signin.GoogleSignInResult:
+    public void <init>(com.google.android.gms.auth.api.signin.GoogleSignInAccount,com.google.android.gms.common.api.Status)
+    public boolean isSuccess()
 androidx.browser.customtabs.CustomTabsSessionToken$1
 androidx.appcompat.app.ToolbarActionBar$2
 com.google.common.collect.ImmutableMultiset$Builder
@@ -5696,6 +5760,7 @@ io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding:
     public abstract void addOnSaveStateListener(io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding$OnSaveInstanceStateListener)
     public abstract void removeOnSaveStateListener(io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding$OnSaveInstanceStateListener)
 kotlin.sequences.SequencesKt___SequencesKt$sortedWith$1
+com.google.android.gms.internal.auth.zzy
 com.google.common.hash.Funnels$SinkAsStream
 com.google.common.math.Quantiles$ScaleAndIndex
 kotlinx.coroutines.scheduling.CoroutineScheduler:
@@ -5746,6 +5811,7 @@ androidx.appcompat.widget.Toolbar$SavedState:
     public void <init>(android.os.Parcel)
 kotlinx.coroutines.flow.FlowKt__TransformKt$filter$$inlined$unsafeTransform$1$1
 com.google.common.collect.Maps$FilteredKeyMap
+com.google.android.gms.internal.auth-api.zbq
 com.google.common.util.concurrent.CombinedFuture$CallableInterruptibleTask
 com.google.common.util.concurrent.Runnables
 javax.annotation.meta.Exhaustive
@@ -5803,11 +5869,13 @@ com.google.android.gms.maps.zzt
 android.support.v4.media.MediaBrowserCompat$ItemCallback:
     public void <init>()
     final java.lang.Object mItemCallbackObj
+com.google.android.gms.auth.api.identity.zbc
 com.google.android.gms.internal.maps.zzi:
     public abstract com.google.android.gms.dynamic.IObjectWrapper zzh(java.lang.String)
     public abstract com.google.android.gms.dynamic.IObjectWrapper zzi(java.lang.String)
     public abstract com.google.android.gms.dynamic.IObjectWrapper zzj(int)
 javax.annotation.meta.TypeQualifierNickname
+com.google.android.gms.auth.account.zzc
 kotlinx.coroutines.selects.WhileSelectKt
 com.google.common.collect.AbstractMapBasedMultimap$AsMap$AsMapIterator
 kotlin.math.MathKt
@@ -5819,10 +5887,7 @@ androidx.browser.customtabs.CustomTabColorSchemeParams:
     androidx.browser.customtabs.CustomTabColorSchemeParams withDefaults(androidx.browser.customtabs.CustomTabColorSchemeParams)
 kotlinx.coroutines.AwaitKt$joinAll$1
 androidx.loader.app.LoaderManagerImpl$LoaderInfo:
-    void <init>(int,android.os.Bundle,androidx.loader.content.Loader,androidx.loader.content.Loader)
-    androidx.loader.content.Loader setCallback(androidx.lifecycle.LifecycleOwner,androidx.loader.app.LoaderManager$LoaderCallbacks)
     boolean isCallbackWaitingForData()
-    public void onLoadComplete(androidx.loader.content.Loader,java.lang.Object)
 androidx.core.provider.FontsContractCompat$FontRequestCallback$FontRequestFailReason
 com.google.firebase.R$style
 com.google.common.cache.CacheBuilderSpec$RefreshDurationParser
@@ -5860,6 +5925,13 @@ com.google.common.collect.AbstractRangeSet
 android.support.v4.media.MediaBrowserCompatApi26$SubscriptionCallback
 androidx.room.RoomOpenHelper$Delegate:
     protected void validateMigration(androidx.sqlite.db.SupportSQLiteDatabase)
+com.google.android.gms.auth.api.signin.internal.zbd:
+    private static final com.google.android.gms.auth.api.signin.GoogleSignInOptions zba(com.google.android.gms.common.api.GoogleApiClient)
+    public final android.content.Intent getSignInIntent(com.google.android.gms.common.api.GoogleApiClient)
+    public final com.google.android.gms.auth.api.signin.GoogleSignInResult getSignInResultFromIntent(android.content.Intent)
+    public final com.google.android.gms.common.api.OptionalPendingResult silentSignIn(com.google.android.gms.common.api.GoogleApiClient)
+    public final com.google.android.gms.common.api.PendingResult revokeAccess(com.google.android.gms.common.api.GoogleApiClient)
+    public final com.google.android.gms.common.api.PendingResult signOut(com.google.android.gms.common.api.GoogleApiClient)
 com.google.common.collect.RegularImmutableTable$CellSet
 io.flutter.embedding.android.FlutterTextureView:
     private static final java.lang.String TAG
@@ -5873,11 +5945,10 @@ com.google.android.gms.common.zzp
 kotlin.jvm.internal.markers.KMutableIterable
 com.google.common.collect.Sets$5
 com.google.android.gms.actions.NoteIntents
+com.google.android.gms.auth.api.accounttransfer.zzd
 com.google.common.collect.RegularImmutableAsList
 kotlinx.coroutines.selects.SelectClause2
 androidx.loader.app.LoaderManagerImpl:
-    private androidx.loader.content.Loader createAndInstallLoader(int,android.os.Bundle,androidx.loader.app.LoaderManager$LoaderCallbacks,androidx.loader.content.Loader)
-    public androidx.loader.content.Loader initLoader(int,android.os.Bundle,androidx.loader.app.LoaderManager$LoaderCallbacks)
     public androidx.loader.content.Loader restartLoader(int,android.os.Bundle,androidx.loader.app.LoaderManager$LoaderCallbacks)
     public void destroyLoader(int)
     public androidx.loader.content.Loader getLoader(int)
@@ -5950,6 +6021,7 @@ androidx.core.content.res.GradientColorInflaterCompat:
     private static final int TILE_MODE_REPEAT
     private static final int TILE_MODE_MIRROR
 com.google.common.graph.DirectedGraphConnections$2
+com.google.android.gms.auth.api.accounttransfer.zzu
 com.google.common.base.Suppliers
 kotlin.sequences.MergingSequence
 kotlin.internal.ContractsDsl
@@ -6010,6 +6082,7 @@ androidx.core.internal.view.SupportMenuItem:
     public static final int SHOW_AS_ACTION_WITH_TEXT
     public static final int SHOW_AS_ACTION_COLLAPSE_ACTION_VIEW
 net.eighttechnologes.ict4farmers.R$dimen
+com.google.android.gms.internal.auth-api.zbah
 com.google.common.base.Optional
 com.google.common.primitives.ImmutableIntArray$AsList
 com.google.common.collect.ArrayListMultimap
@@ -6102,6 +6175,7 @@ androidx.core.app.SharedElementCallback:
     private static final java.lang.String BUNDLE_SNAPSHOT_IMAGE_MATRIX
 androidx.core.graphics.drawable.IconCompat$IconType
 kotlinx.coroutines.sync.SemaphoreImpl$onCancellationRelease$1
+com.google.android.gms.auth.api.identity.SignInCredential
 androidx.work.impl.model.DependencyDao:
     public abstract java.util.List getPrerequisites(java.lang.String)
 androidx.swiperefreshlayout.R$id
@@ -6117,6 +6191,11 @@ android.support.v4.media.MediaMetadataCompatApi21:
     public static java.lang.CharSequence getText(java.lang.Object,java.lang.String)
     public static java.lang.Object createFromParcel(android.os.Parcel)
     private void <init>()
+com.google.android.gms.auth.api.credentials.CredentialPickerConfig$Builder:
+    public com.google.android.gms.auth.api.credentials.CredentialPickerConfig$Builder setForNewAccount(boolean)
+    public com.google.android.gms.auth.api.credentials.CredentialPickerConfig$Builder setPrompt(int)
+    public com.google.android.gms.auth.api.credentials.CredentialPickerConfig$Builder setShowAddAccountButton(boolean)
+    public com.google.android.gms.auth.api.credentials.CredentialPickerConfig$Builder setShowCancelButton(boolean)
 com.onesignal.OneSignalAPIClient:
     public abstract void put(java.lang.String,org.json.JSONObject,com.onesignal.OneSignalApiResponseHandler)
     public abstract void get(java.lang.String,com.onesignal.OneSignalApiResponseHandler,java.lang.String)
@@ -6125,7 +6204,6 @@ com.onesignal.OneSignalAPIClient:
     public abstract void postSync(java.lang.String,org.json.JSONObject,com.onesignal.OneSignalApiResponseHandler)
 kotlinx.coroutines.internal.ExceptionsConstuctorKt$safeCtor$1
 com.google.android.gms.base.R$color
-com.google.android.gms.auth.api.signin.internal.zaa
 com.onesignal.flutter.R$id
 com.google.common.collect.Synchronized$SynchronizedAsMapEntries$1
 kotlin.UByte$Companion
@@ -6292,7 +6370,6 @@ kotlinx.coroutines.channels.ChannelsKt__DeprecatedKt$consumesAll$1
 io.flutter.plugins.imagepicker.ImagePickerPlugin$ActivityState:
     void <init>(io.flutter.plugins.imagepicker.ImagePickerPlugin,io.flutter.plugins.imagepicker.ImagePickerDelegate,android.app.Activity)
 com.google.common.util.concurrent.MoreExecutors$ScheduledListeningDecorator$ListenableScheduledTask
-com.google.android.gms.auth.api.signin.internal.HashAccumulator
 com.google.android.gms.internal.base.zah
 com.google.common.collect.RegularImmutableMap$KeySet
 androidx.core.app.NotificationCompat$StreamType
@@ -6333,6 +6410,7 @@ androidx.appcompat.widget.AppCompatRadioButton:
     public void <init>(android.content.Context)
 com.google.common.collect.Lists$TransformingRandomAccessList$1
 com.google.common.collect.Synchronized$SynchronizedSortedMap
+com.google.android.gms.auth.api.identity.BeginSignInRequest$PasswordRequestOptions
 com.google.common.collect.ObjectArrays
 androidx.vectordrawable.R
 com.google.errorprone.annotations.CompatibleWith
@@ -6362,6 +6440,7 @@ androidx.activity.R$attr
 com.google.common.io.BaseEncoding$Base64Encoding
 androidx.browser.trusted.splashscreens.SplashScreenVersion
 androidx.browser.browseractions.BrowserServiceFileProvider
+com.google.android.gms.internal.auth-api.zbj
 com.google.android.gms.common.config.zzc
 kotlinx.coroutines.internal.LockFreeTaskQueueCore:
     public final java.util.List map(kotlin.jvm.functions.Function1)
@@ -6467,6 +6546,7 @@ androidx.appcompat.app.AppCompatDelegateImpl$Api21Impl:
 androidx.core.hardware.display.DisplayManagerCompat
 kotlin.time.DurationUnitKt__DurationUnitKt$WhenMappings
 kotlin.UShortArray$Iterator
+com.google.android.gms.auth.api.accounttransfer.zzm
 com.google.android.gms.common.GoogleApiAvailability:
     public static final varargs com.google.android.gms.tasks.Task zai(com.google.android.gms.common.api.HasApiKey,com.google.android.gms.common.api.HasApiKey[])
     public int getClientVersion(android.content.Context)
@@ -6545,6 +6625,7 @@ io.flutter.plugins.pathprovider.R
 kotlinx.coroutines.CoroutineExceptionHandler$DefaultImpls
 android.support.v4.media.MediaBrowserCompat$SubscriptionCallback$StubApi21
 com.google.common.util.concurrent.Futures$NonCancellationPropagatingFuture
+com.google.android.gms.auth.api.R$drawable
 kotlinx.coroutines.flow.FlowKt:
     public static final kotlinx.coroutines.flow.Flow asFlow(kotlin.jvm.functions.Function0)
     public static final kotlinx.coroutines.flow.Flow asFlow(kotlin.jvm.functions.Function1)
@@ -6729,6 +6810,7 @@ com.google.common.primitives.UnsignedBytes$LexicographicalComparatorHolder
 kotlin.RequiresOptIn$Level
 com.google.android.gms.common.images.zaf
 com.google.common.base.Verify
+com.google.android.gms.auth.api.credentials.CredentialRequest
 androidx.fragment.app.FragmentTabHost$TabInfo
 com.onesignal.OSNotificationWorkManager:
     void <init>()
@@ -6747,7 +6829,6 @@ androidx.core.view.ViewCompat$AccessibilityPaneVisibilityManager:
     private void unregisterForLayoutCallback(android.view.View)
     void addAccessibilityPane(android.view.View)
     void removeAccessibilityPane(android.view.View)
-androidx.loader.content.ModernAsyncTask$InternalHandler
 com.google.firebase.components.Component$Builder:
     public com.google.firebase.components.Component$Builder eagerInDefaultApp()
     public com.google.firebase.components.Component$Builder publishes(java.lang.Class)
@@ -6774,6 +6855,12 @@ kotlin.sequences.SequencesKt__SequencesKt:
     public static final kotlin.sequences.Sequence generateSequence(java.lang.Object,kotlin.jvm.functions.Function1)
     public static final kotlin.sequences.Sequence generateSequence(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1)
     public void <init>()
+com.google.android.gms.auth.api.phone.SmsRetriever:
+    public static com.google.android.gms.auth.api.phone.SmsRetrieverClient getClient(android.content.Context)
+    private void <init>()
+    public static final java.lang.String SMS_RETRIEVED_ACTION
+    public static final java.lang.String EXTRA_SMS_MESSAGE
+    public static final java.lang.String EXTRA_STATUS
 androidx.appcompat.view.ActionMode:
     public boolean isUiFocusable()
 com.google.android.gms.maps.zzap
@@ -6884,7 +6971,6 @@ io.flutter.embedding.engine.plugins.PluginRegistry:
 androidx.appcompat.widget.AppCompatImageHelper:
     void setInternalImageTint(android.content.res.ColorStateList)
 kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt$createCoroutineFromSuspendFunction$1
-androidx.loader.app.LoaderManager$LoaderCallbacks
 com.google.android.gms.maps.model.CircleOptions:
     public com.google.android.gms.maps.model.CircleOptions strokePattern(java.util.List)
 com.google.common.cache.CacheLoader$1$1
@@ -6904,6 +6990,7 @@ androidx.cardview.R$attr:
 com.google.common.io.FileBackedOutputStream
 android.support.v4.media.session.MediaSessionCompatApi21
 com.google.common.io.LineProcessor
+com.google.android.gms.auth.api.accounttransfer.DeviceMetaData
 com.google.common.util.concurrent.Striped$4
 androidx.work.WorkerParameters:
     public java.util.Set getTags()
@@ -6928,12 +7015,16 @@ com.google.common.collect.Lists$TransformingSequentialList
 kotlinx.coroutines.debug.internal.DebugProbesImpl$startWeakRefCleanerThread$1
 androidx.core.util.PatternsCompat
 javax.annotation.meta.TypeQualifierValidator
+com.google.android.gms.auth.api.identity.zbb
 androidx.concurrent.futures.AbstractResolvableFuture$Waiter
 com.google.common.io.CharSequenceReader
 kotlinx.coroutines.channels.SendElementWithUndeliveredHandler
 androidx.vectordrawable.R$string
 com.google.android.gms.common.api.internal.IStatusCallback$Stub
 com.google.common.base.FinalizableReference
+com.google.android.gms.auth.api.proxy.ProxyApi:
+    public abstract com.google.android.gms.common.api.PendingResult performProxyRequest(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.auth.api.proxy.ProxyRequest)
+    public abstract com.google.android.gms.common.api.PendingResult getSpatulaHeader(com.google.android.gms.common.api.GoogleApiClient)
 io.flutter.plugins.pathprovider.PathProviderPlugin:
     public static void registerWith(io.flutter.plugin.common.PluginRegistry$Registrar)
     static final java.lang.String TAG
@@ -6974,6 +7065,7 @@ kotlinx.coroutines.channels.ChannelsKt__DeprecatedKt$take$1
 androidx.core.app.BundleCompat$BundleCompatBaseImpl:
     private void <init>()
     private static final java.lang.String TAG
+com.google.android.gms.auth.api.identity.SignInPassword
 kotlin.reflect.ParameterizedTypeImpl
 kotlinx.coroutines.flow.FlowKt__BuildersKt$asFlow$$inlined$unsafeFlow$10
 kotlin.sequences.EmptySequence
@@ -7028,6 +7120,7 @@ com.google.android.gms.internal.maps.zzab:
     public final boolean zzD()
     public final boolean zzE()
 kotlin.reflect.TypesJVMKt$WhenMappings
+com.google.android.gms.auth.account.WorkAccount
 kotlin.jvm.internal.PropertyReference1
 kotlinx.coroutines.internal.Concurrent_commonKt
 kotlin.UNumbersKt
@@ -7044,8 +7137,10 @@ com.google.common.util.concurrent.ForwardingLock
 com.google.common.collect.FilteredEntryMultimap
 com.google.android.gms.internal.location.zzu
 com.google.android.gms.common.api.BatchResultToken
+com.google.android.gms.internal.auth.zzc
 kotlin.properties.Delegates$observable$1
 androidx.core.R$string
+androidx.fragment.app.FragmentResultOwner
 android.support.v4.media.MediaBrowserCompat$MediaItem:
     public static android.support.v4.media.MediaBrowserCompat$MediaItem fromMediaItem(java.lang.Object)
     public static java.util.List fromMediaItemList(java.util.List)
@@ -7057,7 +7152,6 @@ android.support.v4.media.MediaBrowserCompat$MediaItem:
     public java.lang.String getMediaId()
     public static final int FLAG_BROWSABLE
     public static final int FLAG_PLAYABLE
-androidx.fragment.app.FragmentResultOwner
 com.google.android.gms.common.server.response.FastJsonResponse
 com.onesignal.shortcutbadger.impl.NovaHomeBadger:
     private static final java.lang.String CONTENT_URI
@@ -7074,6 +7168,7 @@ androidx.core.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityAction
     private static final java.lang.String TAG
 kotlinx.coroutines.GlobalScope
 com.google.android.gms.common.data.DataBufferUtils
+com.jaumard.smsautofill.R
 androidx.legacy.coreui.R$attr
 kotlinx.coroutines.LazyDeferredCoroutine
 com.google.android.gms.maps.model.StreetViewPanoramaLocation
@@ -7081,6 +7176,7 @@ kotlinx.coroutines.debug.internal.ConcurrentWeakMap$keys$1
 kotlin.io.ConsoleKt
 androidx.core.content.LocusIdCompat$Api29Impl
 androidx.core.util.Pools$Pool
+com.google.android.gms.auth.api.R$layout
 dev.fluttercommunity.plus.connectivity.Connectivity:
     static final java.lang.String CONNECTIVITY_NONE
     static final java.lang.String CONNECTIVITY_WIFI
@@ -7090,6 +7186,7 @@ dev.fluttercommunity.plus.connectivity.Connectivity:
 android.support.v4.media.session.MediaControllerCompat$MediaControllerImplBase
 androidx.annotation.RequiresPermission
 com.google.common.math.Quantiles$Scale
+com.google.android.gms.internal.auth.zzt
 kotlinx.coroutines.sync.MutexImpl$TryLockDesc$PrepareOp
 androidx.core.widget.NestedScrollView:
     public void <init>(android.content.Context)
@@ -7136,6 +7233,7 @@ androidx.lifecycle.viewmodel.R
 com.google.android.gms.common.util.RetainForClient
 kotlinx.coroutines.internal.SegmentOrClosed
 com.google.common.collect.Multimaps$MapMultimap$1$1
+com.google.android.gms.auth.api.phone.R
 kotlinx.coroutines.selects.UnbiasedSelectBuilderImpl$invoke$3
 com.google.common.graph.AbstractNetwork$1$1
 kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$2
@@ -7163,6 +7261,10 @@ kotlin.jvm.internal.TypeParameterReference
 androidx.core.content.ContextCompat$Api16Impl:
     private void <init>()
 kotlinx.coroutines.flow.FlowKt__ShareKt
+com.jaumard.smsautofill.AppSignatureHelper:
+    private static final java.lang.String HASH_TYPE
+    public static final int NUM_HASHED_BYTES
+    public static final int NUM_BASE64_CHAR
 com.google.common.base.Enums$StringConverter
 androidx.core.provider.SelfDestructiveThread$1
 kotlin.jvm.internal.markers.KMutableListIterator
@@ -7201,6 +7303,7 @@ com.google.firebase.messaging.R$string
 com.google.android.gms.common.internal.zal:
     public void <init>()
 com.google.android.gms.internal.common.zzq
+com.google.android.gms.internal.auth.zzap
 com.google.android.gms.common.api.internal.LifecycleCallback:
     public static com.google.android.gms.common.api.internal.LifecycleFragment getFragment(android.content.ContextWrapper)
 com.google.common.base.Function
@@ -7242,9 +7345,11 @@ com.google.android.gms.internal.location.zzal:
     public final void zza(com.google.android.gms.internal.location.zzad)
 kotlin.ULongArray
 net.eighttechnologes.ict4farmers.R$anim
+com.google.android.gms.internal.auth-api.zbak
 com.google.android.gms.maps.model.StreetViewPanoramaOrientation
 io.flutter.plugin.common.FlutterException:
     private static final java.lang.String TAG
+com.google.android.gms.auth.api.credentials.IdentityProviders
 com.google.common.cache.LocalCache$EntryFactory$2
 kotlin.jvm.functions.Function20:
     public abstract java.lang.Object invoke(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)
@@ -7388,6 +7493,8 @@ com.google.common.collect.Maps$1
 com.google.common.cache.LocalCache$WeightedStrongValueReference
 androidx.browser.browseractions.BrowserActionsIntent$Builder
 com.google.common.util.concurrent.Striped
+com.google.android.gms.auth.api.credentials.Credential$Builder
+com.google.android.gms.internal.auth-api.zbi
 com.google.android.gms.maps.internal.zzg:
     public final int getMapType()
     public final android.location.Location getMyLocation()
@@ -7466,6 +7573,7 @@ com.google.android.gms.common.config.zzd
 kotlinx.coroutines.ResumeOnCompletion
 kotlinx.coroutines.flow.FlowKt__MergeKt
 kotlinx.coroutines.channels.ChannelsKt__DeprecatedKt$elementAt$1
+com.google.android.gms.auth.api.accounttransfer.zzn
 com.google.common.collect.Iterators$5
 androidx.core.view.WindowInsetsCompat$Impl:
     androidx.core.graphics.Insets getInsetsIgnoringVisibility(int)
@@ -7558,9 +7666,9 @@ kotlinx.coroutines.internal.MainDispatchersKt:
     private static synthetic void getSUPPORT_MISSING$annotations()
     private static final java.lang.String FAST_SERVICE_LOADER_PROPERTY_NAME
 com.google.android.gms.common.internal.LibraryVersion
+com.google.android.gms.maps.StreetViewPanoramaView
 com.google.android.gms.location.SettingsClient:
     public void <init>(android.app.Activity)
-com.google.android.gms.maps.StreetViewPanoramaView
 androidx.appcompat.widget.ActivityChooserModel$OnChooseActivityListener
 kotlin.jvm.internal.FunctionImpl
 com.google.firebase.iid.zzy:
@@ -7568,6 +7676,7 @@ com.google.firebase.iid.zzy:
 kotlin.NumbersKt__NumbersJVMKt
 com.google.common.io.FileBackedOutputStream$2
 androidx.core.hardware.fingerprint.FingerprintManagerCompat$CryptoObject
+com.google.android.gms.auth.api.credentials.CredentialRequestResponse
 android.support.v4.media.MediaMetadataCompat:
     void <init>(android.os.Bundle)
     public boolean containsKey(java.lang.String)
@@ -7636,6 +7745,7 @@ androidx.core.view.ViewGroupCompat:
     public static final int LAYOUT_MODE_CLIP_BOUNDS
     public static final int LAYOUT_MODE_OPTICAL_BOUNDS
 androidx.core.app.NotificationCompat$CarExtender
+com.google.android.gms.internal.auth-api.zbk
 org.checkerframework.checker.nullness.compatqual.KeyForDecl
 com.google.common.collect.AbstractMapBasedMultimap$WrappedList
 kotlinx.coroutines.android.HandlerDispatcherKt$awaitFrame$lambda-3$$inlined$Runnable$1
@@ -7663,7 +7773,6 @@ com.google.android.gms.common.GooglePlayServicesUtilLight:
     void <init>()
     public static void enableUsingApkIndependentContext()
     public static void ensurePlayServicesAvailable(android.content.Context,int)
-    public static boolean honorsDebugCertificates(android.content.Context)
     public static boolean isGooglePlayServicesUid(android.content.Context,int)
     public static boolean isPlayStorePossiblyUpdating(android.content.Context,int)
     public static boolean isSidewinderDevice(android.content.Context)
@@ -7793,8 +7902,6 @@ androidx.appcompat.widget.ListPopupWindow:
     public static final int INPUT_METHOD_FROM_FOCUSABLE
     public static final int INPUT_METHOD_NEEDED
     public static final int INPUT_METHOD_NOT_NEEDED
-com.google.android.gms.common.api.GoogleApi$Settings$Builder:
-    public com.google.android.gms.common.api.GoogleApi$Settings$Builder setLooper(android.os.Looper)
 androidx.appcompat.widget.ActivityChooserModel$HistoricalRecord
 kotlin.jvm.JvmDefaultWithoutCompatibility
 androidx.browser.trusted.sharing.ShareTarget$EncodingType
@@ -7921,7 +8028,6 @@ androidx.fragment.app.DialogFragment:
     private static final java.lang.String SAVED_SHOWS_DIALOG
     private static final java.lang.String SAVED_BACK_STACK_ID
     private static final java.lang.String SAVED_INTERNAL_DIALOG_SHOWING
-com.google.android.gms.auth.api.signin.zaa
 com.google.android.gms.maps.zzaq
 kotlinx.coroutines.channels.ArrayBroadcastChannel
 kotlinx.coroutines.flow.SharedFlowImpl$Emitter
@@ -8228,9 +8334,12 @@ com.google.common.base.CharMatcher$RangesMatcher
 com.google.j2objc.annotations.AutoreleasePool
 com.onesignal.BuildConfig
 kotlin.text.MatcherMatchResult$groups$1
+com.google.android.gms.auth.api.R$animator
+com.google.android.gms.auth.api.identity.zba
 com.google.common.collect.AbstractMapBasedMultimap$KeySet$1
 androidx.asynclayoutinflater.view.AsyncLayoutInflater$InflateRequest
-com.google.android.gms.common.util.UidVerifier
+com.google.android.gms.common.util.UidVerifier:
+    private void <init>()
 com.google.common.reflect.Types$JavaVersion
 kotlin.collections.jdk8.CollectionsJDK8Kt
 kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt:
@@ -8280,6 +8389,7 @@ com.google.android.gms.internal.maps.zzx:
     public abstract boolean zzG()
 kotlinx.coroutines.flow.StartedLazily
 androidx.appcompat.resources.R
+com.google.android.gms.internal.auth.zzs
 androidx.core.telephony.TelephonyManagerCompat$Api26Impl
 com.google.android.gms.maps.internal.zzh
 androidx.appcompat.app.ActionBarDrawerToggle$Delegate
@@ -8287,6 +8397,8 @@ android.support.v4.media.session.PlaybackStateCompat$CustomAction$Builder
 androidx.appcompat.widget.ButtonBarLayout:
     private static final int PEEK_BUTTON_DP
 com.google.common.cache.LocalCache$WriteQueue
+androidx.appcompat.widget.RtlSpacingHelper:
+    public static final int UNDEFINED
 androidx.browser.customtabs.CustomTabsIntent$Builder:
     public void <init>()
     public androidx.browser.customtabs.CustomTabsIntent$Builder setPendingSession(androidx.browser.customtabs.CustomTabsSession$PendingSession)
@@ -8312,13 +8424,12 @@ androidx.browser.customtabs.CustomTabsIntent$Builder:
     public androidx.browser.customtabs.CustomTabsIntent$Builder setColorScheme(int)
     public androidx.browser.customtabs.CustomTabsIntent$Builder setColorSchemeParams(int,androidx.browser.customtabs.CustomTabColorSchemeParams)
     public androidx.browser.customtabs.CustomTabsIntent$Builder setDefaultColorSchemeParams(androidx.browser.customtabs.CustomTabColorSchemeParams)
-androidx.appcompat.widget.RtlSpacingHelper:
-    public static final int UNDEFINED
 com.onesignal.UserStateEmail:
     boolean isSubscribed()
     private static final java.lang.String EMAIL
 com.google.common.util.concurrent.AbstractScheduledService$ServiceDelegate$2
 com.google.common.collect.TransformedIterator
+com.google.android.gms.auth.GoogleAuthUtil
 androidx.print.PrintHelper$PrintBitmapAdapter
 kotlin.jvm.internal.MutablePropertyReference1Impl
 kotlin.sequences.SequencesKt___SequencesKt$minus$2$iterator$1
@@ -8342,7 +8453,15 @@ androidx.media.MediaBrowserServiceCompat$ConnectionRecord$1
 kotlin.reflect.KProperty
 androidx.appcompat.widget.AppCompatButton:
     public void <init>(android.content.Context)
-com.google.android.gms.common.logging.Logger
+com.google.android.gms.common.logging.Logger:
+    public java.lang.String getTag()
+    public varargs void e(java.lang.String,java.lang.Throwable,java.lang.Object[])
+    public varargs void i(java.lang.String,java.lang.Object[])
+    public varargs void v(java.lang.String,java.lang.Object[])
+    public varargs void v(java.lang.String,java.lang.Throwable,java.lang.Object[])
+    public varargs void w(java.lang.String,java.lang.Object[])
+    public void wtf(java.lang.Throwable)
+    public varargs void wtf(java.lang.String,java.lang.Throwable,java.lang.Object[])
 com.google.common.base.Platform$JdkPatternCompiler
 kotlinx.coroutines.channels.ProducerScope
 com.google.android.gms.maps.internal.zzy
@@ -8386,8 +8505,8 @@ androidx.core.app.NotificationManagerCompat:
     public static final int IMPORTANCE_HIGH
     public static final int IMPORTANCE_MAX
 com.google.common.base.FunctionalEquivalence
-android.support.customtabs.IPostMessageService
 androidx.appcompat.app.NavItemSelectedListener
+android.support.customtabs.IPostMessageService
 androidx.core.app.NotificationManagerCompat$CancelTask:
     void <init>(java.lang.String)
 androidx.core.view.WindowInsetsAnimationControllerCompat
@@ -8439,6 +8558,7 @@ com.google.j2objc.annotations.RetainedLocalRef
 kotlin.properties.Delegates
 com.google.common.collect.Maps$TransformedEntriesSortedMap
 com.google.android.gms.location.ActivityTransitionEvent
+com.google.android.gms.auth.api.identity.GetSignInIntentRequest
 io.flutter.view.FlutterView$ViewportMetrics
 com.google.common.util.concurrent.Monitor$Guard
 androidx.core.view.accessibility.AccessibilityManagerCompat$TouchExplorationStateChangeListenerWrapper
@@ -8512,6 +8632,7 @@ io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterAssets:
     public abstract java.lang.String getAssetFilePathByName(java.lang.String,java.lang.String)
     public abstract java.lang.String getAssetFilePathBySubpath(java.lang.String)
     public abstract java.lang.String getAssetFilePathBySubpath(java.lang.String,java.lang.String)
+kotlinx.coroutines.selects.SelectBuilderImpl$DisposeNode
 com.google.firebase.iid.FirebaseInstanceId:
     public java.lang.String getId()
     public long getCreationTime()
@@ -8522,7 +8643,6 @@ com.google.firebase.iid.FirebaseInstanceId:
     public final synchronized com.google.android.gms.tasks.Task zza(java.lang.String)
     public final boolean zzq()
     public final void zzb(boolean)
-kotlinx.coroutines.selects.SelectBuilderImpl$DisposeNode
 com.google.common.escape.ArrayBasedCharEscaper
 androidx.activity.OnBackPressedDispatcher:
     public void <init>()
@@ -8558,8 +8678,8 @@ android.support.v4.media.session.MediaControllerCompatApi21$PlaybackInfo:
     private static final int FLAG_SCO
     private static final int STREAM_BLUETOOTH_SCO
     private static final int STREAM_SYSTEM_ENFORCED
-io.flutter.BuildConfig
 com.google.android.gms.common.internal.service.zag
+io.flutter.BuildConfig
 javax.annotation.Nonnull$Checker
 kotlin.NumbersKt__BigDecimalsKt
 kotlinx.coroutines.EventLoopImplBase$DelayedRunnableTask
@@ -8588,6 +8708,7 @@ com.google.firebase.iid.zzaz:
     final synchronized com.google.android.gms.tasks.Task zza(java.lang.String)
 com.google.common.base.Predicates
 com.google.common.reflect.ClassPath$Scanner
+com.google.android.gms.internal.auth-api.zbaj
 com.google.common.util.concurrent.WrappingScheduledExecutorService
 com.google.common.cache.ForwardingLoadingCache
 androidx.room.R
@@ -8689,6 +8810,7 @@ com.google.common.collect.LinkedHashMultimapGwtSerializationDependencies
 com.google.android.gms.common.util.ProcessUtils:
     private void <init>()
 com.google.common.collect.ImmutableMultiset$1
+com.google.android.gms.internal.auth.zzb
 kotlinx.coroutines.flow.internal.StackFrameContinuation
 com.google.common.reflect.TypeResolver$1
 io.flutter.plugins.urllauncher.R$color
@@ -8698,6 +8820,9 @@ androidx.core.location.LocationManagerCompat$PreRGnssStatusTransport$2
 com.onesignal.outcomes.data.OutcomeEventsTable
 kotlinx.coroutines.channels.ChannelsKt__Channels_commonKt$toList$1
 com.google.android.gms.internal.common.zzr
+com.google.android.gms.internal.auth.zzao:
+    public final void zza(com.google.android.gms.internal.auth.zzal,com.google.android.gms.auth.api.proxy.ProxyRequest)
+    public final void zza(com.google.android.gms.internal.auth.zzal)
 com.google.android.gms.common.GooglePlayServicesRepairableException
 com.google.android.gms.common.api.Response:
     protected void <init>(com.google.android.gms.common.api.Result)
@@ -8719,44 +8844,20 @@ kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsKt:
 net.jonhanson.flutter_native_splash.R$dimen
 com.google.common.util.concurrent.Striped$WeakSafeCondition
 androidx.loader.content.Loader:
-    public void <init>(android.content.Context)
-    public void deliverResult(java.lang.Object)
-    public void deliverCancellation()
     public android.content.Context getContext()
     public int getId()
-    public void registerListener(int,androidx.loader.content.Loader$OnLoadCompleteListener)
     public void registerOnLoadCanceledListener(androidx.loader.content.Loader$OnLoadCanceledListener)
     public void unregisterOnLoadCanceledListener(androidx.loader.content.Loader$OnLoadCanceledListener)
     public boolean isStarted()
-    public boolean isAbandoned()
     public boolean isReset()
-    protected void onStartLoading()
-    protected boolean onCancelLoad()
-    public void forceLoad()
-    protected void onForceLoad()
-    protected void onStopLoading()
-    protected void onAbandon()
-    protected void onReset()
     public boolean takeContentChanged()
-    public void commitContentChanged()
-    public void rollbackContentChanged()
-    public void onContentChanged()
-    public java.lang.String toString()
-    int mId
-    androidx.loader.content.Loader$OnLoadCompleteListener mListener
-    androidx.loader.content.Loader$OnLoadCanceledListener mOnLoadCanceledListener
-    android.content.Context mContext
-    boolean mStarted
-    boolean mAbandoned
-    boolean mReset
-    boolean mContentChanged
-    boolean mProcessingChange
 com.google.common.util.concurrent.AbstractService
 com.google.common.base.Defaults
 com.google.common.util.concurrent.Futures$InCompletionOrderFuture
 kotlin.collections.AbstractList$Companion
 kotlin.DeepRecursiveScope
-com.google.android.gms.auth.api.signin.GoogleSignInOptions
+com.google.android.gms.auth.api.signin.GoogleSignInOptions:
+    public com.google.android.gms.common.api.Scope[] getScopeArray()
 kotlin.collections.CollectionsKt__MutableCollectionsKt:
     private static final boolean remove(java.util.Collection,java.lang.Object)
     private static final boolean removeAll(java.util.Collection,java.util.Collection)
@@ -8835,6 +8936,7 @@ androidx.appcompat.app.AlertController$RecycleListView:
     public void <init>(android.content.Context)
 kotlin.sequences.TransformingIndexedSequence$iterator$1
 com.google.common.collect.CartesianList$1
+com.google.android.gms.auth.api.accounttransfer.zzo
 com.google.common.util.concurrent.AbstractIdleService
 androidx.swiperefreshlayout.widget.SwipeRefreshLayout$3
 com.google.common.collect.Maps$EntryFunction$1
@@ -8901,12 +9003,12 @@ com.google.android.gms.common.wrappers.PackageManagerWrapper:
     public int checkPermission(java.lang.String,java.lang.String)
     public androidx.core.util.Pair getApplicationLabelAndIcon(java.lang.String)
     public boolean isCallerInstantApp()
-    public final boolean zza(int,java.lang.String)
 kotlin.collections.FloatIterator
 androidx.activity.result.contract.ActivityResultContracts$OpenDocumentTree
 com.google.android.gms.common.internal.safeparcel.SafeParcelable$Class
 com.google.firebase.iid.zzx:
     public final java.lang.String getId()
+com.google.android.gms.auth.api.accounttransfer.AccountTransferClient$zza
 com.google.common.hash.AbstractNonStreamingHashFunction$ExposedByteArrayOutputStream
 com.google.android.gms.dynamic.FragmentWrapper
 kotlin.comparisons.UComparisonsKt
@@ -8971,11 +9073,35 @@ androidx.core.widget.ListViewCompat:
 com.google.android.gms.common.FirstPartyScopes
 com.google.common.io.LittleEndianDataOutputStream
 androidx.core.view.ViewCompat$FocusRealDirection
+com.google.android.gms.internal.auth-api.zbl:
+    public final com.google.android.gms.common.api.PendingResult delete(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.auth.api.credentials.Credential)
+    public final com.google.android.gms.common.api.PendingResult disableAutoSignIn(com.google.android.gms.common.api.GoogleApiClient)
+    public final com.google.android.gms.common.api.PendingResult request(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.auth.api.credentials.CredentialRequest)
+    public final com.google.android.gms.common.api.PendingResult save(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.auth.api.credentials.Credential)
 com.google.common.base.FinalizableReferenceQueue$SystemLoader
 com.google.android.gms.common.zab
 com.google.android.gms.common.config.zza
 androidx.browser.browseractions.BrowserActionsIntent$BrowserActionsFallDialogListener
-com.google.android.gms.common.internal.GmsLogger
+com.google.android.gms.common.internal.GmsLogger:
+    private final java.lang.String zza(java.lang.String)
+    private final varargs java.lang.String zzb(java.lang.String,java.lang.Object[])
+    public void d(java.lang.String,java.lang.String)
+    public void d(java.lang.String,java.lang.String,java.lang.Throwable)
+    public void e(java.lang.String,java.lang.String)
+    public void e(java.lang.String,java.lang.String,java.lang.Throwable)
+    public varargs void efmt(java.lang.String,java.lang.String,java.lang.Object[])
+    public void i(java.lang.String,java.lang.String)
+    public void i(java.lang.String,java.lang.String,java.lang.Throwable)
+    public void pii(java.lang.String,java.lang.String)
+    public void pii(java.lang.String,java.lang.String,java.lang.Throwable)
+    public void v(java.lang.String,java.lang.String)
+    public void v(java.lang.String,java.lang.String,java.lang.Throwable)
+    public void w(java.lang.String,java.lang.String)
+    public void w(java.lang.String,java.lang.String,java.lang.Throwable)
+    public varargs void wfmt(java.lang.String,java.lang.String,java.lang.Object[])
+    public void wtf(java.lang.String,java.lang.String,java.lang.Throwable)
+    public boolean canLog(int)
+    public boolean canLogPii()
 kotlinx.coroutines.channels.AbstractChannel$Itr:
     public static final synthetic java.lang.Object access$hasNextSuspend(kotlinx.coroutines.channels.AbstractChannel$Itr,kotlin.coroutines.Continuation)
     public synthetic java.lang.Object next(kotlin.coroutines.Continuation)
@@ -8991,6 +9117,7 @@ com.google.j2objc.annotations.WeakOuter
 org.intellij.lang.annotations.JdkConstants$TitledBorderTitlePosition
 androidx.fragment.app.Fragment$OnPreAttachedListener:
     synthetic void <init>(androidx.fragment.app.Fragment$1)
+com.jaumard.smsautofill.R$dimen
 com.google.common.collect.MapMakerInternalMap$1
 com.onesignal.influence.domain.OSInfluenceType:
     public static final com.onesignal.influence.domain.OSInfluenceType fromString(java.lang.String)
@@ -9394,7 +9521,6 @@ kotlin.reflect.TypesJVMKt
 androidx.core.app.NotificationChannelGroupCompat
 com.google.common.collect.Multisets$2$1
 com.google.common.collect.Sets$FilteredSet
-androidx.loader.content.ModernAsyncTask$2
 kotlinx.coroutines.flow.FlowKt__TransformKt$mapNotNull$$inlined$unsafeTransform$1
 kotlinx.coroutines.flow.internal.AbortFlowException
 kotlinx.coroutines.DisposeOnCancel
@@ -9450,9 +9576,9 @@ com.google.android.gms.common.internal.safeparcel.SafeParcelWriter:
     public static void writeSparseBooleanArray(android.os.Parcel,int,android.util.SparseBooleanArray,boolean)
     public static void writeSparseIntArray(android.os.Parcel,int,android.util.SparseIntArray,boolean)
     public static void writeSparseLongArray(android.os.Parcel,int,android.util.SparseLongArray,boolean)
-    public static void writeStringArray(android.os.Parcel,int,java.lang.String[],boolean)
     public static void writeStringSparseArray(android.os.Parcel,int,android.util.SparseArray,boolean)
     public static void writeTypedSparseArray(android.os.Parcel,int,android.util.SparseArray,boolean)
+com.google.android.gms.auth.api.proxy.ProxyRequest
 androidx.savedstate.R$id:
     private void <init>()
 androidx.core.view.accessibility.AccessibilityViewCommand$SetSelectionArguments:
@@ -9498,12 +9624,16 @@ kotlinx.coroutines.channels.AbstractChannel:
     public java.lang.Object receiveOrNull(kotlin.coroutines.Continuation)
 com.google.common.reflect.Types$ClassOwnership$1
 kotlin.collections.unsigned.UArraysKt___UArraysKt$withIndex$2
+com.google.android.gms.auth.api.signin.zba:
+    static void <clinit>()
+    static final synthetic int[] zba
 com.google.android.gms.internal.maps.zzc:
     public static java.util.ArrayList zzb(android.os.Parcel)
 kotlin.sequences.SequenceScope
 com.onesignal.R$raw
 com.google.android.gms.common.server.response.zap
 androidx.room.RoomTrackingLiveData$1
+com.google.android.gms.auth.api.proxy.ProxyRequest$Builder
 kotlinx.coroutines.flow.DistinctFlowImpl$collect$$inlined$collect$1
 com.google.common.math.LinearTransformation$NaNLinearTransformation
 com.google.android.gms.common.util.BiConsumer
@@ -9528,6 +9658,7 @@ androidx.vectordrawable.R$integer
 com.google.common.util.concurrent.AggregateFuture$RunningState$1
 com.google.common.collect.ObjectCountHashMap$MapEntry
 kotlinx.coroutines.flow.internal.CombineKt$combineInternal$2$1$invokeSuspend$$inlined$collect$1$1
+com.google.android.gms.auth.api.identity.SavePasswordResult
 androidx.loader.R$layout
 net.eighttechnologes.ict4farmers.R$color
 com.google.common.util.concurrent.AbstractTransformFuture
@@ -9573,8 +9704,6 @@ kotlin.ranges.IntRange:
     public synthetic bridge boolean contains(java.lang.Comparable)
 android.support.v4.media.session.MediaSessionCompat$2
 com.google.errorprone.annotations.MustBeClosed
-androidx.loader.content.Loader$OnLoadCompleteListener:
-    public abstract void onLoadComplete(androidx.loader.content.Loader,java.lang.Object)
 com.google.common.util.concurrent.Striped$PowerOfTwoStriped
 androidx.core.view.GestureDetectorCompat$GestureDetectorCompatImplBase
 kotlin.streams.jdk8.StreamsKt$asSequence$$inlined$Sequence$3
@@ -9630,15 +9759,16 @@ androidx.core.widget.AutoSizeableTextView:
     public abstract int getAutoSizeMinTextSize()
     public abstract int getAutoSizeMaxTextSize()
     public abstract int[] getAutoSizeTextAvailableSizes()
-androidx.browser.browseractions.BrowserActionsIntent
 androidx.appcompat.widget.Toolbar$ExpandedActionViewMenuPresenter:
     public androidx.appcompat.view.menu.MenuView getMenuView(android.view.ViewGroup)
     public void setCallback(androidx.appcompat.view.menu.MenuPresenter$Callback)
     public int getId()
     public android.os.Parcelable onSaveInstanceState()
     public void onRestoreInstanceState(android.os.Parcelable)
+androidx.browser.browseractions.BrowserActionsIntent
 com.google.common.collect.ImmutableRangeMap
 kotlinx.coroutines.channels.AbstractChannel$onReceiveCatching$1
+com.google.android.gms.auth.api.R$attr
 androidx.appcompat.view.menu.MenuHelper
 kotlinx.coroutines.channels.ChannelsKt__DeprecatedKt$filterNot$1
 com.google.common.collect.Collections2$OrderedPermutationIterator
@@ -9656,8 +9786,8 @@ kotlin.collections.AbstractSet
 com.google.android.gms.maps.model.PatternItem:
     static java.util.List zza(java.util.List)
 com.google.android.gms.maps.internal.zzi
-com.google.android.gms.maps.model.StreetViewPanoramaOrientation$Builder
 kotlinx.coroutines.flow.FlowKt__EmittersKt$onCompletion$$inlined$unsafeFlow$1
+com.google.android.gms.maps.model.StreetViewPanoramaOrientation$Builder
 kotlinx.coroutines.flow.FlowKt__DelayKt$sample$2$1$2
 com.google.common.util.concurrent.AbstractScheduledService$Scheduler$2
 com.google.common.collect.ConcurrentHashMultiset$3
@@ -9665,6 +9795,7 @@ com.google.common.util.concurrent.AbstractService$5
 com.google.common.collect.Multisets$ImmutableEntry
 org.intellij.lang.annotations.JdkConstants$InputEventMask
 androidx.appcompat.widget.ActionMenuPresenter$SavedState$1
+com.google.android.gms.auth.api.identity.SignInClient
 com.google.common.reflect.Types$ClassOwnership
 com.google.common.base.CaseFormat$1
 android.support.v4.media.session.MediaSessionCompat$Token:
@@ -9681,6 +9812,7 @@ com.google.android.gms.dynamic.RemoteCreator
 com.google.common.util.concurrent.package-info
 kotlin.jvm.internal.Intrinsics$Kotlin
 com.google.common.collect.MinMaxPriorityQueue
+com.google.android.gms.internal.auth.zze
 com.google.common.util.concurrent.Atomics
 com.google.android.gms.common.api.internal.GoogleServices
 kotlin.ResultKt:
@@ -9700,6 +9832,9 @@ com.google.common.base.Platform$1
 com.google.android.gms.maps.internal.zzz
 androidx.legacy.app.ActionBarDrawerToggle$SlideDrawable
 com.google.common.collect.Hashing
+com.google.android.gms.internal.auth.zzar:
+    public final com.google.android.gms.common.api.PendingResult performProxyRequest(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.auth.api.proxy.ProxyRequest)
+    public final com.google.android.gms.common.api.PendingResult getSpatulaHeader(com.google.android.gms.common.api.GoogleApiClient)
 androidx.appcompat.text.AllCapsTransformationMethod
 android.support.v4.media.MediaBrowserCompat$Subscription
 kotlin.time.AbstractDoubleTimeSource
@@ -9733,7 +9868,6 @@ androidx.annotation.StringRes
 com.onesignal.OSTrigger:
     public org.json.JSONObject toJSONObject()
 com.google.android.gms.common.api.internal.GoogleApiManager:
-    public static void reportSignOut()
     public static com.google.android.gms.common.api.internal.GoogleApiManager zal()
     public final com.google.android.gms.tasks.Task zao(java.lang.Iterable)
     public final com.google.android.gms.tasks.Task zap(com.google.android.gms.common.api.GoogleApi)
@@ -9745,6 +9879,7 @@ kotlinx.coroutines.flow.FlowKt__ZipKt$combineTransform$$inlined$combineTransform
 kotlinx.coroutines.channels.ProducerCoroutine
 kotlin.coroutines.SafeContinuation$Companion
 com.google.android.gms.maps.GoogleMap$OnGroundOverlayClickListener
+com.google.android.gms.internal.auth.zzv
 com.google.common.collect.TreeTraverser
 kotlin.TuplesKt:
     public static final java.util.List toList(kotlin.Pair)
@@ -9760,6 +9895,7 @@ io.flutter.embedding.engine.systemchannels.AccessibilityChannel:
 com.google.common.collect.TreeRangeMap$SubRangeMap$SubRangeMapAsMap$2
 com.google.common.io.LineBuffer
 androidx.work.multiprocess.IListenableWorkerImpl$Default
+com.google.android.gms.auth.api.identity.BeginSignInRequest
 androidx.room.InvalidationTracker$ObservedTableTracker:
     static final int NO_OP
     static final int ADD
@@ -9812,6 +9948,7 @@ kotlinx.coroutines.channels.AbstractChannel$receiveCatching$1
 com.google.common.collect.TreeTraverser$PreOrderIterator
 com.onesignal.BundleCompatFactory:
     void <init>()
+com.jaumard.smsautofill.R$drawable
 androidx.core.view.ViewCompat$Api21Impl:
     private void <init>()
 com.google.common.collect.Tables$TransformedTable$2
@@ -9830,6 +9967,7 @@ com.google.android.gms.maps.model.PolygonOptions:
     public com.google.android.gms.maps.model.PolygonOptions strokeJointType(int)
     public com.google.android.gms.maps.model.PolygonOptions strokePattern(java.util.List)
     public java.util.List getHoles()
+com.jaumard.smsautofill.BuildConfig
 io.flutter.plugins.sharedpreferences.R$drawable
 com.google.common.base.Joiner$3
 androidx.coordinatorlayout.widget.CoordinatorLayout$OnPreDrawListener
@@ -9839,6 +9977,7 @@ androidx.room.Fts4
 androidx.versionedparcelable.ParcelImpl:
     public void <init>(androidx.versionedparcelable.VersionedParcelable)
     public androidx.versionedparcelable.VersionedParcelable getVersionedParcel()
+com.google.android.gms.internal.auth.zzaa
 com.google.common.util.concurrent.CombinedFuture
 com.google.common.collect.AbstractMapBasedMultiset$2
 androidx.appcompat.app.AppCompatDialog:
@@ -9850,6 +9989,7 @@ kotlinx.coroutines.flow.FlowKt__ZipKt$combine$$inlined$combineUnsafe$FlowKt__Zip
 androidx.browser.trusted.TrustedWebActivityServiceConnection$ResultArgs
 io.flutter.view.AccessibilityBridge$SemanticsNode:
     private void log(java.lang.String,boolean)
+com.google.android.gms.auth.api.credentials.CredentialRequest$Builder
 androidx.work.impl.WorkRequestHolder
 androidx.lifecycle.runtime.R
 androidx.core.os.ExecutorCompat:
@@ -9871,7 +10011,6 @@ androidx.fragment.app.FragmentActivity:
     public void setExitSharedElementCallback(androidx.core.app.SharedElementCallback)
     public void supportPostponeEnterTransition()
     public void supportStartPostponedEnterTransition()
-    public androidx.loader.app.LoaderManager getSupportLoaderManager()
     public void startActivityFromFragment(androidx.fragment.app.Fragment,android.content.Intent,int)
     public void startActivityFromFragment(androidx.fragment.app.Fragment,android.content.Intent,int,android.os.Bundle)
     public void startIntentSenderFromFragment(androidx.fragment.app.Fragment,android.content.IntentSender,int,android.content.Intent,int,int,int,android.os.Bundle)
@@ -9887,6 +10026,7 @@ com.onesignal.shortcutbadger.impl.AdwHomeBadger:
     public static final java.lang.String PACKAGENAME
     public static final java.lang.String CLASSNAME
     public static final java.lang.String COUNT
+com.google.android.gms.internal.auth-api.zbam
 com.google.common.math.BigIntegerMath
 androidx.localbroadcastmanager.content.LocalBroadcastManager$1
 com.google.common.collect.RegularImmutableSet
@@ -9917,6 +10057,7 @@ com.onesignal.RootToolsInternalMethods:
 androidx.core.content.pm.ShortcutManagerCompat$ShortcutMatchFlags
 androidx.media.R$color
 com.google.common.collect.Ordering
+com.google.android.gms.auth.api.R$integer
 com.google.common.primitives.ImmutableIntArray$1
 com.google.common.reflect.Element
 net.eighttechnologes.ict4farmers.R$string
@@ -10022,6 +10163,7 @@ com.google.common.io.LineReader$1
 com.google.android.gms.stats.zza
 com.google.common.collect.Multimaps$Keys
 com.google.android.gms.common.api.zah
+com.google.android.gms.auth.api.R$dimen
 androidx.room.Relation
 androidx.asynclayoutinflater.view.AsyncLayoutInflater$InflateThread
 androidx.legacy.content.WakefulBroadcastReceiver:
@@ -10045,6 +10187,7 @@ com.google.common.hash.ChecksumHashFunction$1
 io.flutter.plugins.flutter_plugin_android_lifecycle.R$style
 io.flutter.plugin.common.MethodCall:
     public boolean hasArgument(java.lang.String)
+com.google.android.gms.auth.api.identity.BeginSignInRequest$Builder
 androidx.core.text.TextDirectionHeuristicsCompat$TextDirectionHeuristicLocale
 com.google.common.util.concurrent.ExecutionSequencer
 kotlin.time.DurationJvmKt
@@ -10084,6 +10227,7 @@ com.google.android.gms.maps.model.zzn
 androidx.customview.R$id
 androidx.core.view.ViewCompat$FocusRelativeDirection
 kotlin.reflect.KProperty$DefaultImpls
+com.google.android.gms.auth.account.WorkAccountApi
 com.google.android.gms.common.util.Strings:
     public static java.lang.String emptyToNull(java.lang.String)
     private void <init>()
@@ -10158,6 +10302,7 @@ com.google.common.collect.Multiset$Entry
 kotlin.jvm.internal.Ref$BooleanRef
 android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi26
 com.google.android.gms.common.api.internal.OptionalPendingResultImpl
+com.google.android.gms.internal.auth-api.zbm
 io.flutter.embedding.android.FlutterSplashView:
     public void <init>(android.content.Context,android.util.AttributeSet)
 com.google.common.math.LongMath$1
@@ -10202,6 +10347,8 @@ io.flutter.embedding.engine.plugins.lifecycle.FlutterLifecycleAdapter:
     private static final java.lang.String TAG
 com.google.android.gms.internal.maps.zzd
 com.google.common.util.concurrent.Callables$3
+com.google.android.gms.auth.api.signin.zbb:
+    private void <init>()
 com.google.common.collect.ArrayTable$ColumnMap
 com.google.android.gms.location.DetectedActivity
 com.google.android.gms.common.server.response.zaq
@@ -10253,6 +10400,7 @@ androidx.work.impl.background.systemalarm.CommandHandler:
     private static final java.lang.String KEY_NEEDS_RESCHEDULE
     static final long WORK_PROCESSING_TIME_IN_MS
 kotlinx.coroutines.flow.FlowKt__DelayKt$debounceInternal$1
+com.google.android.gms.auth.api.accounttransfer.AccountTransferClient$zzb
 kotlinx.coroutines.flow.FlowKt__TransformKt$map$$inlined$unsafeTransform$1
 com.google.android.gms.common.internal.BaseGmsClient$BaseConnectionCallbacks:
     public static final int CAUSE_SERVICE_DISCONNECTED
@@ -10300,7 +10448,14 @@ com.google.common.reflect.TypeResolver$TypeTable
 kotlinx.coroutines.flow.FlowKt__ChannelsKt$emitAllImpl$1
 androidx.lifecycle.Transformations$1
 androidx.concurrent.futures.ResolvableFuture
-androidx.core.util.TimeUtils
+com.google.android.gms.auth.api.accounttransfer.zzp
+androidx.core.util.TimeUtils:
+    public static void formatDuration(long,java.lang.StringBuilder)
+    private void <init>()
+    public static final int HUNDRED_DAY_FIELD_LEN
+    private static final int SECONDS_PER_MINUTE
+    private static final int SECONDS_PER_HOUR
+    private static final int SECONDS_PER_DAY
 com.google.android.gms.location.zzam
 kotlin.collections.unsigned.UArraysKt___UArraysKt$withIndex$1
 kotlinx.coroutines.channels.BroadcastChannel
@@ -10342,6 +10497,15 @@ com.google.common.base.Equivalence$Equals
 android.support.v4.media.MediaBrowserCompat
 com.google.common.graph.NetworkConnections
 com.google.common.io.ByteSink$1
+com.google.android.gms.auth.api.signin.GoogleSignInApi:
+    public abstract android.content.Intent getSignInIntent(com.google.android.gms.common.api.GoogleApiClient)
+    public abstract com.google.android.gms.auth.api.signin.GoogleSignInResult getSignInResultFromIntent(android.content.Intent)
+    public abstract com.google.android.gms.common.api.OptionalPendingResult silentSignIn(com.google.android.gms.common.api.GoogleApiClient)
+    public abstract com.google.android.gms.common.api.PendingResult revokeAccess(com.google.android.gms.common.api.GoogleApiClient)
+    public abstract com.google.android.gms.common.api.PendingResult signOut(com.google.android.gms.common.api.GoogleApiClient)
+    public static final java.lang.String EXTRA_SIGN_IN_ACCOUNT
+com.google.android.gms.auth.api.AuthProxy:
+    public void <init>()
 com.onesignal.NotificationPayloadProcessorHMS:
     void <init>()
     public static void processDataMessageReceived(android.content.Context,java.lang.String)
@@ -10350,7 +10514,6 @@ com.google.common.reflect.Types$JavaVersion$4
 kotlinx.coroutines.TimeoutCoroutine
 androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView:
     public void <init>(android.content.Context)
-androidx.loader.content.ModernAsyncTask$1
 androidx.annotation.NavigationRes
 com.google.android.gms.maps.model.LatLngBounds:
     public static com.google.android.gms.maps.model.LatLngBounds$Builder builder()
@@ -10578,15 +10741,22 @@ androidx.lifecycle.runtime.R$id:
 androidx.print.PrintHelper$OnPrintFinishCallback
 androidx.core.text.BidiFormatter
 kotlinx.coroutines.flow.FlowKt__MergeKt$flattenConcat$$inlined$unsafeFlow$1
-androidx.loader.content.AsyncTaskLoader
+androidx.loader.content.AsyncTaskLoader:
+    public void setUpdateThrottle(long)
+    public boolean isLoadInBackgroundCanceled()
+    public void waitForLoader()
+    static final java.lang.String TAG
+    static final boolean DEBUG
 io.flutter.view.FlutterView$SurfaceTextureRegistryEntry$1
 kotlinx.coroutines.CompletionHandler_commonKt
 androidx.room.InvalidationTracker$WeakObserver
 com.google.common.collect.ConcurrentHashMultiset$2
 com.google.common.collect.TreeRangeMap$SubRangeMap$SubRangeMapAsMap$1
 kotlinx.coroutines.flow.FlowKt__ZipKt$combine$6$2
+com.jaumard.smsautofill.R$animator
 androidx.activity.R$string
 com.google.common.graph.Traverser$GraphTraverser$2
+com.google.android.gms.internal.auth.zzd
 com.google.common.collect.Synchronized$SynchronizedAsMapEntries
 com.google.common.collect.Synchronized$SynchronizedAsMap
 com.google.common.base.CharMatcher$BitSetMatcher
@@ -10710,7 +10880,6 @@ androidx.concurrent.futures.AbstractResolvableFuture$Cancellation
 com.google.common.base.Predicates$ContainsPatternFromStringPredicate
 io.flutter.embedding.engine.loader.ResourceExtractor$ExtractTask
 kotlin.properties.ReadWriteProperty
-androidx.loader.content.ModernAsyncTask$Status
 kotlinx.coroutines.channels.ChannelsKt__DeprecatedKt$requireNoNulls$1
 kotlinx.coroutines.flow.CancellableFlow
 com.google.common.util.concurrent.ForwardingExecutorService
@@ -10731,6 +10900,7 @@ androidx.core.app.NotificationCompat$BadgeIconType
 com.google.common.collect.Sets$4$1
 android.support.v4.media.MediaBrowserCompatApi21
 kotlinx.coroutines.selects.SelectKt
+com.google.android.gms.internal.auth.zzu
 androidx.work.impl.utils.package-info
 androidx.appcompat.widget.Toolbar$LayoutParams:
     public void <init>(int,int,int)
@@ -10884,6 +11054,7 @@ androidx.core.content.res.ResourcesCompat:
     private static final java.lang.String TAG
     public static final int ID_NULL
 com.google.common.collect.SortedMultisets
+com.google.android.gms.auth.account.zzg
 com.google.common.collect.UnmodifiableSortedMultiset
 com.google.common.cache.LocalCache$Strength
 com.google.common.collect.Multisets$AbstractEntry
@@ -10899,12 +11070,14 @@ com.google.common.collect.Maps$FilteredEntryMap$EntrySet
 kotlinx.coroutines.flow.ReadonlySharedFlow
 kotlin.SafePublicationLazyImpl
 kotlin.time.DurationUnitKt__DurationUnitJvmKt
+com.google.android.gms.auth.GooglePlayServicesAvailabilityException
 com.google.common.io.ByteProcessor
 kotlin.coroutines.jvm.internal.RestrictedSuspendLambda
 androidx.core.location.LocationManagerCompat$PreRGnssStatusTransport$4
 com.google.common.collect.Tables$TransposeTable
 io.flutter.plugins.flutter_plugin_android_lifecycle.R$attr
 com.google.common.collect.Maps$UnmodifiableEntrySet
+com.google.android.gms.internal.auth.zzaq
 com.google.android.gms.common.util.ArrayUtils:
     public static java.util.ArrayList newArrayList()
     public static java.util.ArrayList toArrayList(java.lang.Object[])
@@ -10950,7 +11123,13 @@ io.flutter.embedding.android.AndroidTouchProcessor$PointerSignalKind
 com.google.common.hash.LittleEndianByteArray$UnsafeByteArray$1
 kotlin.ranges.LongRange$Companion
 androidx.core.location.LocationManagerCompat$GpsStatusTransport$2
-com.google.android.gms.common.api.PendingResults
+com.google.android.gms.common.api.PendingResults:
+    public static com.google.android.gms.common.api.OptionalPendingResult immediatePendingResult(com.google.android.gms.common.api.Result)
+    public static com.google.android.gms.common.api.OptionalPendingResult immediatePendingResult(com.google.android.gms.common.api.Result,com.google.android.gms.common.api.GoogleApiClient)
+    public static com.google.android.gms.common.api.PendingResult canceledPendingResult()
+    public static com.google.android.gms.common.api.PendingResult canceledPendingResult(com.google.android.gms.common.api.Result)
+    public static com.google.android.gms.common.api.PendingResult immediatePendingResult(com.google.android.gms.common.api.Status)
+    private void <init>()
 androidx.room.Insert
 kotlinx.coroutines.flow.FlowKt__EmittersKt$unsafeTransform$lambda-1$$inlined$collect$1$1
 kotlin.annotation.MustBeDocumented
@@ -10978,7 +11157,6 @@ com.google.android.gms.internal.common.zzc:
     public static void zzc(android.os.Parcel,android.os.Parcelable)
     public static void zzd(android.os.Parcel,android.os.Parcelable)
     public static boolean zzf(android.os.Parcel)
-com.google.android.gms.common.api.zag
 io.flutter.plugin.common.BinaryCodec
 kotlinx.coroutines.channels.SendChannel:
     public abstract boolean isClosedForSend()
@@ -11136,10 +11314,12 @@ androidx.appcompat.view.menu.BaseMenuPresenter:
 com.google.common.collect.Synchronized$SynchronizedSet
 androidx.annotation.ColorLong
 kotlinx.coroutines.debug.internal.DebugCoroutineInfoImpl$creationStackTrace$1
+com.google.android.gms.auth.api.identity.SaveAccountLinkingTokenResult
 androidx.browser.customtabs.CustomTabsService$1
 com.google.android.gms.common.internal.zam
 io.flutter.view.FlutterNativeView
 kotlinx.coroutines.flow.FlowKt__ZipKt$combineTransform$7$1
+com.google.android.gms.internal.auth-api.zbal
 com.google.common.collect.LinkedListMultimap$1ValuesImpl$1
 kotlin.text.StringsKt___StringsKt:
     private static final char elementAtOrElse(java.lang.CharSequence,int,kotlin.jvm.functions.Function1)
@@ -11345,13 +11525,13 @@ android.support.v4.media.session.MediaControllerCompat$TransportControlsApi23
 com.google.common.base.Suppliers$SupplierFunctionImpl
 androidx.browser.trusted.TrustedWebActivityService$1
 com.google.android.gms.maps.zzat
-com.google.common.cache.LocalCache$SoftValueReference
-com.google.android.gms.auth.api.signin.zad
 com.google.android.gms.maps.model.CameraPosition:
     public static com.google.android.gms.maps.model.CameraPosition$Builder builder(com.google.android.gms.maps.model.CameraPosition)
     public static com.google.android.gms.maps.model.CameraPosition createFromAttributes(android.content.Context,android.util.AttributeSet)
     public static final com.google.android.gms.maps.model.CameraPosition fromLatLngZoom(com.google.android.gms.maps.model.LatLng,float)
+com.google.common.cache.LocalCache$SoftValueReference
 com.google.common.base.CharMatcher$ForPredicate
+com.google.android.gms.internal.auth-api.zbao
 net.eighttechnologes.ict4farmers.R$xml
 androidx.annotation.ContentView
 androidx.room.IMultiInstanceInvalidationCallback$Stub$Proxy:
@@ -11372,6 +11552,7 @@ com.google.common.reflect.Types$ClassOwnership$1LocalClass
 androidx.work.impl.model.WorkTypeConverters$BackoffPolicyIds
 kotlin.jvm.internal.TypeReference$asString$args$1
 io.flutter.embedding.engine.dart.DartMessenger$TaskQueueToken
+com.google.android.gms.auth.zzg
 kotlinx.coroutines.channels.Receive:
     public kotlin.jvm.functions.Function1 resumeOnCancellationFun(java.lang.Object)
 androidx.media.R$drawable
@@ -11527,6 +11708,8 @@ androidx.appcompat.R$color:
     public static final int tooltip_background_light
 androidx.lifecycle.MediatorLiveData$Source
 kotlinx.coroutines.selects.UnbiasedSelectBuilderImpl
+com.google.android.gms.auth.api.credentials.CredentialsClient
+com.jaumard.smsautofill.R$string
 android.support.v4.media.session.PlaybackStateCompat:
     public static int toKeyCode(long)
     public int getState()
@@ -11689,6 +11872,7 @@ androidx.versionedparcelable.VersionedParcelParcel:
     public android.os.Bundle readBundle()
     private static final boolean DEBUG
     private static final java.lang.String TAG
+com.google.android.gms.auth.api.R$string
 com.google.common.collect.FilteredEntryMultimap$Keys$1
 com.google.common.reflect.TypeToken$TypeSet
 com.google.common.base.Optional$1$1
@@ -11730,6 +11914,7 @@ com.google.android.gms.common.internal.Objects:
     public static boolean checkBundlesEquality(android.os.Bundle,android.os.Bundle)
 io.flutter.embedding.android.FlutterActivity$NewEngineIntentBuilder
 kotlin.jvm.internal.unsafe.MonitorKt
+com.google.android.gms.auth.api.accounttransfer.AccountTransferClient$zzc
 kotlin.collections.AbstractMutableMap
 io.flutter.embedding.android.KeyboardManager:
     private static final java.lang.String TAG
@@ -11909,6 +12094,7 @@ androidx.viewpager.widget.ViewPager$SavedState$1
 androidx.swiperefreshlayout.widget.CircularProgressDrawable$1
 com.google.common.collect.Iterables$6$1
 com.google.common.collect.Multimaps$Entries
+com.jaumard.smsautofill.R$color
 com.google.common.collect.StandardRowSortedTable$RowSortedMap
 androidx.vectordrawable.R$styleable
 kotlinx.coroutines.test.TestCoroutineContext$Dispatcher$invokeOnTimeout$1
@@ -11926,7 +12112,6 @@ kotlin.properties.ObservableProperty
 androidx.core.view.inputmethod.InputContentInfoCompat$InputContentInfoCompatApi25Impl:
     public void releasePermission()
 kotlin.jvm.internal.StringCompanionObject
-androidx.loader.content.ModernAsyncTask$4
 androidx.lifecycle.SavedStateHandle:
     public void <init>(java.util.Map)
     public void <init>()
@@ -11988,6 +12173,7 @@ kotlin.internal.InlineOnly
 com.onesignal.flutter.R$animator
 com.google.common.collect.Multimaps$Keys$1
 com.google.android.gms.internal.common.zzm
+com.google.android.gms.internal.auth.zzat
 com.onesignal.OSInAppMessageTag:
     public org.json.JSONObject toJSONObject()
     public void setTagsToAdd(org.json.JSONObject)
@@ -12144,10 +12330,12 @@ org.intellij.lang.annotations.JdkConstants$AdjustableOrientation
 androidx.core.util.DebugUtils:
     private void <init>()
 com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher$1
+com.google.android.gms.auth.api.credentials.CredentialsOptions$Builder
 androidx.room.RoomTrackingLiveData$3
 com.google.common.eventbus.EventBus
 kotlin.ranges.LongProgressionIterator
 com.google.common.collect.Lists$RandomAccessReverseList
+com.google.android.gms.auth.AccountChangeEvent
 io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding:
     public io.flutter.embedding.engine.FlutterEngine getFlutterEngine()
     public io.flutter.view.TextureRegistry getTextureRegistry()
@@ -12232,15 +12420,14 @@ androidx.work.impl.model.WorkProgressDao_Impl:
 kotlin.TypeAliasesKt
 com.google.common.collect.StandardTable$ColumnMap$ColumnMapEntrySet$1
 kotlinx.coroutines.DefaultExecutorKt
+com.google.android.gms.internal.auth-api.zbe
 kotlinx.coroutines.channels.BroadcastKt$broadcast$1
 kotlin.reflect.KMutableProperty0$Setter
 com.google.android.gms.common.api.internal.zabi:
     public final com.google.android.gms.common.ConnectionResult zab()
     public final com.google.android.gms.common.ConnectionResult zac(long,java.util.concurrent.TimeUnit)
     public final com.google.android.gms.common.ConnectionResult zad(com.google.android.gms.common.api.Api)
-    public final void zau()
     public final boolean zax()
-    public final boolean zay(com.google.android.gms.common.api.internal.SignInConnectionListener)
 com.google.common.util.concurrent.UncaughtExceptionHandlers$Exiter
 androidx.browser.customtabs.CustomTabsClient:
     public static boolean bindCustomTabsServicePreservePriority(android.content.Context,java.lang.String,androidx.browser.customtabs.CustomTabsServiceConnection)
@@ -12267,6 +12454,7 @@ com.google.common.primitives.Shorts
 com.google.android.gms.maps.internal.zzk
 com.google.common.collect.ImmutableEnumSet$1
 kotlinx.coroutines.selects.SelectBuilderImpl
+com.google.android.gms.internal.auth.zzac
 kotlinx.coroutines.channels.TickerChannelsKt$fixedDelayTicker$1
 com.google.common.cache.LocalCache$ValueIterator
 androidx.lifecycle.HasDefaultViewModelProviderFactory
@@ -12299,6 +12487,7 @@ androidx.startup.StartupLogger
 com.google.common.util.concurrent.SimpleTimeLimiter
 kotlinx.coroutines.flow.FlowKt__ZipKt$combineTransform$7
 com.google.common.collect.FilteredEntryMultimap$AsMap
+com.google.android.gms.internal.auth-api.zbv
 androidx.appcompat.app.TwilightCalculator:
     public static final int DAY
     public static final int NIGHT
@@ -12368,6 +12557,7 @@ com.google.common.collect.ImmutableRangeSet
 com.onesignal.UserStateSMS:
     boolean isSubscribed()
     private static final java.lang.String SMS
+com.google.android.gms.internal.auth.zzp
 dev.fluttercommunity.plus.connectivity.R$string
 androidx.core.widget.ContentLoadingProgressBar
 kotlinx.coroutines.flow.ChannelAsFlow
@@ -12444,6 +12634,7 @@ com.google.common.base.Predicates$ObjectPredicate$1
 androidx.room.EntityDeletionOrUpdateAdapter
 com.google.common.collect.ObjectCountLinkedHashMap
 androidx.viewpager.widget.ViewPager$2
+com.google.android.gms.auth.api.accounttransfer.zzi
 com.tekartik.sqflite.R$color
 com.google.common.collect.DescendingImmutableSortedMultiset
 kotlin.collections.CollectionsKt__CollectionsKt$binarySearchBy$1
@@ -12478,17 +12669,21 @@ io.flutter.embedding.engine.plugins.contentprovider.ContentProviderPluginBinding
 kotlinx.coroutines.flow.FlowKt__LimitKt$take$$inlined$unsafeFlow$1
 kotlin.contracts.ContractBuilder
 com.google.android.gms.common.internal.PendingResultUtil:
-    public static com.google.android.gms.tasks.Task toVoidTask(com.google.android.gms.common.api.PendingResult)
     public void <init>()
+com.google.android.gms.auth.GoogleAuthException
 net.eighttechnologes.ict4farmers.R$interpolator
 com.google.common.collect.ImmutableMapValues$1
 kotlinx.coroutines.channels.ChannelsKt__DeprecatedKt$lastOrNull$1
 androidx.customview.R$style
+com.google.android.gms.auth.api.signin.internal.zbn:
+    public final synchronized com.google.android.gms.auth.api.signin.GoogleSignInAccount zba()
+    public final synchronized com.google.android.gms.auth.api.signin.GoogleSignInOptions zbb()
 com.google.common.primitives.Booleans$BooleanArrayAsList
 androidx.lifecycle.Transformations$3
 com.google.common.collect.ReverseNaturalOrdering
 com.google.android.gms.maps.zzau
 com.google.common.collect.Maps$ValueDifferenceImpl
+com.google.android.gms.auth.zzh
 com.google.common.collect.ImmutableRangeSet$ComplementRanges
 androidx.appcompat.app.ActionBarDrawerToggle
 com.onesignal.outcomes.data.OSOutcomeEventsClient:
@@ -12554,15 +12749,14 @@ kotlinx.coroutines.RunnableKt$Runnable$1
 com.google.common.collect.AbstractMapBasedMultimap$NavigableAsMap
 com.google.common.collect.ContiguousSet
 androidx.browser.customtabs.CustomTabsService$FilePurpose
-com.google.android.gms.common.api.internal.zav
 com.google.common.base.PairwiseEquivalence
 kotlin.jvm.internal.TypeReference
 androidx.lifecycle.SavedStateHandle$SavingStateLiveData
-com.google.android.gms.auth.api.signin.zae
 com.google.common.cache.LongAddable
 com.google.common.eventbus.Dispatcher$ImmediateDispatcher
 kotlin.sequences.SequencesKt__SequencesKt$flatten$3
 androidx.annotation.LayoutRes
+com.google.android.gms.internal.auth-api.zban
 com.google.common.collect.TreeTraverser$2
 kotlin.reflect.KCallable:
     public abstract java.lang.String getName()
@@ -12587,8 +12781,6 @@ com.google.android.gms.common.internal.ClientSettings:
     public void <init>(android.accounts.Account,java.util.Set,java.util.Map,int,android.view.View,java.lang.String,java.lang.String,com.google.android.gms.signin.SignInOptions)
     public int getGravityForPopups()
     public android.view.View getViewForPopups()
-    public java.lang.String getAccountName()
-    public java.util.Set getApplicableScopes(com.google.android.gms.common.api.Api)
 com.google.common.collect.Lists$RandomAccessPartition
 io.flutter.embedding.engine.deferredcomponents.PlayStoreDeferredComponentManager
 io.flutter.embedding.engine.plugins.service.ServicePluginBinding:
@@ -12598,6 +12790,7 @@ io.flutter.embedding.engine.plugins.service.ServicePluginBinding:
     public abstract void removeOnModeChangeListener(io.flutter.embedding.engine.plugins.service.ServiceAware$OnModeChangeListener)
 androidx.fragment.R$string
 com.google.common.base.FinalizablePhantomReference
+com.google.android.gms.auth.api.phone.SmsRetrieverApi
 kotlinx.coroutines.flow.FlowKt__ZipKt$combineTransform$$inlined$combineTransformUnsafe$FlowKt__ZipKt$5
 kotlinx.coroutines.flow.internal.ChannelFlowTransformLatest$flowCollect$3$invokeSuspend$$inlined$collect$1
 com.google.common.cache.LocalCache$WriteQueue$1
@@ -12649,6 +12842,7 @@ com.google.firebase.components.Component:
     static synthetic java.lang.Object lambda$of$0(java.lang.Object,com.google.firebase.components.ComponentContainer)
     public boolean isLazy()
 com.google.android.gms.common.zaa
+com.google.android.gms.internal.auth.zzn
 kotlinx.coroutines.flow.FlowKt__CountKt$count$1
 androidx.work.impl.utils.IdGenerator:
     public static final int INITIAL_ID
@@ -12699,6 +12893,9 @@ com.google.android.gms.maps.zzi
 com.google.common.collect.FilteredKeySetMultimap
 kotlinx.coroutines.flow.internal.ChannelFlow$collectToFun$1
 com.google.common.collect.Iterators$1
+com.google.android.gms.internal.auth-api-phone.zzb:
+    static void <clinit>()
+    private static com.google.android.gms.internal.auth-api-phone.zzd zzc
 com.google.common.collect.ImmutableMap$MapViewOfValuesAsSingletonSets$1$1
 kotlin.collections.State
 androidx.asynclayoutinflater.view.AsyncLayoutInflater$BasicInflater
@@ -12892,6 +13089,8 @@ io.flutter.app.FlutterActivityDelegate$1
 com.google.common.base.CharMatcher$IsEither
 com.google.android.gms.internal.location.zzba
 com.google.common.collect.ForwardingNavigableSet
+com.google.android.gms.auth.api.Auth:
+    private void <init>()
 com.google.android.gms.common.internal.zax
 com.google.android.gms.common.util.Hex
 com.google.common.collect.TreeRangeSet$Complement
@@ -12933,13 +13132,13 @@ androidx.work.impl.model.WorkSpecDao_Impl:
     public androidx.lifecycle.LiveData getWorkStatusPojoLiveDataForName(java.lang.String)
     public java.util.List getAllUnfinishedWork()
     public androidx.lifecycle.LiveData getScheduleRequestedAtLiveData(java.lang.String)
-androidx.loader.content.ModernAsyncTask$3
 kotlin.jvm.functions.Function7:
     public abstract java.lang.Object invoke(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)
 kotlinx.coroutines.ParentJob$DefaultImpls
 com.google.common.base.StandardSystemProperty
 com.tekartik.sqflite.R$drawable
 kotlinx.coroutines.internal.ThreadLocalKt
+com.google.android.gms.auth.AccountChangeEventsRequest
 kotlinx.coroutines.flow.FlowKt__ReduceKt$singleOrNull$1
 androidx.work.impl.model.WorkTypeConverters$NetworkTypeIds
 android.support.v4.media.session.MediaSessionCompat$MediaSessionImpl
@@ -12991,6 +13190,8 @@ kotlin.ranges.ULongProgression$Companion
 javax.annotation.RegEx$Checker
 javax.annotation.Tainted
 androidx.coordinatorlayout.R$drawable
+com.jaumard.smsautofill.R$anim
+com.google.android.gms.internal.auth.zzab
 com.google.android.gms.common.api.internal.zack
 com.google.common.graph.ConfigurableMutableGraph
 com.google.common.collect.CartesianList
@@ -13023,6 +13224,7 @@ kotlinx.coroutines.channels.ChannelsKt__DeprecatedKt$filterIndexed$1
 com.google.android.gms.internal.common.zzn
 com.google.common.collect.ClassToInstanceMap
 com.google.common.util.concurrent.FuturesGetChecked$GetCheckedTypeValidatorHolder$WeakSetValidator
+com.google.android.gms.internal.auth.zzas
 com.google.common.cache.Weigher
 com.google.common.collect.Maps$UnmodifiableNavigableMap
 com.google.android.gms.internal.location.zzao:
@@ -13042,9 +13244,10 @@ com.google.common.collect.StandardTable$RowMap
 com.google.common.cache.LocalCache$StrongValueReference
 androidx.viewpager.widget.ViewPager$SavedState
 kotlin.io.path.PathsKt__PathReadWriteKt
+com.google.android.gms.internal.auth-api.zbf
 com.google.common.base.Predicates$InstanceOfPredicate
+com.google.android.gms.auth.api.accounttransfer.zzj
 kotlin.collections.builders.MapBuilder$Companion
-androidx.loader.content.Loader$OnLoadCanceledListener
 kotlinx.coroutines.channels.TickerChannelsKt$ticker$3
 com.google.j2objc.annotations.ObjectiveCName
 androidx.core.graphics.TypefaceCompatBaseImpl:
@@ -13058,6 +13261,7 @@ com.google.android.gms.common.stats.LoggingConstants
 androidx.core.telephony.TelephonyManagerCompat$Api23Impl
 com.google.common.collect.ImmutableSet
 com.onesignal.flutter.R$layout
+com.google.android.gms.internal.auth.zzo
 kotlinx.coroutines.AwaitAll$AwaitAllNode
 javax.annotation.Nonnegative$Checker
 kotlinx.coroutines.flow.FlowKt__TransformKt$mapNotNull$$inlined$unsafeTransform$1$1
@@ -13103,6 +13307,7 @@ com.onesignal.influence.OSInfluenceConstants:
     public static final java.lang.String PREFS_OS_OUTCOMES_CURRENT_NOTIFICATION_INFLUENCE
     public static final java.lang.String PREFS_OS_OUTCOMES_CURRENT_IAM_INFLUENCE
 kotlinx.coroutines.debug.internal.DebugProbesImpl$CoroutineOwner
+com.google.android.gms.internal.auth-api.zbw
 androidx.core.graphics.drawable.RoundedBitmapDrawableFactory
 com.google.common.collect.ImmutableBiMap
 com.google.common.collect.HashMultimap
@@ -13252,6 +13457,7 @@ kotlinx.coroutines.DelicateCoroutinesApi
 com.google.android.gms.maps.GoogleMap$OnMyLocationClickListener
 androidx.core.app.ActivityCompat$Api30Impl
 com.google.common.util.concurrent.WrappingExecutorService
+com.google.android.gms.auth.zzi
 kotlin.coroutines.intrinsics.IntrinsicsKt:
     private void <init>()
 kotlinx.coroutines.DisposableFutureHandle
@@ -13476,6 +13682,11 @@ com.google.common.collect.DiscreteDomain$BigIntegerDomain
 io.flutter.plugins.imagepicker.R$layout
 kotlin.collections.AbstractCollection
 androidx.viewpager.R
+com.jaumard.smsautofill.SmsAutoFillPlugin:
+    private void <init>(io.flutter.plugin.common.PluginRegistry$Registrar)
+    public static void registerWith(io.flutter.plugin.common.PluginRegistry$Registrar)
+    private static final int PHONE_HINT_REQUEST
+    private static final java.lang.String channelName
 android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi21$5
 com.google.common.collect.AbstractMapBasedMultimap$WrappedCollection
 com.google.common.collect.ComparisonChain$InactiveComparisonChain
@@ -13617,6 +13828,7 @@ kotlinx.coroutines.ExecutorCoroutineDispatcherImpl:
 com.google.common.collect.SetMultimap
 io.flutter.embedding.engine.FlutterEngineGroup$1
 com.google.common.collect.Iterables$8
+com.google.android.gms.internal.auth-api.zbaq
 com.google.firebase.components.CycleDetector:
     void <init>()
 androidx.core.math.MathUtils
@@ -13637,6 +13849,11 @@ androidx.appcompat.app.AlertController$AlertParams:
     public boolean mForceInverseBackground
 com.google.common.util.concurrent.CycleDetectingLockFactory$Policies$1
 kotlinx.coroutines.flow.FlowKt__MigrationKt
+com.google.android.gms.auth.api.signin.internal.zbm:
+    public static android.content.Intent zba(android.content.Context,com.google.android.gms.auth.api.signin.GoogleSignInOptions)
+    public static android.content.Intent zbb(android.content.Context,com.google.android.gms.auth.api.signin.GoogleSignInOptions)
+    public static com.google.android.gms.auth.api.signin.GoogleSignInResult zbd(android.content.Intent)
+    public static com.google.android.gms.common.api.OptionalPendingResult zbe(com.google.android.gms.common.api.GoogleApiClient,android.content.Context,com.google.android.gms.auth.api.signin.GoogleSignInOptions,boolean)
 kotlin.collections.AbstractMap$values$1$iterator$1
 androidx.appcompat.widget.ActivityChooserModel
 androidx.viewpager.widget.ViewPager$PagerObserver
@@ -13654,6 +13871,7 @@ androidx.core.util.ObjectsCompat:
     public static java.lang.Object requireNonNull(java.lang.Object,java.lang.String)
 com.google.common.collect.TreeBasedTable$1
 com.google.common.collect.ForwardingMultiset$StandardElementSet
+com.google.android.gms.auth.api.identity.zbm
 androidx.coordinatorlayout.R$integer
 androidx.media.MediaSessionManagerImplApi28$RemoteUserInfoImplApi28
 com.google.common.collect.ImmutableCollection$Builder
@@ -13675,6 +13893,7 @@ androidx.loader.R$style
 kotlin.UIntArray$Iterator
 kotlin.KotlinVersionCurrentValue
 org.checkerframework.checker.nullness.compatqual.NullableType
+com.google.android.gms.auth.api.R$id
 com.google.android.gms.maps.model.zzk
 com.google.common.collect.Iterators$MergingIterator$1
 net.eighttechnologes.ict4farmers.R
@@ -13882,6 +14101,7 @@ com.onesignal.OSInAppMessageContent:
     public final void setUseWidthMargin(boolean)
     public final void setFullBleed(boolean)
     public final void setDisplayDuration(java.lang.Double)
+com.google.android.gms.internal.auth.zzav
 com.google.common.graph.EndpointPair$Ordered
 android.support.v4.media.session.PlaybackStateCompat$ShuffleMode
 com.google.common.collect.Maps$8
@@ -14005,6 +14225,21 @@ com.google.common.collect.HashBiMap$EntrySet
 com.google.common.base.Joiner$MapJoiner
 com.google.firebase.R$integer
 androidx.coordinatorlayout.widget.CoordinatorLayout$ViewElevationComparator
+com.google.android.gms.auth.api.signin.GoogleSignIn:
+    public static com.google.android.gms.auth.api.signin.GoogleSignInAccount getAccountForExtension(android.content.Context,com.google.android.gms.auth.api.signin.GoogleSignInOptionsExtension)
+    public static varargs com.google.android.gms.auth.api.signin.GoogleSignInAccount getAccountForScopes(android.content.Context,com.google.android.gms.common.api.Scope,com.google.android.gms.common.api.Scope[])
+    public static com.google.android.gms.auth.api.signin.GoogleSignInAccount getLastSignedInAccount(android.content.Context)
+    public static com.google.android.gms.auth.api.signin.GoogleSignInClient getClient(android.app.Activity,com.google.android.gms.auth.api.signin.GoogleSignInOptions)
+    public static com.google.android.gms.tasks.Task getSignedInAccountFromIntent(android.content.Intent)
+    private void <init>()
+    public static void requestPermissions(android.app.Activity,int,com.google.android.gms.auth.api.signin.GoogleSignInAccount,com.google.android.gms.auth.api.signin.GoogleSignInOptionsExtension)
+    public static varargs void requestPermissions(android.app.Activity,int,com.google.android.gms.auth.api.signin.GoogleSignInAccount,com.google.android.gms.common.api.Scope[])
+    public static void requestPermissions(androidx.fragment.app.Fragment,int,com.google.android.gms.auth.api.signin.GoogleSignInAccount,com.google.android.gms.auth.api.signin.GoogleSignInOptionsExtension)
+    public static varargs void requestPermissions(androidx.fragment.app.Fragment,int,com.google.android.gms.auth.api.signin.GoogleSignInAccount,com.google.android.gms.common.api.Scope[])
+    public static boolean hasPermissions(com.google.android.gms.auth.api.signin.GoogleSignInAccount,com.google.android.gms.auth.api.signin.GoogleSignInOptionsExtension)
+    public static varargs boolean hasPermissions(com.google.android.gms.auth.api.signin.GoogleSignInAccount,com.google.android.gms.common.api.Scope[])
+    private static varargs android.content.Intent zba(android.app.Activity,com.google.android.gms.auth.api.signin.GoogleSignInAccount,com.google.android.gms.common.api.Scope[])
+    private static com.google.android.gms.common.api.Scope[] zbb(java.util.List)
 androidx.core.content.ContextCompat$Api30Impl
 com.google.common.util.concurrent.AbstractScheduledService$ServiceDelegate
 android.support.customtabs.ICustomTabsCallback$Default
@@ -14020,6 +14255,7 @@ androidx.loader.R$dimen
 androidx.core.provider.SelfDestructiveThread$3
 com.google.common.collect.Maps$7
 kotlin.ranges.ClosedFloatingPointRange
+com.google.android.gms.internal.auth.zzae
 kotlinx.coroutines.DispatchersKt
 com.google.android.gms.common.data.DataBufferSafeParcelable
 androidx.work.impl.background.systemjob.package-info
@@ -14117,6 +14353,7 @@ androidx.room.DatabaseConfiguration:
     public void <init>(android.content.Context,java.lang.String,androidx.sqlite.db.SupportSQLiteOpenHelper$Factory,androidx.room.RoomDatabase$MigrationContainer,java.util.List,boolean,androidx.room.RoomDatabase$JournalMode,java.util.concurrent.Executor,java.util.concurrent.Executor,boolean,boolean,boolean,java.util.Set)
     public boolean isMigrationRequiredFrom(int)
 com.google.common.collect.Collections2$FilteredCollection
+com.google.android.gms.auth.api.R$color
 androidx.core.view.DragStartHelper$1
 kotlin.coroutines.SafeContinuation
 kotlinx.coroutines.flow.FlowKt__TransformKt$mapNotNull$$inlined$unsafeTransform$1$2
@@ -14207,15 +14444,18 @@ androidx.swiperefreshlayout.widget.SwipeRefreshLayout$7
 com.google.common.eventbus.Subscriber$1
 com.google.android.gms.common.GoogleSignatureVerifier:
     private final com.google.android.gms.common.zzw zzc(java.lang.String,boolean,boolean)
-    public boolean isGooglePublicSignedPackage(android.content.pm.PackageInfo)
     public boolean isPackageGoogleSigned(java.lang.String)
     public boolean isUidGoogleSigned(int)
     private volatile java.lang.String zzc
 kotlin.collections.UCollectionsKt___UCollectionsKt
+com.google.android.gms.internal.auth-api.zbg
 com.google.common.base.Predicates$ObjectPredicate$3
+com.google.android.gms.auth.api.identity.BeginSignInRequest$GoogleIdTokenRequestOptions$Builder
 androidx.work.impl.model.PreferenceDao:
     public abstract androidx.lifecycle.LiveData getObservableLongValue(java.lang.String)
+com.google.android.gms.auth.api.accounttransfer.zzk
 kotlin.jvm.internal.TypeReference$Companion
+com.google.android.gms.auth.UserRecoverableNotifiedException
 io.flutter.FlutterInjector:
     public static void setInstance(io.flutter.FlutterInjector)
     public static void reset()
@@ -14305,6 +14545,10 @@ androidx.core.view.accessibility.AccessibilityRecordCompat:
     public int hashCode()
     public boolean equals(java.lang.Object)
     private final android.view.accessibility.AccessibilityRecord mRecord
+com.google.android.gms.internal.auth.zza:
+    protected final android.os.Parcel obtainAndWriteInterfaceToken()
+    protected final android.os.Parcel transactAndReadException(int,android.os.Parcel)
+    protected final void transactAndReadExceptionReturnVoid(int,android.os.Parcel)
 androidx.vectordrawable.graphics.drawable.AnimatorInflaterCompat:
     private static void dumpKeyframes(java.lang.Object[],java.lang.String)
     private void <init>()
@@ -14334,6 +14578,7 @@ androidx.appcompat.app.ActionBar$Tab:
     public abstract androidx.appcompat.app.ActionBar$Tab setContentDescription(int)
     public abstract androidx.appcompat.app.ActionBar$Tab setContentDescription(java.lang.CharSequence)
     public static final int INVALID_POSITION
+com.google.android.gms.auth.zzj
 com.google.common.util.concurrent.FakeTimeLimiter
 com.google.android.gms.base.R$styleable
 com.google.android.gms.tasks.TaskCompletionSource:
@@ -14342,6 +14587,7 @@ com.google.android.gms.tasks.TaskCompletionSource:
 kotlin.coroutines.jvm.internal.RunSuspendKt
 com.google.android.gms.common.api.Api$ApiOptions$NoOptions
 androidx.browser.browseractions.BrowserActionsFallbackMenuUi$1
+com.google.android.gms.internal.auth-api.zbx
 com.google.common.collect.ImmutableRangeMap$2
 com.google.common.collect.Lists$ReverseList
 kotlin.text.StringsKt___StringsKt$windowed$1
@@ -14405,6 +14651,7 @@ androidx.core.content.res.ComplexColorCompat:
     private static final java.lang.String LOG_TAG
 kotlinx.coroutines.scheduling.DefaultScheduler:
     public final java.lang.String toDebugString()
+com.google.android.gms.internal.auth.zzr
 androidx.work.Data:
     public static boolean[] convertToPrimitiveArray(java.lang.Boolean[])
     public static byte[] convertToPrimitiveArray(java.lang.Byte[])
@@ -14451,6 +14698,7 @@ io.flutter.embedding.engine.systemchannels.PlatformViewsChannel:
     private static final java.lang.String TAG
 kotlinx.coroutines.flow.FlowKt__ReduceKt$single$$inlined$collect$1
 com.google.common.collect.Multisets$FilteredMultiset$1
+com.google.android.gms.auth.api.identity.zbl
 com.google.android.gms.common.server.response.zam
 androidx.core.graphics.drawable.WrappedDrawableApi21:
     private static final java.lang.String TAG
@@ -14835,6 +15083,7 @@ androidx.core.content.ContextCompat$Api23Impl:
 kotlin.internal.OnlyInputTypes
 com.google.errorprone.annotations.Immutable
 kotlinx.coroutines.Delay$DefaultImpls
+com.google.android.gms.internal.auth-api.zbz
 androidx.core.view.accessibility.AccessibilityViewCommand$ScrollToPositionArguments:
     public int getRow()
     public int getColumn()
@@ -14903,6 +15152,7 @@ kotlin.text.Charsets
 com.google.common.primitives.UnsignedLongs
 com.google.common.collect.Ordering$ArbitraryOrderingHolder
 com.google.common.math.LinearTransformation$VerticalLinearTransformation
+com.google.android.gms.auth.api.accounttransfer.zzl
 com.google.common.collect.Multisets$1
 com.google.common.util.concurrent.CycleDetectingLockFactory$Policies$2
 android.support.v4.media.session.PlaybackStateCompat$ErrorCode
@@ -14963,10 +15213,10 @@ com.google.firebase.iid.Registrar$zza:
     public final java.lang.String getToken()
 com.google.common.util.concurrent.Service$Listener
 com.google.common.collect.MapMakerInternalMap$WeakKeyDummyValueEntry$Helper
-com.google.android.gms.auth.api.signin.zac
 com.google.common.util.concurrent.ServiceManager
 androidx.core.view.accessibility.AccessibilityNodeProviderCompat$AccessibilityNodeProviderApi16
 android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi21$4
+com.google.android.gms.internal.auth-api.zbap
 com.google.android.gms.common.api.internal.RegistrationMethods
 com.onesignal.OneSignalRestClientWrapper$6
 androidx.lifecycle.viewmodel.savedstate.R
@@ -15116,6 +15366,7 @@ androidx.work.OneTimeWorkRequest$Builder:
     public androidx.work.OneTimeWorkRequest$Builder setInputMerger(java.lang.Class)
 com.google.firebase.R$drawable
 com.google.common.graph.ImmutableGraph
+com.jaumard.smsautofill.R$integer
 com.google.android.gms.common.util.MurmurHash3
 com.google.common.cache.CacheBuilder$OneWeigher
 com.google.common.cache.package-info
@@ -15149,6 +15400,7 @@ com.google.common.cache.Striped64
 kotlin.jvm.functions.Function9:
     public abstract java.lang.Object invoke(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)
 com.google.android.gms.location.ActivityTransition$SupportedActivityTransition
+com.google.android.gms.internal.auth.zzad
 androidx.work.impl.utils.taskexecutor.package-info
 com.google.common.graph.AbstractNetwork
 androidx.core.view.accessibility.AccessibilityNodeInfoCompat$TouchDelegateInfoCompat
@@ -15190,6 +15442,7 @@ com.google.firebase.components.Lazy:
     boolean isInitialized()
 androidx.core.util.LogWriter
 kotlinx.coroutines.flow.FlowKt__ReduceKt$firstOrNull$1
+com.google.android.gms.internal.auth.zzau
 androidx.browser.browseractions.BrowserActionsIntent$BrowserActionsItemId
 kotlin.internal.LowPriorityInOverloadResolution
 com.google.common.base.PatternCompiler
@@ -15257,7 +15510,6 @@ androidx.legacy.app.ActionBarDrawerToggle$DelegateProvider
 androidx.core.view.WindowInsetsAnimationCompat$Impl21$Impl21OnApplyWindowInsetsListener
 androidx.loader.app.LoaderManager:
     public static void enableDebugLogging(boolean)
-    public abstract androidx.loader.content.Loader initLoader(int,android.os.Bundle,androidx.loader.app.LoaderManager$LoaderCallbacks)
     public abstract androidx.loader.content.Loader restartLoader(int,android.os.Bundle,androidx.loader.app.LoaderManager$LoaderCallbacks)
     public abstract void destroyLoader(int)
     public abstract androidx.loader.content.Loader getLoader(int)
@@ -15312,6 +15564,7 @@ androidx.work.impl.WorkContinuationImpl:
     public androidx.lifecycle.LiveData getWorkInfosLiveData()
     public com.google.common.util.concurrent.ListenableFuture getWorkInfos()
     protected androidx.work.WorkContinuation combineInternal(java.util.List)
+com.google.android.gms.auth.api.identity.BeginSignInResult
 com.google.android.gms.common.api.internal.zacz:
     public void <init>(com.google.android.gms.common.api.internal.zada,android.os.Looper)
     public final void handleMessage(android.os.Message)
@@ -15320,17 +15573,34 @@ androidx.appcompat.app.AppCompatDelegate$NightMode
 com.google.common.collect.EnumMultiset$1
 com.google.common.graph.Network
 androidx.cursoradapter.widget.SimpleCursorAdapter
+com.google.android.gms.auth.api.credentials.zbd
 android.support.v4.media.MediaBrowserCompatApi21$SubscriptionCallbackProxy
 kotlinx.coroutines.flow.FlowKt__CollectKt$collectIndexed$2
 com.google.common.base.Absent
 androidx.customview.R$layout
-com.google.android.gms.common.internal.safeparcel.SafeParcelableSerializer
+com.google.android.gms.common.internal.safeparcel.SafeParcelableSerializer:
+    public static com.google.android.gms.common.internal.safeparcel.SafeParcelable deserializeFromBytes(byte[],android.os.Parcelable$Creator)
+    public static com.google.android.gms.common.internal.safeparcel.SafeParcelable deserializeFromIntentExtra(android.content.Intent,java.lang.String,android.os.Parcelable$Creator)
+    public static com.google.android.gms.common.internal.safeparcel.SafeParcelable deserializeFromString(java.lang.String,android.os.Parcelable$Creator)
+    public static java.lang.String serializeToString(com.google.android.gms.common.internal.safeparcel.SafeParcelable)
+    public static java.util.ArrayList deserializeIterableFromBundle(android.os.Bundle,java.lang.String,android.os.Parcelable$Creator)
+    public static java.util.ArrayList deserializeIterableFromBundleSafe(android.os.Bundle,java.lang.String,android.os.Parcelable$Creator)
+    public static java.util.ArrayList deserializeIterableFromBytes(byte[],android.os.Parcelable$Creator)
+    public static java.util.ArrayList deserializeIterableFromIntentExtra(android.content.Intent,java.lang.String,android.os.Parcelable$Creator)
+    public static java.util.ArrayList deserializeIterableFromIntentExtraSafe(android.content.Intent,java.lang.String,android.os.Parcelable$Creator)
+    private void <init>()
+    public static void serializeIterableToBundle(java.lang.Iterable,android.os.Bundle,java.lang.String)
+    public static void serializeIterableToBundleSafe(java.lang.Iterable,android.os.Bundle,java.lang.String)
+    public static void serializeIterableToIntentExtra(java.lang.Iterable,android.content.Intent,java.lang.String)
+    public static void serializeIterableToIntentExtraSafe(java.lang.Iterable,android.content.Intent,java.lang.String)
+    private static byte[] zza(java.lang.Iterable)
 kotlin.coroutines.CombinedContext$Serialized$Companion
 androidx.core.view.ContentInfoCompat$Builder:
     public void <init>(androidx.core.view.ContentInfoCompat)
     public androidx.core.view.ContentInfoCompat$Builder setClip(android.content.ClipData)
     public androidx.core.view.ContentInfoCompat$Builder setSource(int)
 androidx.swiperefreshlayout.widget.SwipeRefreshLayout$6
+com.google.android.gms.auth.api.identity.BeginSignInRequest$PasswordRequestOptions$Builder
 kotlinx.coroutines.debug.internal.ConcurrentWeakMap
 com.google.common.hash.package-info
 com.onesignal.flutter.OneSignalPlugin:
@@ -15488,6 +15758,7 @@ androidx.browser.R$styleable
 kotlinx.coroutines.flow.FlowKt__MergeKt$flatMapMerge$$inlined$map$1
 kotlinx.coroutines.flow.StartedWhileSubscribed
 io.flutter.embedding.android.FlutterFragmentActivity
+com.google.android.gms.auth.zzk
 kotlin.collections.EmptySet:
     private final java.lang.Object readResolve()
     private static final long serialVersionUID
@@ -15528,6 +15799,7 @@ androidx.cardview.R$style:
     public static final int Base_CardView
     public static final int CardView_Dark
     public static final int CardView_Light
+com.google.android.gms.internal.auth.zzq
 io.flutter.embedding.engine.deferredcomponents.DeferredComponentManager:
     public abstract void loadAssets(int,java.lang.String)
     public abstract void loadDartLibrary(int,java.lang.String)
@@ -15535,6 +15807,7 @@ kotlinx.coroutines.flow.internal.ChannelLimitedFlowMerge
 com.google.common.base.CharMatcher$SingleWidth
 com.google.common.collect.ImmutableMultimap$Values
 androidx.customview.widget.FocusStrategy$BoundsAdapter
+com.google.android.gms.internal.auth-api.zbh
 com.onesignal.LocationController:
     private static final long TIME_FOREGROUND_SEC
     private static final long TIME_BACKGROUND_SEC
@@ -15591,6 +15864,7 @@ androidx.vectordrawable.animated.R$id
 androidx.browser.customtabs.PostMessageService$1
 androidx.customview.R$dimen
 kotlinx.coroutines.channels.ChannelsKt__DeprecatedKt$indexOf$1
+com.google.android.gms.internal.auth-api.zby
 com.onesignal.NotificationChannelManager:
     void <init>()
     private static final java.lang.String DEFAULT_CHANNEL_ID
@@ -15632,6 +15906,7 @@ androidx.annotation.Size
 androidx.cursoradapter.widget.SimpleCursorAdapter$CursorToStringConverter
 com.google.common.collect.Iterables$UnmodifiableIterable
 com.google.common.collect.RegularImmutableTable$1
+com.google.android.gms.internal.auth.zzk
 com.google.auto.value.AutoValue$CopyAnnotations
 androidx.coordinatorlayout.R$string
 androidx.core.view.WindowInsetsAnimationControllerCompat$Impl30
@@ -15660,6 +15935,7 @@ kotlin.coroutines.ContinuationInterceptor$DefaultImpls:
     public static kotlin.coroutines.CoroutineContext plus(kotlin.coroutines.ContinuationInterceptor,kotlin.coroutines.CoroutineContext)
 androidx.browser.trusted.NotificationApiHelperForO
 kotlin.jvm.Transient
+com.google.android.gms.auth.api.identity.zbk
 androidx.room.Junction
 com.google.common.reflect.Types$NativeTypeVariableEquals
 kotlinx.coroutines.debug.internal.ConcurrentWeakMap$Core
@@ -15705,6 +15981,7 @@ kotlin.text._OneToManyTitlecaseMappingsKt
 kotlin.ranges.ClosedFloatRange
 androidx.core.view.accessibility.AccessibilityEventCompat
 kotlinx.coroutines.flow.FlowKt__CollectionKt$toCollection$$inlined$collect$1
+com.google.android.gms.auth.api.credentials.Credentials
 androidx.core.location.LocationCompat$Api17Impl
 androidx.room.Entity
 kotlinx.coroutines.channels.ConflatedBroadcastChannel$onSend$1
@@ -15783,6 +16060,7 @@ com.google.android.gms.location.LocationServices:
     public static com.google.android.gms.location.GeofencingClient getGeofencingClient(android.content.Context)
     public static com.google.android.gms.location.SettingsClient getSettingsClient(android.app.Activity)
     public static com.google.android.gms.location.FusedLocationProviderClient getFusedLocationProviderClient(android.app.Activity)
+com.google.android.gms.auth.api.accounttransfer.AccountTransferStatusCodes
 com.google.common.collect.Maps$SortedMapDifferenceImpl
 kotlinx.coroutines.flow.CancellableFlowImpl
 com.google.common.net.HostSpecifier
@@ -15797,6 +16075,7 @@ com.google.android.gms.common.zzv
 com.google.common.collect.TreeRangeSet
 kotlin.jvm.functions.Function16:
     public abstract java.lang.Object invoke(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)
+com.google.android.gms.internal.auth.zzax
 com.google.android.gms.internal.common.zzi:
     public void <init>()
 android.support.customtabs.trusted.ITrustedWebActivityCallback$Stub$Proxy
@@ -15845,15 +16124,18 @@ com.google.android.gms.maps.internal.IGoogleMapDelegate:
     public abstract void setOnPoiClickListener(com.google.android.gms.maps.internal.zzbd)
     public abstract void snapshotForTest(com.google.android.gms.maps.internal.zzbu)
 kotlinx.coroutines.flow.SubscribedSharedFlow
+com.google.android.gms.internal.auth-api.zbas
 com.google.common.collect.EmptyContiguousSet
 com.google.android.gms.common.api.zaa
 com.google.common.collect.MinMaxPriorityQueue$MoveDesc
 kotlinx.coroutines.flow.FlowKt__ZipKt$combine$5$2
+com.google.android.gms.auth.api.accounttransfer.AccountTransferException
 androidx.core.widget.PopupMenuCompat
 com.google.common.reflect.TypeToken$TypeCollector$ForwardingTypeCollector
 com.google.common.base.Splitter$5
 com.google.common.util.concurrent.CycleDetectingLockFactory$1
 kotlin.reflect.KTypeProjection$Companion
+com.google.android.gms.internal.auth-api.zbab
 com.google.common.util.concurrent.InterruptibleTask$1
 androidx.media.VolumeProviderCompat$ControlType
 com.google.common.collect.Tables$ImmutableCell
@@ -15873,6 +16155,7 @@ com.onesignal.shortcutbadger.impl.OPPOHomeBader:
 com.onesignal.flutter.R$integer
 io.flutter.embedding.android.FlutterFragment
 com.google.common.collect.Multimaps$AsMap$EntrySet
+com.google.android.gms.auth.zzc
 androidx.cursoradapter.widget.SimpleCursorAdapter$ViewBinder
 android.support.v4.media.session.IMediaSession:
     public abstract void sendCommand(java.lang.String,android.os.Bundle,android.support.v4.media.session.MediaSessionCompat$ResultReceiverWrapper)
@@ -15973,16 +16256,13 @@ com.google.common.base.CharMatcher$And
 com.google.common.base.Suppliers$SupplierFunction
 com.google.common.collect.TreeRangeSet$AsRanges
 com.google.android.gms.common.api.GoogleApiClient:
-    public static java.util.Set getAllClients()
     public static void dumpAll(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])
-    public android.content.Context getContext()
     public abstract com.google.android.gms.common.ConnectionResult blockingConnect()
     public abstract com.google.android.gms.common.ConnectionResult blockingConnect(long,java.util.concurrent.TimeUnit)
     public abstract com.google.android.gms.common.ConnectionResult getConnectionResult(com.google.android.gms.common.api.Api)
     public abstract com.google.android.gms.common.api.PendingResult clearDefaultAccountAndReconnect()
     public com.google.android.gms.common.api.internal.ListenerHolder registerListener(java.lang.Object)
     public void connect(int)
-    public void maybeSignOut()
     public abstract void reconnect()
     public abstract void registerConnectionCallbacks(com.google.android.gms.common.api.GoogleApiClient$ConnectionCallbacks)
     public abstract void stopAutoManage(androidx.fragment.app.FragmentActivity)
@@ -15992,7 +16272,6 @@ com.google.android.gms.common.api.GoogleApiClient:
     public abstract boolean isConnecting()
     public abstract boolean isConnectionCallbacksRegistered(com.google.android.gms.common.api.GoogleApiClient$ConnectionCallbacks)
     public abstract boolean isConnectionFailedListenerRegistered(com.google.android.gms.common.api.GoogleApiClient$OnConnectionFailedListener)
-    public boolean maybeSignIn(com.google.android.gms.common.api.internal.SignInConnectionListener)
     public void zao(com.google.android.gms.common.api.internal.zada)
     public static final java.lang.String DEFAULT_ACCOUNT
     public static final int SIGN_IN_MODE_REQUIRED
@@ -16116,7 +16395,9 @@ kotlin.random.RandomKt:
     public static final void checkRangeBounds(long,long)
     public static final void checkRangeBounds(double,double)
     public static final java.lang.String boundsErrorMessage(java.lang.Object,java.lang.Object)
+com.jaumard.smsautofill.R$layout
 kotlinx.coroutines.flow.internal.FusibleFlow
+com.google.android.gms.internal.auth.zzag
 io.flutter.embedding.android.FlutterFragmentActivity$CachedEngineIntentBuilder
 com.google.common.collect.Multisets$3$1
 kotlin.sequences.TakeWhileSequence
@@ -16127,7 +16408,9 @@ kotlinx.coroutines.flow.FlowKt__TransformKt$filterIsInstance$$inlined$filter$1
 com.google.common.hash.LongAddables$PureJavaLongAddable
 kotlinx.coroutines.channels.ChannelsKt__DeprecatedKt$singleOrNull$1
 androidx.annotation.NonNull
+com.google.android.gms.auth.api.accounttransfer.zzv
 androidx.drawerlayout.R$color
+com.google.android.gms.auth.account.zzb
 com.google.common.util.concurrent.MoreExecutors$ScheduledListeningDecorator$NeverSuccessfulListenableFutureTask
 androidx.arch.core.executor.DefaultTaskExecutor$1:
     private static final java.lang.String THREAD_NAME_STEM
@@ -16142,6 +16425,7 @@ com.google.firebase.components.ComponentDiscovery:
     private static final java.lang.String TAG
     private static final java.lang.String COMPONENT_SENTINEL_VALUE
     private static final java.lang.String COMPONENT_KEY_PREFIX
+com.google.android.gms.internal.auth-api.zbr
 com.google.common.collect.ImmutableSortedMapFauxverideShim
 androidx.vectordrawable.animated.R$color
 kotlin.jvm.internal.MutablePropertyReference0
@@ -16168,6 +16452,7 @@ kotlinx.coroutines.internal.Symbol:
     public final java.lang.String getSymbol()
     public final java.lang.Object unbox(java.lang.Object)
 com.google.common.math.IntMath
+com.google.android.gms.auth.api.accounttransfer.AccountTransfer
 kotlin.Experimental
 com.google.common.eventbus.SubscriberExceptionHandler
 com.google.android.gms.common.api.internal.zzb:
@@ -16297,6 +16582,7 @@ kotlinx.coroutines.channels.ChannelsKt__DeprecatedKt$distinctBy$1
 kotlin.reflect.KMutableProperty2
 com.google.android.gms.places_placereport.R
 androidx.customview.R$attr
+com.google.android.gms.auth.api.accounttransfer.AuthenticatorTransferCompletionStatus
 kotlin.jvm.Strictfp
 androidx.work.impl.WorkDatabaseMigrations:
     private void <init>()
@@ -16349,6 +16635,7 @@ com.google.common.reflect.Types$1
 androidx.browser.trusted.TrustedWebActivityDisplayMode
 kotlinx.coroutines.flow.FlowKt__BuildersKt$asFlow$$inlined$unsafeFlow$2
 com.google.common.collect.AbstractBiMap$ValueSet
+com.google.android.gms.auth.api.credentials.zbc
 com.onesignal.OSSharedPreferencesWrapper:
     public long getLong(java.lang.String,java.lang.String,long)
     public void saveLong(java.lang.String,java.lang.String,long)
@@ -16365,6 +16652,7 @@ com.google.common.reflect.MutableTypeToInstanceMap
 kotlinx.coroutines.channels.ChannelsKt__DeprecatedKt$zip$1
 kotlin.random.XorWowRandom
 com.google.common.graph.Traverser$TreeTraverser
+com.google.android.gms.auth.api.accounttransfer.zze
 kotlin.jvm.internal.InlineMarker
 androidx.activity.R$drawable
 io.flutter.plugin.common.EventChannel:
@@ -16406,6 +16694,8 @@ kotlin.LazyKt__LazyJVMKt$WhenMappings
 com.google.android.gms.maps.internal.zzbn
 kotlin.jvm.functions.Function4:
     public abstract java.lang.Object invoke(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)
+com.google.android.gms.auth.api.Auth$AuthCredentialsOptions$Builder:
+    public com.google.android.gms.auth.api.Auth$AuthCredentialsOptions$Builder forceEnableSaveDialog()
 com.google.android.gms.maps.zzay
 com.google.common.graph.AbstractGraph
 com.google.android.gms.common.api.ResolvingResultCallbacks
@@ -16484,7 +16774,6 @@ io.flutter.plugins.googlemaps.GoogleMapController:
     void setView(com.google.android.gms.maps.MapView)
     private static final java.lang.String TAG
 io.flutter.embedding.engine.deferredcomponents.PlayStoreDeferredComponentManager$FeatureInstallStateUpdatedListener
-androidx.loader.content.ModernAsyncTask$AsyncTaskResult
 com.google.common.util.concurrent.WrappingExecutorService$1
 kotlin.collections.AbstractMap$keys$1$iterator$1
 kotlin.jvm.internal.BooleanCompanionObject
@@ -16492,8 +16781,8 @@ androidx.browser.browseractions.BrowserServiceFileProvider$1
 kotlinx.coroutines.flow.FlowKt__TransformKt$filterIsInstance$$inlined$filter$1$2$1
 kotlinx.coroutines.channels.ProduceKt$awaitClose$4$1
 com.google.common.collect.Synchronized$SynchronizedQueue
+com.google.android.gms.auth.api.identity.zbj
 com.google.android.gms.common.api.internal.zabv:
-    public final android.content.Context getContext()
     public final void zao(com.google.android.gms.common.api.internal.zada)
 kotlinx.coroutines.flow.FlowKt__LimitKt$transformWhile$1
 kotlinx.coroutines.channels.BroadcastChannel$DefaultImpls
@@ -16503,14 +16792,12 @@ com.google.android.gms.common.api.internal.zabe:
     static synthetic bridge android.content.Context zae(com.google.android.gms.common.api.internal.zabe)
     static synthetic bridge void zah(com.google.android.gms.common.api.internal.zabe,com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.common.api.internal.StatusPendingResult,boolean)
     private final void zam(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.common.api.internal.StatusPendingResult,boolean)
-    public final android.content.Context getContext()
     public final com.google.android.gms.common.ConnectionResult blockingConnect()
     public final com.google.android.gms.common.ConnectionResult blockingConnect(long,java.util.concurrent.TimeUnit)
     public final com.google.android.gms.common.ConnectionResult getConnectionResult(com.google.android.gms.common.api.Api)
     public final com.google.android.gms.common.api.PendingResult clearDefaultAccountAndReconnect()
     public final com.google.android.gms.common.api.internal.ListenerHolder registerListener(java.lang.Object)
     public final void connect(int)
-    public final void maybeSignOut()
     public final void reconnect()
     public final void registerConnectionCallbacks(com.google.android.gms.common.api.GoogleApiClient$ConnectionCallbacks)
     public final void zao(com.google.android.gms.common.api.internal.zada)
@@ -16521,7 +16808,6 @@ com.google.android.gms.common.api.internal.zabe:
     public final boolean isConnecting()
     public final boolean isConnectionCallbacksRegistered(com.google.android.gms.common.api.GoogleApiClient$ConnectionCallbacks)
     public final boolean isConnectionFailedListenerRegistered(com.google.android.gms.common.api.GoogleApiClient$OnConnectionFailedListener)
-    public final boolean maybeSignIn(com.google.android.gms.common.api.internal.SignInConnectionListener)
 androidx.fragment.app.FragmentTransaction$Op:
     void <init>(int,androidx.fragment.app.Fragment,androidx.lifecycle.Lifecycle$State)
 androidx.sqlite.db.framework.FrameworkSQLiteDatabase:
@@ -16635,6 +16921,7 @@ androidx.cursoradapter.widget.CursorAdapter:
     public static final int FLAG_AUTO_REQUERY
     public static final int FLAG_REGISTER_CONTENT_OBSERVER
 androidx.appcompat.resources.R$color
+com.google.android.gms.auth.api.identity.CredentialSavingClient
 kotlin.collections.AbstractList$SubList
 kotlinx.coroutines.BuildersKt:
     public static final java.lang.Object runBlocking(kotlin.coroutines.CoroutineContext,kotlin.jvm.functions.Function2)
@@ -16681,6 +16968,7 @@ android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi21$6
 kotlin.text.Regex$Serialized
 com.google.firebase.platforminfo.GlobalLibraryVersionRegistrar:
     public void registerVersion(java.lang.String,java.lang.String)
+com.google.android.gms.internal.auth-api.zbaa
 com.google.common.cache.LocalCache$LoadingSerializationProxy
 com.google.android.gms.maps.GoogleMap$OnPoiClickListener
 com.google.common.cache.CacheBuilderSpec$RecordStatsParser
@@ -16932,6 +17220,7 @@ androidx.core.graphics.BlendModeColorFilterCompat
 com.onesignal.influence.domain.OSInfluence:
     public final java.lang.String getDirectId()
 com.google.common.collect.ImmutableRangeSet$1
+com.google.android.gms.auth.api.identity.SavePasswordRequest$Builder
 com.google.android.gms.internal.maps.zzo
 com.google.android.gms.common.zzw
 com.google.common.util.concurrent.CollectionFuture$CollectionFutureRunningState
@@ -16966,6 +17255,7 @@ androidx.appcompat.widget.FitWindowsLinearLayout:
     public void <init>(android.content.Context)
 androidx.core.app.ComponentActivity$ExtraData
 kotlinx.coroutines.flow.MutableSharedFlow
+com.google.android.gms.auth.zzd
 com.google.android.gms.common.internal.AccountAccessor:
     public final boolean equals(java.lang.Object)
     public final android.accounts.Account zzb()
@@ -17256,6 +17546,7 @@ androidx.appcompat.R$styleable:
     public static final int View_paddingEnd
     public static final int View_paddingStart
 androidx.concurrent.futures.AbstractResolvableFuture$Failure
+com.google.android.gms.internal.auth-api.zbar
 com.google.common.cache.LocalCache$AccessQueue
 androidx.appcompat.app.AlertController:
     public void setButtonPanelLayoutHint(int)
@@ -17272,7 +17563,6 @@ androidx.annotation.DoNotInline
 com.google.android.gms.common.internal.GmsClient:
     protected void <init>(android.content.Context,android.os.Handler,int,com.google.android.gms.common.internal.ClientSettings)
     protected void <init>(android.content.Context,android.os.Looper,int,com.google.android.gms.common.internal.ClientSettings)
-    protected final com.google.android.gms.common.internal.ClientSettings getClientSettings()
     public com.google.android.gms.common.Feature[] getRequiredFeatures()
 com.google.common.io.ByteStreams$1
 androidx.annotation.experimental.R
@@ -17286,6 +17576,7 @@ com.google.common.reflect.TypeResolver$WildcardCapturer$1
 androidx.core.widget.TintableCompoundButton:
     public abstract android.content.res.ColorStateList getSupportButtonTintList()
     public abstract android.graphics.PorterDuff$Mode getSupportButtonTintMode()
+com.google.android.gms.internal.auth.zzaf
 androidx.core.widget.CheckedTextViewCompat$Api14Impl
 com.onesignal.UserState:
     abstract boolean isSubscribed()
@@ -17351,8 +17642,10 @@ com.onesignal.language.LanguageProviderDevice:
     private static final java.lang.String YIDDISH_CORRECTED
     private static final java.lang.String CHINESE
 com.google.android.gms.internal.common.zzj
+com.google.android.gms.internal.auth.zzaw
 kotlinx.coroutines.flow.FlowKt__LimitKt$transformWhile$1$invokeSuspend$$inlined$collectWhile$1
 com.google.common.base.Splitter$3$1
+com.google.android.gms.internal.auth.zzj
 kotlinx.coroutines.android.HandlerDispatcher:
     public abstract kotlinx.coroutines.android.HandlerDispatcher getImmediate()
     public kotlinx.coroutines.DisposableHandle invokeOnTimeout(long,java.lang.Runnable,kotlin.coroutines.CoroutineContext)
@@ -17411,6 +17704,7 @@ androidx.appcompat.widget.ThemeUtils:
     public static android.content.res.ColorStateList createDisabledStateList(int,int)
     private void <init>()
     private static final java.lang.String TAG
+com.google.android.gms.auth.api.accounttransfer.zzf
 kotlinx.coroutines.flow.FlowKt__ErrorsKt$retry$3
 com.google.common.base.MoreObjects$ToStringHelper:
     private com.google.common.base.MoreObjects$ToStringHelper addHolder(java.lang.String,java.lang.Object)
@@ -17466,13 +17760,17 @@ androidx.core.app.RemoteInput$Source
 com.google.firebase.FirebaseTooManyRequestsException
 kotlin.sequences.MergingSequence$iterator$1
 com.google.android.gms.common.server.response.zaf
+com.google.android.gms.internal.auth-api.zbs
 kotlin.jvm.internal.MutablePropertyReference1
 androidx.appcompat.widget.ActivityChooserView$4
 com.google.common.collect.HashMultiset
 androidx.coordinatorlayout.R
+com.google.android.gms.auth.api.R$style
 androidx.fragment.app.FragmentManager$6:
     void <init>(androidx.fragment.app.FragmentManager,java.lang.String,androidx.fragment.app.FragmentResultListener,androidx.lifecycle.Lifecycle)
-androidx.core.os.OperationCanceledException
+androidx.core.os.OperationCanceledException:
+    public void <init>()
+    public void <init>(java.lang.String)
 androidx.work.multiprocess.IWorkManagerImpl$Stub
 kotlinx.coroutines.flow.FlowKt__BuildersKt$asFlow$$inlined$unsafeFlow$1
 android.support.v4.media.ParceledListSliceAdapterApi21
@@ -17963,6 +18261,7 @@ androidx.media.app.NotificationCompat$MediaStyle
 org.checkerframework.checker.nullness.compatqual.PolyNullDecl
 com.google.common.collect.ForwardingImmutableCollection
 com.google.common.io.Files$FileByteSink
+com.google.android.gms.auth.account.zza
 kotlinx.coroutines.flow.FlowKt__ZipKt$combine$$inlined$combineUnsafe$FlowKt__ZipKt$1$2
 kotlin.time.Duration$Companion
 androidx.activity.result.ActivityResultLauncher:
@@ -18007,6 +18306,7 @@ com.google.common.collect.Sets$5$1$1$1
 com.google.android.gms.dynamic.zad
 com.google.common.base.Functions$1
 com.google.common.cache.LocalCache$WeightedSoftValueReference
+com.google.android.gms.auth.api.proxy.ProxyResponse
 com.google.android.gms.common.data.zab
 com.google.common.base.Predicates$ObjectPredicate$4
 androidx.annotation.XmlRes
@@ -18023,6 +18323,7 @@ com.google.common.util.concurrent.Service$1
 com.google.common.eventbus.Dispatcher$LegacyAsyncDispatcher
 com.google.common.graph.MapIteratorCache$1$1
 androidx.annotation.IntDef
+com.google.android.gms.auth.account.WorkAccountClient
 androidx.documentfile.provider.SingleDocumentFile
 com.google.common.collect.AbstractMapBasedMultimap$1
 com.google.common.collect.MultimapBuilder$SetMultimapBuilder
@@ -18033,9 +18334,6 @@ com.google.android.gms.common.api.internal.zaaa:
     public final com.google.android.gms.common.ConnectionResult zab()
     public final com.google.android.gms.common.ConnectionResult zac(long,java.util.concurrent.TimeUnit)
     public final com.google.android.gms.common.ConnectionResult zad(com.google.android.gms.common.api.Api)
-    public final void zau()
-    public final boolean zax()
-    public final boolean zay(com.google.android.gms.common.api.internal.SignInConnectionListener)
 androidx.appcompat.view.menu.ActionMenuItemView:
     public void <init>(android.content.Context)
     public void setShortcut(boolean,char)
@@ -18058,9 +18356,11 @@ com.google.common.collect.ImmutableMultimap$Keys
 com.google.common.graph.UndirectedMultiNetworkConnections
 com.google.common.collect.MinMaxPriorityQueue$1
 com.google.common.base.Converter$1
+com.google.android.gms.auth.api.identity.SaveAccountLinkingTokenRequest
 com.google.thirdparty.publicsuffix.PublicSuffixType
 androidx.core.location.GnssStatusCompat$Callback
 io.flutter.plugins.googlemaps.R$layout
+com.google.android.gms.auth.api.proxy.AuthApiStatusCodes
 com.google.android.gms.maps.zzai
 com.google.common.collect.AbstractMapBasedMultimap$NavigableKeySet
 io.flutter.plugins.googlemaps.TileProviderController:
@@ -18076,6 +18376,8 @@ com.onesignal.GenerateNotification:
     public static final java.lang.String BUNDLE_KEY_ACTION_ID
     public static final java.lang.String BUNDLE_KEY_ONESIGNAL_DATA
 com.google.android.gms.common.BlockingServiceConnection
+com.google.android.gms.auth.api.signin.internal.zbs:
+    public final void zbe(com.google.android.gms.auth.api.signin.internal.zbr,com.google.android.gms.auth.api.signin.GoogleSignInOptions)
 androidx.appcompat.graphics.drawable.AnimatedStateListDrawableCompat$AnimatedStateListState:
     private static final long REVERSED_BIT
     private static final long REVERSIBLE_FLAG_BIT
@@ -18142,6 +18444,7 @@ com.onesignal.OSOutcomeEventsController:
     private static final java.lang.String OS_SEND_SAVED_OUTCOMES
     private static final java.lang.String OS_SAVE_UNIQUE_OUTCOME_NOTIFICATIONS
     private static final java.lang.String OS_DELETE_CACHED_UNIQUE_OUTCOMES_NOTIFICATIONS_THREAD
+com.google.android.gms.auth.api.identity.zbi
 kotlinx.coroutines.flow.FlowKt__EmittersKt
 com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher
 kotlin.jvm.internal.TypeIntrinsics:
@@ -18240,10 +18543,10 @@ androidx.appcompat.resources.R$styleable:
     public static final int StateListDrawable_android_exitFadeDuration
     public static final int StateListDrawableItem_android_drawable
 kotlinx.coroutines.flow.internal.SendingCollector
-com.google.android.gms.maps.model.zzd
+kotlinx.coroutines.sync.MutexImpl$lockSuspend$2$1$1
 com.google.android.gms.maps.model.Cap:
     final com.google.android.gms.maps.model.Cap zza()
-kotlinx.coroutines.sync.MutexImpl$lockSuspend$2$1$1
+com.google.android.gms.maps.model.zzd
 androidx.work.ListenableWorker$Result$Retry:
     public androidx.work.Data getOutputData()
 kotlin.collections.unsigned.UArraysKt___UArraysJvmKt$asList$2
@@ -18262,6 +18565,7 @@ kotlin.reflect.KMutableProperty2$Setter
 com.baseflow.geolocator.location.NotificationImportance
 com.google.j2objc.annotations.ReflectionSupport$Level
 com.google.common.cache.LocalCache$EntryIterator
+com.google.android.gms.auth.api.identity.SaveAccountLinkingTokenRequest$Builder
 com.google.common.base.MoreObjects:
     public static java.lang.Object firstNonNull(java.lang.Object,java.lang.Object)
     public static com.google.common.base.MoreObjects$ToStringHelper toStringHelper(java.lang.Class)
@@ -18389,6 +18693,7 @@ com.google.android.gms.tasks.Tasks:
     public static com.google.android.gms.tasks.Task withTimeout(com.google.android.gms.tasks.Task,long,java.util.concurrent.TimeUnit)
     private void <init>()
 javax.annotation.WillCloseWhenClosed
+com.google.android.gms.internal.auth.zzaz
 kotlin.jvm.functions.Function14:
     public abstract java.lang.Object invoke(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)
 androidx.core.view.WindowInsetsControllerCompat$Impl30$2
@@ -18417,6 +18722,7 @@ androidx.core.R$dimen:
     public static final int notification_top_pad_large_text
 kotlinx.coroutines.TimeoutKt
 androidx.browser.trusted.TrustedWebActivityIntentBuilder
+com.google.android.gms.internal.auth.zzm
 kotlin.io.LinesSequence$iterator$1
 kotlinx.coroutines.channels.RendezvousChannel:
     protected final boolean isBufferAlwaysFull()
@@ -18435,6 +18741,7 @@ kotlin.comparisons.ComparisonsKt___ComparisonsKt:
     public static final java.lang.Object minOf(java.lang.Object,java.lang.Object,java.util.Comparator)
     public static final java.lang.Object minOf(java.lang.Object,java.lang.Object[],java.util.Comparator)
     public void <init>()
+com.google.android.gms.auth.api.proxy.zza
 com.google.common.collect.StandardTable$ColumnKeySet
 androidx.customview.widget.FocusStrategy$CollectionAdapter
 kotlinx.coroutines.flow.internal.FusibleFlow$DefaultImpls
@@ -18443,21 +18750,19 @@ kotlin.internal.jdk8.JDK8PlatformImplementations:
     public kotlin.text.MatchGroup getMatchResultNamedGroup(java.util.regex.MatchResult,java.lang.String)
 com.google.common.collect.HashBiMap$KeySet
 androidx.coordinatorlayout.R$attr
-com.google.android.gms.common.api.internal.StatusPendingResult
+com.google.android.gms.common.api.internal.StatusPendingResult:
+    public void <init>(android.os.Looper)
 com.google.common.collect.RegularImmutableMultiset$ElementSet
+com.google.android.gms.auth.zze
 org.jetbrains.annotations.Nullable
 com.google.android.gms.maps.model.LatLngBounds$Builder
 com.google.android.gms.common.api.GoogleApi:
-    public void <init>(android.app.Activity,com.google.android.gms.common.api.Api,com.google.android.gms.common.api.Api$ApiOptions,com.google.android.gms.common.api.GoogleApi$Settings)
-    public void <init>(android.app.Activity,com.google.android.gms.common.api.Api,com.google.android.gms.common.api.Api$ApiOptions,com.google.android.gms.common.api.internal.StatusExceptionMapper)
     public void <init>(android.content.Context,com.google.android.gms.common.api.Api,com.google.android.gms.common.api.Api$ApiOptions,android.os.Looper,com.google.android.gms.common.api.internal.StatusExceptionMapper)
-    public android.content.Context getApplicationContext()
     public com.google.android.gms.common.api.Api$ApiOptions getApiOptions()
     public com.google.android.gms.common.api.internal.BaseImplementation$ApiMethodImpl doBestEffortWrite(com.google.android.gms.common.api.internal.BaseImplementation$ApiMethodImpl)
     public com.google.android.gms.common.api.internal.ListenerHolder registerListener(java.lang.Object,java.lang.String)
     protected com.google.android.gms.tasks.Task disconnectService()
     public com.google.android.gms.tasks.Task doRegisterEventListener(com.google.android.gms.common.api.internal.RegistrationMethods)
-    public com.google.android.gms.tasks.Task doWrite(com.google.android.gms.common.api.internal.TaskApiCall)
     protected java.lang.String getContextFeatureId()
 io.flutter.plugin.common.PluginRegistry$Registrar:
     public abstract android.app.Activity activity()
@@ -18517,6 +18822,7 @@ com.onesignal.AndroidSupportV4Compat$ActivityCompat:
 androidx.core.app.NotificationCompat$BubbleMetadata$Api29Impl:
     private void <init>()
     static androidx.core.app.NotificationCompat$BubbleMetadata fromPlatform(android.app.Notification$BubbleMetadata)
+com.google.android.gms.auth.TokenData
 androidx.core.telephony.SubscriptionManagerCompat
 com.google.common.io.CharStreams$NullWriter
 com.google.android.gms.internal.common.zzak
@@ -18578,6 +18884,7 @@ androidx.appcompat.widget.PopupMenu$2
 kotlin.sequences.SequencesKt___SequencesKt$filterIndexed$1
 com.google.common.util.concurrent.SmoothRateLimiter$1
 kotlin.reflect.TypeImpl
+com.google.android.gms.auth.CookieUtil
 com.google.android.gms.common.internal.zzaf
 com.google.common.collect.Interner
 com.google.common.io.BaseEncoding$Base16Encoding
@@ -18592,6 +18899,7 @@ kotlin.ThrowsKt
 androidx.room.MultiInstanceInvalidationClient:
     void stop()
 com.google.common.collect.Synchronized$SynchronizedList
+com.google.android.gms.auth.api.R$styleable
 com.google.common.collect.DenseImmutableTable$Row
 androidx.appcompat.widget.ActionBarContainer:
     public void <init>(android.content.Context)
@@ -18609,6 +18917,7 @@ com.google.android.gms.maps.internal.IUiSettingsDelegate:
     public abstract boolean isScrollGesturesEnabledDuringRotateOrZoom()
 androidx.annotation.LongDef
 kotlin.collections.AbstractMutableList
+com.google.android.gms.internal.auth.zzai
 com.google.common.collect.ForwardingQueue
 com.google.common.collect.ImmutableRangeSet$AsSet$1
 com.google.android.gms.maps.zzh
@@ -18655,7 +18964,6 @@ com.google.common.collect.TreeRangeMap$RangeMapEntry
 io.flutter.view.FlutterView$FirstFrameListener
 androidx.browser.browseractions.BrowserActionItem
 com.google.common.collect.ListMultimap
-androidx.loader.content.ModernAsyncTask$WorkerRunnable
 com.google.android.gms.common.zzt
 androidx.core.content.FileProvider:
     public static android.net.Uri getUriForFile(android.content.Context,java.lang.String,java.io.File,java.lang.String)
@@ -18717,6 +19025,7 @@ com.google.android.gms.maps.UiSettings:
     public boolean isIndoorLevelPickerEnabled()
     public boolean isScrollGesturesEnabledDuringRotateOrZoom()
 com.google.common.hash.LongAddables
+com.google.android.gms.internal.auth-api.zbau
 com.google.common.util.concurrent.AbstractIdleService$ThreadNameSupplier
 com.google.common.collect.TreeRangeMap$AsMapOfRanges
 androidx.core.content.ContextCompat:
@@ -18795,10 +19104,21 @@ kotlinx.coroutines.CoroutineScopeKt:
     public static final void ensureActive(kotlinx.coroutines.CoroutineScope)
     public static final java.lang.Object currentCoroutineContext(kotlin.coroutines.Continuation)
     private static final java.lang.Object currentCoroutineContext$$forInline(kotlin.coroutines.Continuation)
+com.google.android.gms.auth.api.credentials.Credential:
+    static synthetic android.net.Uri zba(com.google.android.gms.auth.api.credentials.Credential)
+    static synthetic java.lang.String zbb(com.google.android.gms.auth.api.credentials.Credential)
+    static synthetic java.lang.String zbc(com.google.android.gms.auth.api.credentials.Credential)
+    static synthetic java.lang.String zbd(com.google.android.gms.auth.api.credentials.Credential)
+    static synthetic java.lang.String zbe(com.google.android.gms.auth.api.credentials.Credential)
+    static synthetic java.lang.String zbf(com.google.android.gms.auth.api.credentials.Credential)
+    static synthetic java.lang.String zbg(com.google.android.gms.auth.api.credentials.Credential)
+    static synthetic java.util.List zbh(com.google.android.gms.auth.api.credentials.Credential)
+    public static final java.lang.String EXTRA_KEY
 com.google.android.gms.common.internal.zae
 io.flutter.embedding.engine.loader.ResourceExtractor$1
 androidx.legacy.coreui.R$dimen
 com.google.android.gms.stats.CodePackage
+com.google.android.gms.internal.auth-api.zbad
 com.google.common.collect.FilteredKeyMultimap$AddRejectingList
 kotlin.jvm.internal.PropertyReference2Impl
 androidx.core.location.LocationCompat
@@ -18973,6 +19293,7 @@ com.google.common.util.concurrent.AbstractExecutionThreadService$1$2
 androidx.asynclayoutinflater.view.AsyncLayoutInflater$OnInflateFinishedListener
 com.google.android.gms.security.zza
 com.google.android.gms.maps.internal.zzaz
+com.google.android.gms.auth.api.accounttransfer.zzg
 kotlin.jvm.internal.CallableReference$NoReceiver:
     private java.lang.Object readResolve()
 com.google.android.gms.internal.base.zae
@@ -18989,7 +19310,9 @@ com.google.common.graph.AbstractBaseGraph
 kotlin.DeepRecursiveScopeImpl$crossFunctionCompletion$$inlined$Continuation$1
 kotlinx.coroutines.ThreadState
 com.google.common.io.Files$FilePredicate$2
+com.google.android.gms.auth.api.R$anim
 com.google.android.gms.maps.internal.zzai
+com.google.android.gms.internal.auth-api.zbav
 org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement
 com.google.android.gms.common.internal.MethodInvocation:
     public void <init>(int,int,int,long,long,java.lang.String,java.lang.String,int)
@@ -19019,6 +19342,11 @@ net.eighttechnologes.ict4farmers.R$styleable
 androidx.core.location.GpsStatusWrapper
 androidx.annotation.Px
 androidx.media.MediaBrowserServiceCompat$ServiceBinderImpl$8
+com.google.android.gms.internal.auth-api.zbt:
+    public final void zbc(com.google.android.gms.internal.auth-api.zbs,com.google.android.gms.internal.auth-api.zbp)
+    public final void zbd(com.google.android.gms.internal.auth-api.zbs,com.google.android.gms.auth.api.credentials.CredentialRequest)
+    public final void zbe(com.google.android.gms.internal.auth-api.zbs,com.google.android.gms.internal.auth-api.zbu)
+    public final void zbf(com.google.android.gms.internal.auth-api.zbs)
 androidx.core.net.MailTo
 com.google.common.base.CharMatcher$Ascii
 androidx.vectordrawable.R$color
@@ -19180,6 +19508,7 @@ androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImplApi23$1
 io.flutter.embedding.android.AndroidTouchProcessor$PointerChange
 androidx.core.hardware.fingerprint.FingerprintManagerCompat$AuthenticationResult
 androidx.fragment.app.Fragment$SavedState
+com.google.android.gms.auth.api.identity.zbh
 com.google.android.gms.internal.maps.zzl:
     public abstract double zzd()
     public abstract float zze()
@@ -19339,6 +19668,7 @@ com.onesignal.OSTaskController:
     java.util.concurrent.ConcurrentLinkedQueue getTaskQueueWaitingForInit()
     void shutdownNow()
     static final java.lang.String OS_PENDING_EXECUTOR
+com.google.android.gms.auth.api.proxy.ProxyApi$SpatulaHeaderResult
 kotlinx.coroutines.flow.FlowKt__DistinctKt
 com.google.common.collect.RegularImmutableMap$EntrySet
 com.google.android.gms.maps.model.MarkerOptions:
@@ -19373,7 +19703,6 @@ com.google.android.gms.common.util.PlatformVersion:
     public static boolean isAtLeastHoneycombMR1()
     public static boolean isAtLeastIceCreamSandwichMR1()
     public static boolean isAtLeastJellyBeanMR1()
-    public static boolean isAtLeastKitKat()
     public static boolean isAtLeastLollipopMR1()
     public static boolean isAtLeastM()
     public static boolean isAtLeastP()
@@ -19472,7 +19801,6 @@ com.google.android.gms.common.internal.safeparcel.SafeParcelReader:
     public static long[] createLongArray(android.os.Parcel,int)
     public static android.os.IBinder[] createIBinderArray(android.os.Parcel,int)
     public static android.os.Parcel[] createParcelArray(android.os.Parcel,int)
-    public static java.lang.String[] createStringArray(android.os.Parcel,int)
     public static java.math.BigDecimal[] createBigDecimalArray(android.os.Parcel,int)
     public static java.math.BigInteger[] createBigIntegerArray(android.os.Parcel,int)
     public static boolean[] createBooleanArray(android.os.Parcel,int)
@@ -19483,6 +19811,7 @@ kotlin.jvm.functions.Function13:
 androidx.media.R
 com.google.common.hash.Hashing$Sha1Holder
 kotlin.jvm.internal.CharCompanionObject
+com.google.android.gms.internal.auth.zzl
 io.flutter.embedding.engine.systemchannels.RestorationChannel:
     private static final java.lang.String TAG
 androidx.work.impl.background.package-info
@@ -19558,6 +19887,7 @@ androidx.appcompat.widget.PopupMenu$3
 androidx.core.view.WindowInsetsAnimationCompat$Impl21
 com.google.common.collect.SortedLists$KeyPresentBehavior$4
 kotlin.jvm.internal.PropertyReference
+com.google.android.gms.auth.api.proxy.zzb
 kotlinx.coroutines.channels.Channel:
     public static final int UNLIMITED
     public static final int RENDEZVOUS
@@ -19573,6 +19903,7 @@ com.google.android.gms.maps.internal.zzr
 androidx.core.app.ActivityOptionsCompat$ActivityOptionsCompatImpl
 androidx.browser.customtabs.CustomTabsClient$1
 kotlin.math.Constants
+com.google.android.gms.auth.zzf
 org.intellij.lang.annotations.Language
 kotlin.random.jdk8.PlatformThreadLocalRandom:
     public int nextInt(int,int)
@@ -19612,6 +19943,7 @@ com.google.common.collect.StandardTable$1
 com.google.android.gms.common.internal.service.zaa
 kotlinx.coroutines.flow.StateFlowImpl
 kotlin.properties.ReadOnlyProperty
+com.google.android.gms.auth.api.credentials.CredentialsOptions
 net.eighttechnologes.ict4farmers.R$bool
 com.baseflow.geolocator.R
 kotlinx.coroutines.flow.FlowKt__TransformKt$withIndex$$inlined$unsafeFlow$1
@@ -19644,6 +19976,7 @@ kotlinx.coroutines.flow.FlowKt__ZipKt$combine$5$1
 com.tekartik.sqflite.R
 kotlinx.coroutines.flow.internal.FlowExceptions_commonKt
 com.google.common.collect.DenseImmutableTable$Column
+com.google.android.gms.internal.auth-api.zbac
 org.checkerframework.checker.nullness.compatqual.NonNullType
 androidx.viewpager.R$dimen
 androidx.coordinatorlayout.widget.CoordinatorLayout$AttachedBehavior
@@ -19658,13 +19991,27 @@ com.google.android.gms.maps.internal.IMapViewDelegate:
     public abstract void onLowMemory()
     public abstract void onPause()
 kotlinx.coroutines.flow.FlowKt__MigrationKt$onErrorReturn$2
-androidx.loader.content.ModernAsyncTask
+androidx.loader.content.ModernAsyncTask:
+    public static void setDefaultExecutor(java.util.concurrent.Executor)
+    public static void execute(java.lang.Runnable)
+    public final androidx.loader.content.ModernAsyncTask$Status getStatus()
+    public final java.lang.Object get()
+    public final java.lang.Object get(long,java.util.concurrent.TimeUnit)
+    public final varargs androidx.loader.content.ModernAsyncTask execute(java.lang.Object[])
+    protected final varargs void publishProgress(java.lang.Object[])
+    private static final java.lang.String LOG_TAG
+    private static final int CORE_POOL_SIZE
+    private static final int MAXIMUM_POOL_SIZE
+    private static final int KEEP_ALIVE
+    private static final int MESSAGE_POST_RESULT
+    private static final int MESSAGE_POST_PROGRESS
 com.google.common.collect.SortedMultisetBridge
 androidx.core.view.accessibility.AccessibilityManagerCompat$AccessibilityStateChangeListener
 kotlinx.coroutines.ChildJob$DefaultImpls
 androidx.swiperefreshlayout.R$attr
 org.checkerframework.checker.nullness.compatqual.NullableDecl
 com.google.common.hash.Hashing$Sha256Holder
+com.google.android.gms.internal.auth.zzah
 androidx.fragment.R$integer
 com.google.android.gms.maps.model.StreetViewSource
 io.flutter.embedding.engine.dart.DartMessenger$1
@@ -19692,6 +20039,7 @@ androidx.work.impl.utils.WorkProgressUpdater$1
 com.google.android.gms.internal.common.zzaj
 com.google.android.gms.common.zzu
 kotlin.jvm.internal.SpreadBuilder
+com.google.android.gms.internal.auth.zzay
 androidx.work.impl.utils.StatusRunnable$3
 kotlin.UByte
 androidx.media.AudioAttributesCompat$AttributeUsage
@@ -19776,6 +20124,7 @@ androidx.swiperefreshlayout.R$style
 com.google.common.cache.RemovalListeners
 com.google.common.collect.EmptyContiguousSet$1
 com.google.common.collect.Sets$1
+com.google.android.gms.auth.R
 com.google.android.gms.common.api.Api$BaseClientBuilder:
     public static final int API_PRIORITY_GAMES
     public static final int API_PRIORITY_PLUS
@@ -19796,6 +20145,7 @@ com.onesignal.ADMMessageHandler$Receiver
 com.google.common.io.BaseEncoding$5
 kotlinx.coroutines.flow.internal.NullSurrogateKt
 com.google.common.net.package-info
+com.google.android.gms.internal.auth-api-phone.zzd
 com.google.firebase.FirebaseError
 kotlin.collections.unsigned.UArraysKt___UArraysJvmKt$asList$1
 com.google.common.cache.CacheBuilder
@@ -19859,6 +20209,7 @@ kotlin.collections.BooleanIterator
 com.google.common.collect.SortedSetMultimap
 com.google.common.io.PatternFilenameFilter
 com.google.common.reflect.Types$ParameterizedTypeImpl
+com.google.android.gms.internal.auth-api.zbat
 kotlinx.coroutines.flow.FlowKt__ErrorsKt
 com.google.common.util.concurrent.ListenerCallQueue$PerListenerQueue
 kotlinx.coroutines.flow.FlowKt__MergeKt$flattenConcat$lambda-1$$inlined$collect$1
@@ -20086,6 +20437,7 @@ com.onesignal.OSBackgroundSync:
     protected abstract void scheduleSyncTask(android.content.Context)
 com.google.android.gms.internal.common.zzl
 kotlinx.coroutines.CompletableDeferred$DefaultImpls
+com.google.android.gms.auth.api.credentials.CredentialRequestResult
 io.flutter.plugin.platform.PlatformPlugin:
     public void <init>(android.app.Activity,io.flutter.embedding.engine.systemchannels.PlatformChannel)
     public static final int DEFAULT_SYSTEM_UI
@@ -20100,6 +20452,7 @@ androidx.core.graphics.TypefaceCompatApi21Impl:
     private static final java.lang.String ADD_FONT_WEIGHT_STYLE_METHOD
     private static final java.lang.String CREATE_FROM_FAMILIES_WITH_DEFAULT_METHOD
 com.google.common.collect.AbstractSortedMultiset$1DescendingMultisetImpl
+com.jaumard.smsautofill.R$style
 android.support.customtabs.ICustomTabsCallback$Stub:
     public static android.support.customtabs.ICustomTabsCallback asInterface(android.os.IBinder)
     public static boolean setDefaultImpl(android.support.customtabs.ICustomTabsCallback)
@@ -20293,6 +20646,7 @@ androidx.core.view.ViewCompat:
     private static boolean sTempDetachBound
     private static java.lang.reflect.Method sChildrenDrawingOrderMethod
 com.google.android.gms.internal.common.zzai
+com.google.android.gms.internal.auth-api.zbd
 androidx.vectordrawable.animated.R$string
 kotlinx.coroutines.channels.ChannelsKt__DeprecatedKt$filterNotNullTo$1
 androidx.core.os.CancellationSignal:
@@ -20474,6 +20828,7 @@ androidx.work.impl.model.WorkProgressDao:
     public abstract void insert(androidx.work.impl.model.WorkProgress)
     public abstract androidx.work.Data getProgressForWorkSpecId(java.lang.String)
     public abstract java.util.List getProgressForWorkSpecIds(java.util.List)
+com.google.android.gms.internal.auth-api.zbu
 com.onesignal.shortcutbadger.util.CloseHelper:
     public void <init>()
     public static void closeQuietly(java.io.Closeable)
@@ -20525,6 +20880,7 @@ com.google.android.gms.tasks.zzh:
     public final void zzc()
 kotlinx.coroutines.channels.ChannelsKt__DeprecatedKt$toChannel$1
 io.flutter.view.FlutterView$1
+com.jaumard.smsautofill.R$styleable
 com.google.common.util.concurrent.CycleDetectingLockFactory$ExampleStackTrace
 org.jetbrains.annotations.Contract
 androidx.browser.R$string
@@ -20550,7 +20906,6 @@ com.google.android.gms.common.util.DeviceProperties:
     public static boolean isTablet(android.content.Context)
     public static boolean isTablet(android.content.res.Resources)
     public static boolean isTv(android.content.Context)
-    public static boolean isUserBuild()
     public static boolean zzc(android.content.res.Resources)
     private static java.lang.Boolean zza
     private static java.lang.Boolean zzb
@@ -20564,6 +20919,7 @@ kotlinx.coroutines.flow.internal.ChannelFlowMerge$collectTo$$inlined$collect$1$1
 io.flutter.plugins.flutter_plugin_android_lifecycle.FlutterAndroidLifecyclePlugin:
     public static void registerWith(io.flutter.plugin.common.PluginRegistry$Registrar)
 androidx.core.graphics.drawable.RoundedBitmapDrawable
+com.google.android.gms.auth.api.identity.zbg
 com.google.android.gms.internal.maps.zzm
 com.google.common.collect.Synchronized$SynchronizedDeque
 com.onesignal.OneSignal:
@@ -20624,9 +20980,9 @@ com.google.common.collect.FilteredEntryMultimap$AsMap$1EntrySetImpl
 com.onesignal.ActivityLifecycleHandler:
     private static final java.lang.String FOCUS_LOST_WORKER_TAG
     private static final int SYNC_AFTER_BG_DELAY_MS
+androidx.fragment.app.ListFragment$2
 android.support.v4.media.MediaBrowserCompat$CustomActionCallback:
     public void <init>()
-androidx.fragment.app.ListFragment$2
 kotlin.jvm.internal.markers.KMappedMarker
 com.google.common.util.concurrent.ImmediateFuture$ImmediateCancelledFuture
 kotlin.collections.ReversedList
@@ -20640,6 +20996,7 @@ io.flutter.embedding.engine.dart.DartMessenger$SerialTaskQueue
 io.flutter.plugins.googlemaps.TileOverlayController:
     public void setTileProvider(com.google.android.gms.maps.model.TileProvider)
 androidx.browser.trusted.sharing.ShareTarget$Params
+com.google.android.gms.auth.api.accounttransfer.zzh
 com.google.common.collect.Tables$UnmodifiableTable
 com.google.android.gms.maps.model.PointOfInterest
 androidx.core.view.ViewCompat$AccessibilityViewProperty:
@@ -20787,18 +21144,12 @@ com.google.android.gms.common.GooglePlayServicesManifestException:
     private final int zza
 com.onesignal.OSInAppMessageController$8:
     final synthetic com.onesignal.OSInAppMessageController this$0
-androidx.loader.app.LoaderManagerImpl$LoaderViewModel:
-    private boolean mCreatingLoader
 kotlin.random.Random:
     public abstract int nextBits(int)
 com.google.android.gms.auth.api.signin.GoogleSignInAccount:
     public static com.google.android.gms.common.util.Clock zaa
 com.onesignal.TrackAmazonPurchase$OSPurchasingListener:
     final synthetic com.onesignal.TrackAmazonPurchase this$0
-androidx.loader.app.LoaderManagerImpl$LoaderObserver:
-    boolean hasDeliveredData()
-    void reset()
-    public void dump(java.lang.String,java.io.PrintWriter)
 androidx.core.view.WindowInsetsControllerCompat$Impl30:
     final androidx.core.view.WindowInsetsControllerCompat mCompatController
     private final androidx.collection.SimpleArrayMap mListeners
@@ -20861,6 +21212,8 @@ androidx.media.AudioAttributesCompat:
     private static final int[] SDK_USAGES
 io.flutter.plugins.pathprovider.PathProviderPlugin$PathProviderPlatformThread$1:
     final synthetic io.flutter.plugins.pathprovider.PathProviderPlugin$PathProviderPlatformThread this$1
+com.google.android.gms.auth.api.signin.GoogleSignInClient:
+    private static final com.google.android.gms.auth.api.signin.zbb zbb
 androidx.core.graphics.TypefaceCompatBaseImpl$1:
     final synthetic androidx.core.graphics.TypefaceCompatBaseImpl this$0
 androidx.lifecycle.SavedStateHandleController:
@@ -20884,15 +21237,15 @@ com.onesignal.OSInAppMessageAction:
     private java.lang.String pageId
 androidx.work.impl.model.WorkSpecDao_Impl$2:
     final synthetic androidx.work.impl.model.WorkSpecDao_Impl this$0
+com.google.android.gms.auth.api.signin.GoogleSignInResult
 androidx.fragment.app.FragmentTransitionCompat21$4:
     final synthetic androidx.fragment.app.FragmentTransitionCompat21 this$0
 kotlinx.coroutines.scheduling.CoroutineScheduler:
     public static final kotlinx.coroutines.scheduling.CoroutineScheduler$Companion Companion
 com.google.android.gms.internal.firebase_messaging.zzh
-androidx.loader.app.LoaderManagerImpl$LoaderInfo:
-    androidx.loader.content.Loader getLoader()
 androidx.appcompat.view.menu.MenuItemWrapperICS$ActionProviderWrapperJB:
     final synthetic androidx.appcompat.view.menu.MenuItemWrapperICS this$0
+com.google.android.gms.auth.api.signin.internal.zbd
 androidx.core.provider.CallbackWithHandler$2:
     final synthetic androidx.core.provider.CallbackWithHandler this$0
 androidx.fragment.app.Fragment$3:
@@ -20983,6 +21336,8 @@ androidx.fragment.app.FragmentViewLifecycleOwner:
 com.google.android.gms.dynamite.zzl
 androidx.core.view.ViewConfigurationCompat:
     private static java.lang.reflect.Method sGetScaledScrollFactorMethod
+com.jaumard.smsautofill.SmsAutoFillPlugin$3:
+    final synthetic com.jaumard.smsautofill.SmsAutoFillPlugin this$0
 androidx.work.impl.model.WorkSpecDao_Impl$8:
     final synthetic androidx.work.impl.model.WorkSpecDao_Impl this$0
 com.google.android.gms.common.internal.zzt:
@@ -20991,9 +21346,6 @@ android.support.v4.media.MediaMetadataCompat:
     private static final java.lang.String[] PREFERRED_DESCRIPTION_ORDER
     private static final java.lang.String[] PREFERRED_BITMAP_ORDER
     private static final java.lang.String[] PREFERRED_URI_ORDER
-com.google.android.gms.common.GooglePlayServicesUtilLight:
-    private static boolean zzb
-    static boolean zza
 androidx.appcompat.widget.ListPopupWindow:
     private java.lang.Runnable mShowDropDownRunnable
 androidx.appcompat.view.menu.ActionMenuItem:
@@ -21003,6 +21355,8 @@ io.flutter.embedding.engine.systemchannels.PlatformViewsChannel$1$1:
 androidx.core.view.ActionProvider:
     private final android.content.Context mContext
     private androidx.core.view.ActionProvider$SubUiVisibilityListener mSubUiVisibilityListener
+com.google.android.gms.common.logging.Logger:
+    private final com.google.android.gms.common.internal.GmsLogger zzc
 com.google.android.gms.internal.firebase_messaging.zzj:
     private static final java.io.OutputStream zzg
 androidx.core.text.PrecomputedTextCompat$Params:
@@ -21021,20 +21375,25 @@ androidx.work.impl.model.WorkProgressDao_Impl$3:
     final synthetic androidx.work.impl.model.WorkProgressDao_Impl this$0
 androidx.fragment.app.Fragment$1
 androidx.loader.content.Loader:
-    public void unregisterListener(androidx.loader.content.Loader$OnLoadCompleteListener)
-    public void abandon()
-    public java.lang.String dataToString(java.lang.Object)
+    android.content.Context mContext
+com.google.android.gms.auth.api.signin.GoogleSignInOptions:
+    private java.util.Map zaq
+    public static final com.google.android.gms.auth.api.signin.GoogleSignInOptions DEFAULT_GAMES_SIGN_IN
+    public static final com.google.android.gms.common.api.Scope zab
 androidx.work.impl.model.WorkSpecDao_Impl$7:
     final synthetic androidx.work.impl.model.WorkSpecDao_Impl this$0
 com.google.firebase.iid.zzx:
     private final java.lang.String zzbu
+com.google.android.gms.common.internal.GmsLogger:
+    private final java.lang.String zza
+    private final java.lang.String zzb
 com.google.android.gms.internal.firebase_messaging.zzm:
     private static final java.lang.Throwable[] zzj
 io.flutter.plugins.googlemaps.GoogleMapController$3:
     final synthetic io.flutter.plugins.googlemaps.GoogleMapController this$0
+com.google.android.gms.auth.api.signin.zba
 com.google.android.gms.internal.maps.zzc:
     private static final java.lang.ClassLoader zza
-androidx.loader.content.Loader$OnLoadCompleteListener
 com.onesignal.OneSignalRemoteParams$Params:
     boolean enterprise
 com.google.android.gms.maps.model.PatternItem:
@@ -21062,10 +21421,12 @@ androidx.work.impl.model.WorkSpecDao_Impl$6:
     final synthetic androidx.work.impl.model.WorkSpecDao_Impl this$0
 com.onesignal.OSInAppMessageRepository$1:
     final synthetic com.onesignal.OSInAppMessageRepository this$0
+com.google.android.gms.auth.api.signin.zbb
 io.flutter.embedding.engine.loader.FlutterLoader$InitResult:
     final java.lang.String dataDirPath
 kotlinx.coroutines.android.HandlerDispatcherKt:
     public static final kotlinx.coroutines.android.HandlerDispatcher Main
+com.google.android.gms.auth.api.signin.GoogleSignInApi
 androidx.room.MultiInstanceInvalidationClient$5
 com.onesignal.PushRegistratorHMS:
     private static com.onesignal.PushRegistrator$RegisteredHandler registeredHandler
@@ -21125,6 +21486,9 @@ io.flutter.plugins.urllauncher.WebViewActivity$2:
     final synthetic io.flutter.plugins.urllauncher.WebViewActivity this$0
 com.onesignal.OneSignalRestClientWrapper$2:
     final synthetic com.onesignal.OneSignalRestClientWrapper this$0
+com.google.android.gms.auth.api.signin.internal.zbn:
+    com.google.android.gms.auth.api.signin.GoogleSignInAccount zbb
+    com.google.android.gms.auth.api.signin.GoogleSignInOptions zbc
 com.onesignal.shortcutbadger.ShortcutBadger:
     private static final java.lang.Object sCounterSupportedLock
 androidx.cardview.widget.CardViewApi17Impl$1:
@@ -21143,6 +21507,10 @@ com.google.android.gms.internal.firebase_messaging.zzn:
     private static final int zzl
 androidx.fragment.app.DefaultSpecialEffectsController$5:
     final synthetic androidx.fragment.app.DefaultSpecialEffectsController this$0
+com.google.android.gms.auth.api.Auth:
+    public static final com.google.android.gms.common.api.Api PROXY_API
+    public static final com.google.android.gms.auth.api.proxy.ProxyApi ProxyApi
+    public static final com.google.android.gms.auth.api.signin.GoogleSignInApi GoogleSignInApi
 androidx.work.impl.model.WorkSpecDao_Impl:
     private final androidx.room.SharedSQLiteStatement __preparedStmtOfPruneFinishedWorkWithZeroDependentsIgnoringKeepForAtLeast
 androidx.work.Configuration$1:
@@ -21241,12 +21609,12 @@ androidx.room.DatabaseConfiguration:
     public final java.lang.String copyFromAssetPath
     public final java.io.File copyFromFile
 com.google.android.gms.dynamite.zzj
-com.google.android.gms.common.GoogleSignatureVerifier:
-    private final android.content.Context zzb
 io.flutter.FlutterInjector:
     private static boolean accessed
 androidx.activity.ComponentActivity:
     private final java.util.concurrent.atomic.AtomicInteger mNextLocalRequestCode
+com.google.android.gms.internal.auth.zza:
+    private final java.lang.String zzb
 com.onesignal.OSInAppMessageRepository$5:
     final synthetic com.onesignal.OSInAppMessageRepository this$0
 androidx.work.impl.utils.WorkForegroundUpdater:
@@ -21373,7 +21741,6 @@ androidx.appcompat.R$styleable:
 androidx.work.impl.model.WorkTagDao_Impl$1:
     final synthetic androidx.work.impl.model.WorkTagDao_Impl this$0
 com.google.android.gms.common.internal.GmsClient:
-    private final com.google.android.gms.common.internal.ClientSettings zab
     private static volatile java.util.concurrent.Executor zaa
 com.tekartik.sqflite.SqflitePlugin$BgResult:
     final synthetic com.tekartik.sqflite.SqflitePlugin this$0
@@ -21402,8 +21769,6 @@ kotlinx.coroutines.Dispatchers:
     private void <init>()
     public static final kotlinx.coroutines.Dispatchers INSTANCE
     private static final kotlinx.coroutines.CoroutineDispatcher Unconfined
-com.google.android.gms.common.api.internal.zaaa:
-    private final android.os.Looper zac
 com.onesignal.GenerateNotification:
     private static java.lang.Class notificationOpenedClass
 io.flutter.embedding.engine.loader.FlutterApplicationInfo:
@@ -21438,11 +21803,12 @@ androidx.fragment.app.FragmentStateManager$1:
     final synthetic androidx.fragment.app.FragmentStateManager this$0
 com.google.android.gms.internal.location.zzbd:
     private boolean zzdk
-androidx.lifecycle.LiveData:
-    public java.lang.Object getValue()
-    public boolean hasActiveObservers()
+com.google.android.gms.internal.auth-api-phone.zzc:
+    private static final java.lang.ClassLoader zzd
 com.google.android.gms.maps.model.MapStyleOptions:
     private static final java.lang.String zza
+com.google.android.gms.internal.auth-api.zbc:
+    private static final java.lang.ClassLoader zba
 androidx.fragment.app.FragmentManager$7:
     final synthetic androidx.fragment.app.FragmentManager this$0
 androidx.appcompat.app.ToolbarActionBar
@@ -21466,6 +21832,8 @@ com.onesignal.UserStateSynchronizer$1:
     final synthetic com.onesignal.UserStateSynchronizer this$0
 com.onesignal.JobIntentService:
     boolean mStopped
+androidx.loader.content.ModernAsyncTask:
+    private static volatile java.util.concurrent.Executor sDefaultExecutor
 io.flutter.FlutterInjector$Builder$NamedThreadFactory:
     final synthetic io.flutter.FlutterInjector$Builder this$0
 com.google.android.gms.common.internal.zzag:
@@ -21491,8 +21859,8 @@ androidx.core.view.ViewCompat$AccessibilityViewProperty:
     private final int mContentChangeType
 androidx.appcompat.view.StandaloneActionMode:
     private boolean mFocusable
+io.flutter.plugin.common.BinaryMessenger$-CC
 io.flutter.plugin.platform.PlatformView$-CC:
     public static void $default$onInputConnectionLocked(io.flutter.plugin.platform.PlatformView)
     public static void $default$onInputConnectionUnlocked(io.flutter.plugin.platform.PlatformView)
-io.flutter.plugin.common.BinaryMessenger$-CC
 androidx.lifecycle.DefaultLifecycleObserver$-CC

@@ -11,6 +11,7 @@ import 'package:flutx/widgets/text/text.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:ict4farmers/models/AppVersionModel.dart';
 import 'package:ict4farmers/models/BannerModel.dart';
 import 'package:ict4farmers/models/GardenActivityModel.dart';
 import 'package:ict4farmers/models/GardenModel.dart';
@@ -86,6 +87,7 @@ import '../pages/questions/question_screen.dart';
 import '../pages/questions/questions_create_screen.dart';
 import '../pages/questions/questions_screen.dart';
 import '../pages/search/search_screen.dart';
+import '../pages/wizard/AppUpdateScreen.dart';
 import '../pages/wizard/WizardCheckListScreen.dart';
 import '../pages/wizard/WizardHomeScreen.dart';
 import '../widgets/switcher_screen.dart';
@@ -94,6 +96,7 @@ import 'SubmitActivityScreen.dart';
 
 class Utils {
   static void boot_system() async {
+    await AppVersionModel.is_latest_varsion();;
     await WizardItemModel.get_items();
     await Utils.get_logged_in();
     await CropCategory.get_items();
@@ -400,7 +403,18 @@ class Utils {
 
   static navigate_to(String screen, context, {dynamic data: null}) {
     switch (screen) {
-      case AppConfig.WizardCheckListScreen:
+      case AppConfig.AppUpdateScreen:
+        Navigator.push(
+          context,
+          PageRouteBuilder(
+            pageBuilder: (context, animation1, animation2) =>
+                AppUpdateScreen(),
+            transitionDuration: Duration.zero,
+          ),
+        );
+        break;
+
+  case AppConfig.WizardCheckListScreen:
         Navigator.push(
           context,
           PageRouteBuilder(

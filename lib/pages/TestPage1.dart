@@ -284,7 +284,7 @@ class _TestPage1State extends State<TestPage1> {
                       child: CachedNetworkImage(
                         fit: BoxFit.fill,
                         imageUrl:
-                        "${AppConfig.BASE_URL}/storage/${horizontal_banner_2.image}",
+                        "${AppConfig.BASE_URL}/${horizontal_banner_2.image}",
                         placeholder: (context, url) => ShimmerLoadingWidget(
                             height: 90, width: 90, is_circle: true),
                         errorWidget: (context, url, error) => Image(
@@ -340,7 +340,7 @@ class _TestPage1State extends State<TestPage1> {
                         height: 220,
                         fit: BoxFit.fill,
                         imageUrl:
-                        "${AppConfig.BASE_URL}/storage/${horizontal_banner_3.image}",
+                        "${AppConfig.BASE_URL}/${horizontal_banner_3.image}",
                         placeholder: (context, url) => ShimmerLoadingWidget(
                           height: 220,
                         ),
@@ -482,7 +482,7 @@ class _TestPage1State extends State<TestPage1> {
             CachedNetworkImage(
               height: 100,
               fit: BoxFit.cover,
-              imageUrl: "${AppConfig.BASE_URL}/storage/${productModel.image}",
+              imageUrl: "${AppConfig.BASE_URL}/${productModel.image}",
               placeholder: (context, url) => ShimmerLoadingWidget(
                   height: 100, width: 100, is_circle: true),
               errorWidget: (context, url, error) => Image(
@@ -512,7 +512,7 @@ class _TestPage1State extends State<TestPage1> {
         child: CachedNetworkImage(
           width: ((MediaQuery.of(context).size.width / 2) - 15),
           fit: BoxFit.fill,
-          imageUrl: "${AppConfig.BASE_URL}/storage/${bannerModel.image}",
+          imageUrl: "${AppConfig.BASE_URL}/${bannerModel.image}",
           placeholder: (context, url) => ShimmerLoadingWidget(
             height: 210,
           ),
@@ -536,7 +536,7 @@ class _TestPage1State extends State<TestPage1> {
           children: [
             CachedNetworkImage(
               height: 70,
-              imageUrl: "${AppConfig.BASE_URL}/storage/${data.image}",
+              imageUrl: "${AppConfig.BASE_URL}/${data.image}",
               placeholder: (context, url) => ShimmerLoadingWidget(
                   height: 100, width: 100, is_circle: true, padding: 0),
               errorWidget: (context, url, error) => Image(

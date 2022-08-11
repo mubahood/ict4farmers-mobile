@@ -5,6 +5,7 @@ import 'package:form_builder_validators/form_builder_validators.dart';
 import 'package:ict4farmers/models/LoggedInUserModel.dart';
 import 'package:ict4farmers/theme/app_theme.dart';
 import 'package:ict4farmers/utils/Utils.dart';
+import 'package:sms_autofill/sms_autofill.dart';
 
 class account_verification_code extends StatefulWidget {
   @override
@@ -199,6 +200,8 @@ class _account_verification_code extends State<account_verification_code> {
   }
 
   Future<void> check_verification() async {
+    await SmsAutoFill().listenForCode;
+
     await LoggedInUserModel.update_local_user();
     LoggedInUserModel _u = await LoggedInUserModel.get_logged_in_user();
     if (_u.phone_number_verified.toString() == "1") {

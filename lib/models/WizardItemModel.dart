@@ -21,7 +21,7 @@ class WizardItemModel {
 
     bool decision = false;
     _items.forEach((e) {
-      if ((e.id == 2) || (e.id == 3) || (e.id == 4) || (e.id == 5)) {
+      if ((e.id == 2)) {
         if (!e.is_done) {
           decision = true;
         }

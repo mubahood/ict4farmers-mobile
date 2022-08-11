@@ -1,5 +1,9 @@
 class AppConfig {
+  static const String APP_VERSION = "3";
   static const String GardensScreen = "GardensScreen";
+  static const String MOBILE_APP_LINK =
+      "https://play.google.com/store/apps/details?id=net.eighttechnologes.ict4farmers&hl=en&gl=US";
+  static const String AppUpdateScreen = "AppUpdateScreen";
   static const String ONESIGNAL_APP_ID = "51de22fc-e924-4731-a37f-f7a3276ab151";
   static const String GardenCreateScreen = "GardenCreateScreen";
   static const String GardenScreen = "GardenScreen";
