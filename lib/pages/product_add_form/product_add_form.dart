@@ -461,7 +461,7 @@ class ProductAddFormState extends State<ProductAddForm> {
                 children: [
                   Icon(Icons.add, size: 35, color: CustomTheme.primary),
                   Center(child: Text("add photo")),
-                ])))
+                ])) )
         : Stack(
       children: [
         Container(
