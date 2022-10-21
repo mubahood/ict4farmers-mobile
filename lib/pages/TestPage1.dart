@@ -556,6 +556,7 @@ class _TestPage1State extends State<TestPage1> {
     );
   }
 
+
   void open_product_listting(BannerModel item) {
     Utils.navigate_to(AppConfig.ProductListting, context, data: {
       'title': item.name,

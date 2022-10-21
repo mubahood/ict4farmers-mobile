@@ -65,6 +65,7 @@ class LoggedInUserModel {
 
 
   static Future<void> update_local_user() async {
+
     LoggedInUserModel u = await LoggedInUserModel.get_logged_in_user();
     String _resp = await Utils.http_get('api/users-profile', {
       'id': u.id,

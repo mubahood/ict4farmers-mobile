@@ -37,6 +37,7 @@ import '../models/ChatThreadModel.dart';
 import '../models/CropCategory.dart';
 import '../models/DynamicTable.dart';
 import '../models/FarmModel.dart';
+import '../models/FarmersGroup.dart';
 import '../models/FormItemModel.dart';
 import '../models/GardenActivityModel.dart';
 import '../models/GardenModel.dart';
@@ -96,7 +97,8 @@ import 'SubmitActivityScreen.dart';
 
 class Utils {
   static void boot_system() async {
-    await AppVersionModel.is_latest_varsion();;
+    await AppVersionModel.is_latest_varsion();
+    ;
     await WizardItemModel.get_items();
     await Utils.get_logged_in();
     await CropCategory.get_items();
@@ -106,6 +108,7 @@ class Utils {
     await PestModel.get_items();
     await QuestionModel.get_items();
     await LocationModel.get_items();
+    await FarmersGroup.get_items();
     await CategoryModel.get_all();
     await ProductModel.get_online_items({});
   }
@@ -1074,15 +1077,34 @@ class Utils {
     return await Geolocator.getCurrentPosition();
   }
 
+  static List<String> json_to_list(String data) {
+    List<String> items = [];
+    if (data == null || data.isEmpty) {
+      return [];
+    }
+    try {
+      List<dynamic> temp = jsonDecode(data);
+      if (temp != null) {
+        temp.forEach((element) {
+          items.add(element.toString());
+        });
+      }
+    } catch (e) {
+      return [];
+    }
+
+    return items;
+  }
+
   static String to_date_1(String string_date) {
     DateTime d;
-    try{
-      d=DateTime.parse(string_date);
-    }catch (d){
+    try {
+      d = DateTime.parse(string_date);
+    } catch (d) {
       return "-";
     }
 
-    if(d == null){
+    if (d == null) {
       return "-";
     }
     return '${d.day}-${d.month}-${d.year}';
