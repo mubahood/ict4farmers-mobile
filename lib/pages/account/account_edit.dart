@@ -37,6 +37,7 @@ class _AccountEditState extends State<AccountEdit> {
   bool onLoading = false;
 
   LoggedInUserModel item = new LoggedInUserModel();
+  String user_role = '';
 
   late Future<dynamic> futureInit;
 
@@ -231,6 +232,7 @@ class _AccountEditState extends State<AccountEdit> {
 
       if (_resp == null || _resp.isEmpty) {
         setState(() {
+          onLoading = false;
           error_message =
               "Failed to connect to internet. Please check your network and try again.";
         });
@@ -240,7 +242,7 @@ class _AccountEditState extends State<AccountEdit> {
 
       if (resp_obg['status'].toString() != "1") {
         error_message = resp_obg['message'];
-
+        onLoading = false;
         Utils.showSnackBar(error_message, context, Colors.white,
             background_color: CustomTheme.primary);
 
@@ -344,6 +346,7 @@ password
                       child: Text("Something went wrong. PLease try again."),
                     );
                   } else {
+
                     if (!['Male', 'Female'].contains(item.gender)) {
                       item.gender = "";
                     }
@@ -355,6 +358,8 @@ password
                     if (!['Basic user', 'Farmer', 'Service provider']
                         .contains(item.user_role)) {
                       item.user_role = item.user_role;
+                      user_role = item.user_role;
+
                     }
                     if (![
                       'Subsistence production',
@@ -461,10 +466,7 @@ password
                               textInputAction: TextInputAction.next,
                               keyboardType: TextInputType.emailAddress,
                               validator: FormBuilderValidators.compose([
-                                FormBuilderValidators.required(
-                                  context,
-                                  errorText: "Email address is required.",
-                                ),
+
                                 FormBuilderValidators.minLength(
                                   context,
                                   5,
@@ -496,13 +498,12 @@ password
                               )
                             ]),
                             items: [
-                              '',
                               'Male',
                               'Female',
                             ]
-                                .map((tyepe) => DropdownMenuItem(
-                                      value: tyepe,
-                                      child: Text('$tyepe'),
+                                .map((gender) => DropdownMenuItem(
+                                      value: gender,
+                                      child: Text('${gender}'),
                                     ))
                                 .toList(),
                           ),
@@ -510,7 +511,7 @@ password
                             color: Colors.grey.shade300,
                           ),
                           FormBuilderDropdown(
-                            initialValue: item.marital_status,
+
                             dropdownColor: Colors.white,
                             name: 'marital_status',
                             decoration: customTheme.input_decoration_2(
@@ -523,12 +524,13 @@ password
                               )
                             ]),
                             items: [
+                              '',
                               'Single',
                               'Married',
                             ]
-                                .map((tyepe) => DropdownMenuItem(
-                                      value: tyepe,
-                                      child: Text('$tyepe'),
+                                .map((marital_status) => DropdownMenuItem(
+                                      value: marital_status,
+                                      child: Text('$marital_status'),
                                     ))
                                 .toList(),
                           ),
@@ -580,6 +582,7 @@ password
                             ),
                             onChanged: (c) {
                               item.user_role = c.toString();
+                              user_role = item.user_role;
                               setState(() {});
                             },
                             validator: FormBuilderValidators.compose([
@@ -589,6 +592,7 @@ password
                               )
                             ]),
                             items: [
+                              '',
                               'Basic user',
                               'Farmer',
                               'Service provider',
@@ -602,7 +606,7 @@ password
                           FxDashedDivider(
                             color: Colors.grey.shade300,
                           ),
-                          (item.user_role == "Farmer")
+                          (user_role == "Farmer")
                               ? InkWell(
                                   onTap: () => {prick_farmer_group()},
                                   child: Container(
@@ -646,7 +650,7 @@ password
                           FxDashedDivider(
                             color: Colors.grey.shade300,
                           ),
-                          (item.user_role == "Farmer")
+                          (user_role == "Farmer")
                               ? FormBuilderCheckboxGroup<String>(
                                   autovalidateMode:
                                       AutovalidateMode.onUserInteraction,
@@ -679,7 +683,7 @@ password
                           FxDashedDivider(
                             color: Colors.grey.shade300,
                           ),
-                          (item.user_role == "Farmer")
+                          (user_role == "Farmer")
                               ? FormBuilderTextField(
                                   name: "experience",
                                   initialValue: item.experience,
@@ -699,7 +703,7 @@ password
                           FxDashedDivider(
                             color: Colors.grey.shade300,
                           ),
-                          (item.user_role == "Farmer")
+                          (user_role == "Farmer")
                               ? FormBuilderDropdown(
                                   dropdownColor: Colors.white,
                                   name: 'production_scale',
@@ -715,6 +719,7 @@ password
                                     )
                                   ]),
                                   items: [
+                                    '',
                                     'Subsistence production',
                                     'Small Commercial Production',
                                     'Large Commercial Production',
@@ -729,7 +734,7 @@ password
                           FxDashedDivider(
                             color: Colors.grey.shade300,
                           ),
-                          (item.user_role == "Farmer")
+                          (user_role == "Farmer")
                               ? FormBuilderDropdown(
                                   dropdownColor: Colors.white,
                                   name: 'access_to_credit',
