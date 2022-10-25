@@ -21,6 +21,25 @@ class CustomTheme {
   static final Color orange = Color(0xffFFA500);
 
 
+  static InputDecoration input_decoration_3({
+    String labelText: "",
+    String hintText: "",
+  }) {
+    return InputDecoration(
+      focusedBorder: InputBorder.none,
+      enabledBorder: InputBorder.none,
+      filled: true,
+      border: InputBorder.none,
+      labelStyle: FxTextStyle.b1(color: Colors.grey.shade700),
+      labelText: labelText,
+      hintText: hintText,
+      hintStyle: TextStyle(
+        fontWeight: FontWeight.w300,
+      ),
+      fillColor: Colors.white,
+    );
+  }
+
   InputDecoration input_decoration_2({
     String labelText: "",
     String hintText: "",

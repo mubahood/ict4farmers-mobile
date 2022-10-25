@@ -756,6 +756,7 @@ kotlin.sequences.SequencesKt___SequencesKt$minus$1$iterator$1
 com.google.common.collect.RegularImmutableList
 io.flutter.view.TextureRegistry:
     public abstract io.flutter.view.TextureRegistry$SurfaceTextureEntry registerSurfaceTexture(android.graphics.SurfaceTexture)
+    public void onTrimMemory(int)
 com.google.android.gms.auth.api.signin.internal.Storage:
     protected final void zab(java.lang.String)
     public final void zac()
@@ -2065,6 +2066,9 @@ androidx.core.view.inputmethod.InputContentInfoCompat$InputContentInfoCompatImpl
     public abstract void releasePermission()
 androidx.annotation.AnimatorRes
 androidx.versionedparcelable.ParcelField
+io.flutter.plugin.platform.PlatformViewWrapper:
+    public android.graphics.SurfaceTexture getTexture()
+    private static final java.lang.String TAG
 com.google.common.graph.Traverser$GraphTraverser
 com.onesignal.shortcutbadger.impl.SonyHomeBadger:
     private static final java.lang.String INTENT_ACTION
@@ -4341,6 +4345,7 @@ kotlin.reflect.TypeOfKt
 com.google.android.gms.location.zzi
 androidx.work.impl.background.systemalarm.package-info
 io.flutter.embedding.engine.FlutterEngineConnectionRegistry:
+    private android.app.Activity attachedActivity()
     public void add(java.util.Set)
     public io.flutter.embedding.engine.plugins.FlutterPlugin get(java.lang.Class)
     public void attachToService(android.app.Service,androidx.lifecycle.Lifecycle,boolean)
@@ -4721,6 +4726,7 @@ kotlin.comparisons.ComparisonsKt__ComparisonsKt$then$1
 io.flutter.view.AccessibilityBridge:
     public int getHoveredObjectId()
     public void reset()
+    public boolean externalViewRequestSendAccessibilityEvent(android.view.View,android.view.View,android.view.accessibility.AccessibilityEvent)
     private static final java.lang.String TAG
     private static final int ACTION_SHOW_ON_SCREEN
     private static final float SCROLL_EXTENT_FOR_INFINITY
@@ -4902,6 +4908,7 @@ io.flutter.embedding.engine.loader.FlutterLoader:
     private static final java.lang.String TAG
     private static final java.lang.String OLD_GEN_HEAP_SIZE_META_DATA_KEY
     private static final java.lang.String ENABLE_SKPARAGRAPH_META_DATA_KEY
+    private static final java.lang.String LEAK_VM_META_DATA_KEY
     static final java.lang.String AOT_SHARED_LIBRARY_NAME
     static final java.lang.String AOT_VMSERVICE_SHARED_LIBRARY_NAME
     static final java.lang.String SNAPSHOT_ASSET_PATH_KEY
@@ -5135,6 +5142,9 @@ kotlin.jvm.internal.Ref$FloatRef
 com.google.firebase.FirebaseAppLifecycleListener
 io.flutter.plugins.urllauncher.R$id
 io.flutter.embedding.engine.renderer.FlutterRenderer:
+    private void unregisterTexture(long)
+    static synthetic void access$600(io.flutter.embedding.engine.renderer.FlutterRenderer,long)
+    void removeOnTrimMemoryListener(io.flutter.view.TextureRegistry$OnTrimMemoryListener)
     public android.graphics.Bitmap getBitmap()
     public void setAccessibilityFeatures(int)
     public void dispatchSemanticsAction(int,int,java.nio.ByteBuffer,int)
@@ -5828,6 +5838,9 @@ androidx.core.internal.view.SupportMenu:
     public static final int CATEGORY_SHIFT
     public static final int SUPPORTED_MODIFIERS_MASK
     public static final int FLAG_KEEP_OPEN_ON_SUBMENU_OPENED
+io.flutter.plugin.platform.PlatformView:
+    public void onInputConnectionLocked()
+    public void onInputConnectionUnlocked()
 kotlin.streams.jdk8.StreamsKt
 com.google.common.collect.Multimaps
 kotlin.coroutines.CoroutineContextImplKt
@@ -6056,6 +6069,7 @@ io.flutter.embedding.android.FlutterActivity:
     public static io.flutter.embedding.android.FlutterActivity$NewEngineIntentBuilder withNewEngine()
     public static io.flutter.embedding.android.FlutterActivity$CachedEngineIntentBuilder withCachedEngine(java.lang.String)
     void setDelegate(io.flutter.embedding.android.FlutterActivityAndFragmentDelegate)
+    public io.flutter.embedding.android.ExclusiveAppComponent getExclusiveAppComponent()
     public void updateSystemUiOverlays()
     private static final java.lang.String TAG
 com.google.common.collect.LinkedHashMultimap$ValueEntry
@@ -6152,6 +6166,8 @@ io.flutter.embedding.engine.FlutterShellArgs:
     public static final java.lang.String ARG_OBSERVATORY_PORT
     public static final java.lang.String ARG_KEY_DART_FLAGS
     public static final java.lang.String ARG_DART_FLAGS
+    public static final java.lang.String ARG_KEY_MSAA_SAMPLES
+    public static final java.lang.String ARG_MSAA_SAMPLES
 com.google.common.collect.ImmutableMultiset$EntrySetSerializedForm
 com.google.common.primitives.Shorts$ShortArrayAsList
 com.google.common.reflect.TypeToken$TypeCollector$1
@@ -6601,8 +6617,6 @@ androidx.work.impl.model.DependencyDao_Impl:
     public java.util.List getPrerequisites(java.lang.String)
 kotlin.io.FilesKt__UtilsKt$copyRecursively$2
 com.google.common.net.HostAndPort
-io.flutter.plugin.platform.SingleViewPresentation$WindowManagerHandler:
-    private static final java.lang.String TAG
 com.google.firebase.messaging.FirebaseMessaging:
     public static synchronized com.google.firebase.messaging.FirebaseMessaging getInstance()
     private void <init>(com.google.firebase.iid.FirebaseInstanceId)
@@ -8923,6 +8937,8 @@ androidx.room.RoomMasterTable:
     public static final java.lang.String DEFAULT_ID
     public static final java.lang.String CREATE_QUERY
     public static final java.lang.String READ_QUERY
+io.flutter.view.TextureRegistry$SurfaceTextureEntry:
+    public abstract void release()
 kotlinx.coroutines.ResumeAwaitOnCompletion
 androidx.core.graphics.BlendModeCompat
 kotlin.sequences.SequencesKt__SequencesKt$flatten$2
@@ -12421,6 +12437,9 @@ kotlin.TypeAliasesKt
 com.google.common.collect.StandardTable$ColumnMap$ColumnMapEntrySet$1
 kotlinx.coroutines.DefaultExecutorKt
 com.google.android.gms.internal.auth-api.zbe
+io.flutter.embedding.engine.renderer.FlutterRenderer$SurfaceTextureRegistryEntry:
+    private void removeListener()
+    public void release()
 kotlinx.coroutines.channels.BroadcastKt$broadcast$1
 kotlin.reflect.KMutableProperty0$Setter
 com.google.android.gms.common.api.internal.zabi:
@@ -14410,6 +14429,7 @@ androidx.appcompat.widget.ViewUtils:
     private void <init>()
     private static final java.lang.String TAG
 io.flutter.embedding.android.FlutterActivityAndFragmentDelegate$Host:
+    public abstract io.flutter.embedding.android.ExclusiveAppComponent getExclusiveAppComponent()
     public abstract void updateSystemUiOverlays()
 io.flutter.embedding.android.AndroidTouchProcessor:
     private static final int POINTER_DATA_FIELD_COUNT
@@ -14692,9 +14712,9 @@ androidx.viewpager.widget.ViewPager$ViewPositionComparator
 com.google.android.gms.base.R
 android.support.v4.media.session.MediaSessionCompatApi23$Callback
 androidx.customview.widget.ExploreByTouchHelper
-io.flutter.embedding.engine.systemchannels.PlatformChannel:
-    private static final java.lang.String TAG
 io.flutter.embedding.engine.systemchannels.PlatformViewsChannel:
+    private static final java.lang.String TAG
+io.flutter.embedding.engine.systemchannels.PlatformChannel:
     private static final java.lang.String TAG
 kotlinx.coroutines.flow.FlowKt__ReduceKt$single$$inlined$collect$1
 com.google.common.collect.Multisets$FilteredMultiset$1
@@ -16772,6 +16792,8 @@ kotlinx.coroutines.flow.FlowKt__ZipKt$combineTransform$6$2
 com.google.common.collect.MultimapBuilder$4
 io.flutter.plugins.googlemaps.GoogleMapController:
     void setView(com.google.android.gms.maps.MapView)
+    public void onInputConnectionLocked()
+    public void onInputConnectionUnlocked()
     private static final java.lang.String TAG
 io.flutter.embedding.engine.deferredcomponents.PlayStoreDeferredComponentManager$FeatureInstallStateUpdatedListener
 com.google.common.util.concurrent.WrappingExecutorService$1
@@ -16934,6 +16956,7 @@ io.flutter.embedding.engine.systemchannels.SettingsChannel:
     private static final java.lang.String TAG
     public static final java.lang.String CHANNEL_NAME
     private static final java.lang.String TEXT_SCALE_FACTOR
+    private static final java.lang.String BRIEFLY_SHOW_PASSWORD
     private static final java.lang.String ALWAYS_USE_24_HOUR_FORMAT
     private static final java.lang.String PLATFORM_BRIGHTNESS
 kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt$createCoroutineUnintercepted$$inlined$createCoroutineFromSuspendFunction$IntrinsicsKt__IntrinsicsJvmKt$1
@@ -17613,6 +17636,7 @@ io.flutter.plugin.mouse.MouseCursorPlugin$2:
     private static final long serialVersionUID
 androidx.core.view.WindowInsetsAnimationCompat$Impl21$Impl21OnApplyWindowInsetsListener$1
 io.flutter.embedding.engine.dart.DartExecutor:
+    public void executeDartEntrypoint(io.flutter.embedding.engine.dart.DartExecutor$DartEntrypoint)
     public void executeDartCallback(io.flutter.embedding.engine.dart.DartExecutor$DartCallback)
     public io.flutter.plugin.common.BinaryMessenger getBinaryMessenger()
     public io.flutter.plugin.common.BinaryMessenger$TaskQueue makeBackgroundTaskQueue(io.flutter.plugin.common.BinaryMessenger$TaskQueueOptions)
@@ -18728,6 +18752,8 @@ kotlinx.coroutines.channels.RendezvousChannel:
     protected final boolean isBufferAlwaysFull()
     protected final boolean isBufferFull()
 com.google.common.collect.SortedLists$KeyPresentBehavior$5
+io.flutter.util.TraceSection:
+    public void <init>()
 kotlinx.coroutines.flow.FlowKt__ZipKt$combineTransform$$inlined$combineTransformUnsafe$FlowKt__ZipKt$5$1
 com.google.common.collect.TreeMultiset$2
 androidx.exifinterface.media.ExifInterface$ExifStreamType
@@ -19690,7 +19716,8 @@ com.google.common.graph.AbstractDirectedNetworkConnections$1
 androidx.appcompat.widget.LinearLayoutCompat$DividerMode
 io.flutter.embedding.engine.dart.DartExecutor$DartEntrypoint:
     public static io.flutter.embedding.engine.dart.DartExecutor$DartEntrypoint createDefault()
-    public void <init>(java.lang.String,java.lang.String,java.lang.String)
+io.flutter.plugin.platform.AccessibilityEventsDelegate:
+    public boolean requestSendAccessibilityEvent(android.view.View,android.view.View,android.view.accessibility.AccessibilityEvent)
 kotlinx.coroutines.FlowPreview
 androidx.fragment.app.ListFragment$1
 kotlin.ArrayIntrinsicsKt
@@ -20130,7 +20157,6 @@ com.google.android.gms.common.api.Api$BaseClientBuilder:
     public static final int API_PRIORITY_PLUS
     public static final int API_PRIORITY_OTHER
 io.flutter.embedding.android.FlutterActivityAndFragmentDelegate:
-    void onLowMemory()
     private static final java.lang.String TAG
     private static final java.lang.String FRAMEWORK_RESTORATION_BUNDLE_KEY
     private static final java.lang.String PLUGINS_RESTORATION_BUNDLE_KEY
@@ -21350,8 +21376,6 @@ androidx.appcompat.widget.ListPopupWindow:
     private java.lang.Runnable mShowDropDownRunnable
 androidx.appcompat.view.menu.ActionMenuItem:
     private android.view.MenuItem$OnMenuItemClickListener mClickListener
-io.flutter.embedding.engine.systemchannels.PlatformViewsChannel$1$1:
-    final synthetic io.flutter.embedding.engine.systemchannels.PlatformViewsChannel$1 this$1
 androidx.core.view.ActionProvider:
     private final android.content.Context mContext
     private androidx.core.view.ActionProvider$SubUiVisibilityListener mSubUiVisibilityListener
@@ -21812,10 +21836,10 @@ com.google.android.gms.internal.auth-api.zbc:
 androidx.fragment.app.FragmentManager$7:
     final synthetic androidx.fragment.app.FragmentManager this$0
 androidx.appcompat.app.ToolbarActionBar
-io.flutter.plugin.platform.VirtualDisplayController$1:
-    final synthetic io.flutter.plugin.platform.VirtualDisplayController this$0
 com.google.android.gms.internal.firebase_messaging.zze:
     private static volatile com.google.android.gms.internal.firebase_messaging.zzh zzc
+io.flutter.plugin.platform.AccessibilityEventsDelegate:
+    private io.flutter.view.AccessibilityBridge accessibilityBridge
 androidx.work.impl.model.PreferenceDao_Impl$1:
     final synthetic androidx.work.impl.model.PreferenceDao_Impl this$0
 io.flutter.embedding.engine.dart.DartMessenger$DefaultTaskQueueFactory:
@@ -21860,7 +21884,5 @@ androidx.core.view.ViewCompat$AccessibilityViewProperty:
 androidx.appcompat.view.StandaloneActionMode:
     private boolean mFocusable
 androidx.lifecycle.DefaultLifecycleObserver$-CC
-io.flutter.plugin.platform.PlatformView$-CC:
-    public static void $default$onInputConnectionLocked(io.flutter.plugin.platform.PlatformView)
-    public static void $default$onInputConnectionUnlocked(io.flutter.plugin.platform.PlatformView)
 io.flutter.plugin.common.BinaryMessenger$-CC
+io.flutter.view.TextureRegistry$SurfaceTextureEntry$-CC

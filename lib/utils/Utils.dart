@@ -49,6 +49,7 @@ import '../models/ProductModel.dart';
 import '../models/QuestionModel.dart';
 import '../models/WizardItemModel.dart';
 import '../pages/Dashboard.dart';
+import '../pages/account/AccountEdit.dart';
 import '../pages/account/account_details.dart';
 import '../pages/account/account_edit.dart';
 import '../pages/account/account_login.dart';
@@ -412,6 +413,17 @@ class Utils {
           PageRouteBuilder(
             pageBuilder: (context, animation1, animation2) =>
                 AppUpdateScreen(),
+            transitionDuration: Duration.zero,
+          ),
+        );
+        break;
+
+        case AppConfig.ProfileEdit:
+        Navigator.push(
+          context,
+          PageRouteBuilder(
+            pageBuilder: (context, animation1, animation2) =>
+                ProfileEdit(),
             transitionDuration: Duration.zero,
           ),
         );

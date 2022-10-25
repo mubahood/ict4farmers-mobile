@@ -1,6 +1,7 @@
 class AppConfig {
-  static const String APP_VERSION = "3";
+  static const String APP_VERSION = "4";
   static const String GardensScreen = "GardensScreen";
+  static const String ProfileEdit = "ProfileEdit";
   static const String MOBILE_APP_LINK =
       "https://play.google.com/store/apps/details?id=net.eighttechnologes.ict4farmers&hl=en&gl=US";
   static const String AppUpdateScreen = "AppUpdateScreen";

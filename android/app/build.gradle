@@ -54,7 +54,7 @@ android {
 
     signingConfigs {
         release {
-            storeFile file("/Users/mac/Desktop/github/ict4farmers-mobile/ict4farmers.jks")
+            storeFile file("/home/eighttech/projects/mobile/ict4farmers.jks")
             storePassword "Abertnamanya2."
             keyPassword "Abertnamanya2."
             keyAlias "ict4farmers_alias"

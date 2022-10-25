@@ -50,6 +50,7 @@ class LoggedInUserModel {
   String group_id = "";
   String group_text = "";
   String sector = "";
+  List<String> sectors = [];
   String production_scale = "";
   String number_of_dependants = "";
   String user_role = "";
@@ -62,10 +63,9 @@ class LoggedInUserModel {
   String education = "";
   String phone_number_verified = "";
   String verification_code = "";
-
+  DateTime dob = DateTime(1990);
 
   static Future<void> update_local_user() async {
-
     LoggedInUserModel u = await LoggedInUserModel.get_logged_in_user();
     String _resp = await Utils.http_get('api/users-profile', {
       'id': u.id,
@@ -115,7 +115,8 @@ class LoggedInUserModel {
             item.first_name = Utils.string_parse(d['data']['first_name'], "");
             item.last_name = Utils.string_parse(d['data']['last_name'], "");
             item.email = Utils.string_parse(d['data']['email'], "");
-            item.phone_number = Utils.string_parse(d['data']['phone_number'], "");
+            item.phone_number =
+                Utils.string_parse(d['data']['phone_number'], "");
             item.avatar = Utils.string_parse(d['data']['avatar'], "");
             item.status = Utils.string_parse(d['data']['status'], "");
             item.message = Utils.string_parse(d['data']['message'], "");
@@ -178,6 +179,24 @@ class LoggedInUserModel {
                 Utils.string_parse(d['data']['phone_number_verified'], "");
             item.verification_code =
                 Utils.string_parse(d['data']['verification_code'], "");
+
+            if (item.date_of_birth.length > 4) {
+              try {
+                item.dob = DateTime.parse(item.date_of_birth);
+              } catch (e) {}
+            }
+
+            if (item.sector.length > 4) {
+              try {
+                item.sectors.clear();
+                (jsonDecode(item.sector) as List<dynamic>).forEach((e) {
+                  if (['Crop farming', 'Livestock farming', 'Fisheries']
+                      .contains(e.toString())) {
+                    item.sectors.add(e.toString());
+                  }
+                });
+              } catch (e) {}
+            }
           }
         }
       }
@@ -199,8 +218,6 @@ class LoggedInUserModel {
 
     d.data = raw;
 
-
-
     await DynamicTable.save_to_local_db(
         end_point: end_point, clear_previous: true, new_ids: [1], items: [d]);
   }
@@ -214,8 +231,6 @@ class LoggedInUserModel {
 
     return token_items[0].data;
   }
-
-
 
   static save_token(String token) async {
     DynamicTable _token = new DynamicTable();

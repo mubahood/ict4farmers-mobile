@@ -38,6 +38,16 @@ class _AccountEditState extends State<AccountEdit> {
 
   LoggedInUserModel item = new LoggedInUserModel();
 
+  late Future<dynamic> futureInit;
+
+  @override
+  void initState() {
+    super.initState();
+    customTheme = AppTheme.customTheme;
+    theme = AppTheme.theme;
+    futureInit = my_init();
+  }
+
   Future<void> get_location() async {
     Position p = await Utils.get_device_location();
     if (p != null) {
@@ -51,14 +61,19 @@ class _AccountEditState extends State<AccountEdit> {
     }
   }
 
-  List<LocationModel> locations = [];
 
-  Future<void> my_init() async {
+  Future<dynamic> my_init() async {
     item = await Utils.get_logged_in();
 
-    locations = await LocationModel.get_items();
 
-    if (item.date_of_birth != null) {
+
+    return "Done";
+    //item.district = result['location_sub_name'];
+    //item.sub_county = result['location_sub_id'];
+
+    /*
+
+        if (item.date_of_birth != null) {
       if (item.date_of_birth.length > 3) {
         try {
           DateTime dob = DateTime.parse(item.date_of_birth);
@@ -69,20 +84,6 @@ class _AccountEditState extends State<AccountEdit> {
       }
     }
 
-    locations.forEach((loc_1) {
-      if (loc_1.id.toString() == item.sub_county) {
-        locations.forEach((loc_2) {
-          if (loc_2.id.toString() == loc_1.parent.toString()) {
-            _formKey.currentState!.patchValue({
-              'district': "${loc_2.name}, ${loc_1.name}",
-            });
-          }
-        });
-      }
-    });
-
-    //item.district = result['location_sub_name'];
-    //item.sub_county = result['location_sub_id'];
 
     if (item.id < 1) {
       Utils.showSnackBar("Login before you proceed.", context, Colors.red);
@@ -168,28 +169,19 @@ class _AccountEditState extends State<AccountEdit> {
 
     _formKey.currentState!.patchValue({
       'sectors': Utils.json_to_list(item.sector),
-    });
-
-    print("============MY INIT==========");
-
-    setState(() {});
+    });*/
   }
 
   List<FarmersGroup> farmers_groups = [];
   List<String> sectors = [];
 
   @override
-  void initState() {
-    super.initState();
-    customTheme = AppTheme.customTheme;
-    theme = AppTheme.theme;
-  }
-
-  @override
   Widget build(BuildContext context) {
     // setState(() { onLoading = false;});
 
     Future<void> submit_form() async {
+
+
       error_message = "";
       setState(() {});
       if (!_formKey.currentState!.validate()) {
@@ -341,8 +333,49 @@ password
           padding: FxSpacing.fromLTRB(20, 10, 20, 0),
           children: [
             FutureBuilder(
-                future: my_init(),
-                builder: (context, snapshot) => FormBuilder(
+                future: futureInit,
+                builder: (context, snapshot) {
+                  if (!snapshot.hasData) {
+                    return const Center(
+                      child: Text("⌛ Loading..."),
+                    );
+                  } else if (!snapshot.hasData) {
+                    return const Center(
+                      child: Text("Something went wrong. PLease try again."),
+                    );
+                  } else {
+                    if (!['Male', 'Female'].contains(item.gender)) {
+                      item.gender = "";
+                    }
+
+                    if (!['Single', 'Married'].contains(item.marital_status)) {
+                      item.marital_status = "";
+                    }
+
+                    if (!['Basic user', 'Farmer', 'Service provider']
+                        .contains(item.user_role)) {
+                      item.user_role = item.user_role;
+                    }
+                    if (![
+                      'Subsistence production',
+                      'Small Commercial Production',
+                      'Large Commercial Production'
+                    ].contains(item.production_scale)) {
+                      item.user_role = item.production_scale;
+                    }
+
+                    if (![
+                      '',
+                      'No any access',
+                      'SACCO',
+                      'Bank',
+                      'VSLA',
+                      'Family',
+                    ].contains(item.access_to_credit)) {
+                      item.access_to_credit = item.access_to_credit;
+                    }
+
+                    return FormBuilder(
                       key: _formKey,
                       child: Column(
                         children: [
@@ -397,6 +430,7 @@ password
                           FxSpacing.height(15),
                           FormBuilderTextField(
                               name: "name",
+                              initialValue: item.name,
                               textInputAction: TextInputAction.next,
                               keyboardType: TextInputType.name,
                               validator: FormBuilderValidators.compose([
@@ -423,6 +457,7 @@ password
                           ),
                           FormBuilderTextField(
                               name: "email",
+                              initialValue: item.email,
                               textInputAction: TextInputAction.next,
                               keyboardType: TextInputType.emailAddress,
                               validator: FormBuilderValidators.compose([
@@ -448,6 +483,7 @@ password
                             color: Colors.grey.shade300,
                           ),
                           FormBuilderDropdown(
+                            initialValue: item.gender,
                             dropdownColor: Colors.white,
                             name: 'gender',
                             decoration: customTheme.input_decoration_2(
@@ -474,6 +510,7 @@ password
                             color: Colors.grey.shade300,
                           ),
                           FormBuilderDropdown(
+                            initialValue: item.marital_status,
                             dropdownColor: Colors.white,
                             name: 'marital_status',
                             decoration: customTheme.input_decoration_2(
@@ -499,6 +536,7 @@ password
                             color: Colors.grey.shade300,
                           ),
                           FormBuilderDateTimePicker(
+                              initialValue: item.dob,
                               name: "date_of_birth",
                               textInputAction: TextInputAction.next,
                               inputType: InputType.date,
@@ -511,11 +549,11 @@ password
                               decoration: customTheme.input_decoration_2(
                                   labelText: "Date of birth",
                                   hintText: "When were you born?")),
-                          FxDashedDivider(
+                        /*  FxDashedDivider(
                             color: Colors.grey.shade300,
                           ),
                           FormBuilderTextField(
-                              name: "district",
+                              name: ,
                               textInputAction: TextInputAction.next,
                               readOnly: true,
                               onTap: () => {pick_location()},
@@ -529,17 +567,21 @@ password
                               ]),
                               decoration: customTheme.input_decoration_2(
                                   labelText: "Location",
-                                  hintText: "Where do you mainly live?")),
+                                  hintText: "Where do you mainly live?")),*/
                           FxDashedDivider(
                             color: Colors.grey.shade300,
                           ),
                           FormBuilderDropdown(
                             dropdownColor: Colors.white,
+                            initialValue: item.user_role,
                             name: 'user_role',
                             decoration: customTheme.input_decoration_2(
                               labelText: "User role",
                             ),
-                            onChanged: (c) => {OnUserTypeChange(c.toString())},
+                            onChanged: (c) {
+                              item.user_role = c.toString();
+                              setState(() {});
+                            },
                             validator: FormBuilderValidators.compose([
                               FormBuilderValidators.required(
                                 context,
@@ -560,7 +602,7 @@ password
                           FxDashedDivider(
                             color: Colors.grey.shade300,
                           ),
-                          (user_role == "Farmer")
+                          (item.user_role == "Farmer")
                               ? InkWell(
                                   onTap: () => {prick_farmer_group()},
                                   child: Container(
@@ -586,7 +628,7 @@ password
                                           child: Row(
                                             children: [
                                               FxText(
-                                                group_text,
+                                                item.group_text,
                                                 maxLines: 2,
                                                 color: Colors.grey.shade500,
                                               ),
@@ -604,7 +646,7 @@ password
                           FxDashedDivider(
                             color: Colors.grey.shade300,
                           ),
-                          (user_role == "Farmer")
+                          (item.user_role == "Farmer")
                               ? FormBuilderCheckboxGroup<String>(
                                   autovalidateMode:
                                       AutovalidateMode.onUserInteraction,
@@ -612,6 +654,7 @@ password
                                     labelText:
                                         "Select your sectors of specialization",
                                   ),
+                                  initialValue: item.sectors,
                                   name: 'sectors',
                                   options: const [
                                     FormBuilderFieldOption(
@@ -636,9 +679,10 @@ password
                           FxDashedDivider(
                             color: Colors.grey.shade300,
                           ),
-                          (user_role == "Farmer")
+                          (item.user_role == "Farmer")
                               ? FormBuilderTextField(
                                   name: "experience",
+                                  initialValue: item.experience,
                                   textInputAction: TextInputAction.next,
                                   keyboardType: TextInputType.number,
                                   validator: FormBuilderValidators.compose([
@@ -655,13 +699,14 @@ password
                           FxDashedDivider(
                             color: Colors.grey.shade300,
                           ),
-                          (user_role == "Farmer")
+                          (item.user_role == "Farmer")
                               ? FormBuilderDropdown(
                                   dropdownColor: Colors.white,
                                   name: 'production_scale',
                                   decoration: customTheme.input_decoration_2(
                                     labelText: "Production scale",
                                   ),
+                                  initialValue: item.production_scale,
                                   validator: FormBuilderValidators.compose([
                                     FormBuilderValidators.required(
                                       context,
@@ -684,13 +729,14 @@ password
                           FxDashedDivider(
                             color: Colors.grey.shade300,
                           ),
-                          (user_role == "Farmer")
+                          (item.user_role == "Farmer")
                               ? FormBuilderDropdown(
                                   dropdownColor: Colors.white,
                                   name: 'access_to_credit',
                                   decoration: customTheme.input_decoration_2(
                                     labelText: "Do you have access to credit?",
                                   ),
+                                  initialValue: item.access_to_credit,
                                   validator: FormBuilderValidators.compose([
                                     FormBuilderValidators.required(
                                       context,
@@ -698,6 +744,7 @@ password
                                     )
                                   ]),
                                   items: [
+                                    '',
                                     'No any access',
                                     'SACCO',
                                     'Bank',
@@ -769,7 +816,10 @@ password
                           FxSpacing.height(16),
                         ],
                       ),
-                    )),
+                    );
+                  }
+                  ;
+                }),
           ],
         ),
       ),
@@ -800,7 +850,7 @@ password
       MaterialPageRoute(builder: (context) => LocationMain()),
     );
 
-    if (result != null) {
+   /* if (result != null) {
       if ((result['location_sub_id'] != null) &&
           (result['location_sub_name'] != null)) {
         item.district = result['location_sub_name'];
@@ -809,7 +859,7 @@ password
           'district': item.district,
         });
       }
-    }
+    }*/
   }
 
   void _show_bottom_sheet_photo(context) {
@@ -884,8 +934,6 @@ password
     setState(() {});
   }
 
-  String group_text = "";
-  String group_id = "";
 
   prick_farmer_group() async {
     farmers_groups = await FarmersGroup.get_items();
@@ -903,18 +951,11 @@ password
 
     if (result != null) {
       if (result['id'] != null && result['name'] != null) {
-        group_id = result['id'].toString();
-        group_text = result['name'].toString();
+        item.group_id = result['id'].toString();
+        item.group_text = result['name'].toString();
         setState(() {});
       }
     }
-  }
-
-  String user_role = "";
-
-  OnUserTypeChange(String c) {
-    user_role = c.toString();
-    setState(() {});
   }
 
   Future<void> logout() async {
