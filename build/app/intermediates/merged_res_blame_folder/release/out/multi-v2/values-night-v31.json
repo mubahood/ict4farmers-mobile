@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/mac/Desktop/github/ict4farmers-mobile/build/app/intermediates/incremental/mergeReleaseResources/merged.dir/values-night-v31/values-night-v31.xml",
+            "map": [
+                {
+                    "source": "/Users/mac/Desktop/github/ict4farmers-mobile/android/app/src/main/res/values-night-v31/styles.xml",
+                    "from": {
+                        "startLines": "3,15",
+                        "startColumns": "4,4",
+                        "startOffsets": "173,888",
+                        "endLines": "8,17",
+                        "endColumns": "12,12",
+                        "endOffsets": "537,1052"
+                    },
+                    "to": {
+                        "startLines": "2,8",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,424",
+                        "endLines": "7,10",
+                        "endColumns": "12,12",
+                        "endOffsets": "419,588"
+                    }
+                }
+            ]
+        }
+    ]
+}

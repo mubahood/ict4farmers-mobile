@@ -1,5 +1,5 @@
 class AppConfig {
-  static const String APP_VERSION = "4";
+  static const String APP_VERSION = "5";
   static const String GardensScreen = "GardensScreen";
   static const String ProfileEdit = "ProfileEdit";
   static const String MOBILE_APP_LINK =
@@ -21,15 +21,18 @@ class AppConfig {
   static const String MoreMenuScreen = "MoreMenuScreen";
   static const String WorkerCreateScreen = "WorkerCreateScreen";
   static const String SubmitActivityScreen = "SubmitActivityScreen";
-  static const String FinancialRecordsCreateScreen = "FinancialRecordsCreateScreen";
+  static const String FinancialRecordsCreateScreen =
+      "FinancialRecordsCreateScreen";
   static const String FinancialRecordsScreen = "FinancialRecordsScreen";
   static const String QuestionsScreen = "QuestionsScreen";
   static const String QuestionsCreateScreen = "QuestionsCreateScreen";
   static const String QuestionScreen = "QuestionScreen";
   static const String MyAccountScreen = "MyAccountScreen";
-  static const String GardenProductionRecordsScreen = "GardenProductionRecordsScreen";
+  static const String GardenProductionRecordsScreen =
+      "GardenProductionRecordsScreen";
   static const String AboutUsScreen = "AboutUsScreen";
-  static const String GardenProductionRecordCreateScreen = "GardenProductionRecordCreateScreen";
+  static const String GardenProductionRecordCreateScreen =
+      "GardenProductionRecordCreateScreen";
   static const String FarmCreateScreen = "FarmCreateScreen";
   static const String FarmsScreen = "FarmsScreen";
   static const String account_verification_code = "account_verification_code";
@@ -37,8 +40,10 @@ class AppConfig {
   static const String Dashboard = "Dashboard";
   static const String HomesScreen = "HomesScreen";
 
-  static String Lorem1 = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consequatur temporibus laboriosam atque aperiam dolorem, esse, velit exercitationem expedita sit optio possimus. Ipsam repellat corporis temporibus incidunt sunt obcaecati aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consequatur temporibus laboriosam atque aperiam dolorem, esse, velit exercitationem expedita sit optio possimus. Ipsam repellat corporis temporibus incidunt sunt obcaecati aperiam.";
-  static String Lorem2 = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consequatur temporibus laboriosam atque aperiam dolorem, esse, velit exercitationem expedita sit optio possimus. Ipsam repellat corporis temporibus incidunt sunt obcaecati aperiam.";
+  static String Lorem1 =
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consequatur temporibus laboriosam atque aperiam dolorem, esse, velit exercitationem expedita sit optio possimus. Ipsam repellat corporis temporibus incidunt sunt obcaecati aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consequatur temporibus laboriosam atque aperiam dolorem, esse, velit exercitationem expedita sit optio possimus. Ipsam repellat corporis temporibus incidunt sunt obcaecati aperiam.";
+  static String Lorem2 =
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consequatur temporibus laboriosam atque aperiam dolorem, esse, velit exercitationem expedita sit optio possimus. Ipsam repellat corporis temporibus incidunt sunt obcaecati aperiam.";
   static String BASE_URL = "https://app2.unffeict4farmers.org";
   static const String HomePage = "HomePage";
   static const String MyProductsScreen = "MyProductsScreen";
@@ -78,13 +83,16 @@ class AppConfig {
   static const String OUR_PHONE_NUMBER = "0414230705";
   static const String TOLL_FREE_PHONE_NUMBER = "0800209003";
   static const String OUR_WHATSAPP_NUMBER = "+256780602550";
-  static const String account_verification_splash = "account_verification_splash";
+  static const String account_verification_splash =
+      "account_verification_splash";
   static const String account_verification_phone = "account_verification_phone";
 
-  static const String OUR_FACEBOOK_LINK = "https://www.facebook.com/ict4farmers";
+  static const String OUR_FACEBOOK_LINK =
+      "https://www.facebook.com/ict4farmers";
   static const String OUR_TWITTER_LINK = "https://twitter.com/ict4farmers";
-  static const String OUR_INSTAGRAM_LINK = "https://www.instagram.com/ict4farmers/";
-  static const String OUR_YOUTUBE_LINK = "https://www.youtube.com/channel/UCMqE0SeSuidm2LpYrypEKOQ";
+  static const String OUR_INSTAGRAM_LINK =
+      "https://www.instagram.com/ict4farmers/";
+  static const String OUR_YOUTUBE_LINK =
+      "https://www.youtube.com/channel/UCMqE0SeSuidm2LpYrypEKOQ";
   static const String OUR_WEBSITE_LINK = "https://app2.unffeict4farmers.org";
-
 }
